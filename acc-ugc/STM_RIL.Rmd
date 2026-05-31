@@ -1,0 +1,556 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+if (!require(stm)) install.packages("stm")
+if (!require(dplyr)) install.packages("dplyr")
+if (!require(readr)) install.packages("readr")
+if (!require(ggplot2)) install.packages("ggplot2")
+if (!require(tidytext)) install.packages("tidytext")
+if (!require(corrplot)) install.packages("corrplot")
+if (!require(splines)) install.packages("splines")
+if (!require(readxl)) install.packages("readxl")
+if (!require(tm)) install.packages("tm")
+if (!require(openxlsx)) install.packages("openxlsx")
+
+library(stm)
+library(dplyr)
+library(readr)
+library(ggplot2)
+library(tidytext)
+library(corrplot)
+library(splines)
+library(tm)
+library(glue)
+library(future)
+library(furrr)
+library(tidyverse)
+```
+
+```{r setup include=FALSE}
+# This command sets the working directory for ALL chunks in this document.
+knitr::opts_chunk$set(root.dir = 'D:/skripsi')
+```
+
+```{r}
+# data <- read_excel("../outputs/no_unk_processed_STM_ALL.xlsx")
+data <- read_excel("../price_merge_imputed.xlsx")
+```
+
+```{r}
+head(data)
+```
+
+```{r}
+sapply(data[c("segment", "price", "predicted_class", "processed_text_stm")], function(x) sum(is.na(x)))
+
+# Basic summary statistics
+cat("Dataset Summary:\n")
+cat("Total reviews:", nrow(data), "\n")
+cat("Segments:", paste(unique(data$segment), collapse = ", "), "\n")
+cat("Types:", paste(unique(data$type), collapse = ", "), "\n")
+cat("Year range:", min(data$year, na.rm = TRUE), "-", max(data$year, na.rm = TRUE), "\n")
+
+```
+```{r}
+table(data$segment, data$type)
+```
+
+```{r}
+data_clean <- data %>%
+  filter(!is.na(processed_text_stm) & 
+         !is.na(segment) & 
+         !is.na(type) & 
+         !is.na(year) &
+         nchar(processed_text_stm) > 7)  # Remove very short texts
+
+cat("Data after cleaning:\n")
+cat("Remaining reviews:", nrow(data_clean), "\n")
+```
+```{r}
+revisit_stopwords <- c(
+  # Direct outcome words and their variations
+  "recommend", "recommended", "recommends",
+  "return", "returned", "returning",
+  "revisit", "revisited",
+  "back", "come", "comeback",
+  "again", "stayagain",
+  # Intensifiers that almost always modify an outcome phrase
+  "definitely", "highly", "absolutely", "certainly",
+  # Conditional or future-intent words
+  "would", "next",
+  # Names
+  "aadc", "aah", "aahhhhh", "aaron", "aayartta", "abdul", "abe", "abel", "abib", "adhistana", "adhisthana", "adidas", "adimulia", "adisucipto", "adisutjipto", "alan", "aldo", "alex", "alexander", "alexandra", "alica",
+  "alisha", "alissa", "alvin", "amanda", "ana", "andine", "andre", "andrea", "andrianto", "anton", "antonio", "australia", "bali", "batu", "ben", "bromo", "canggu", "casa", "chris", "daniel", "darwin", "devi",
+  "evan", "gaia", "garda", "helena", "indonesia", "ivan", "jakarta", "jasmine", "jatim", "jay", "jeff", "jiva", "jogja", "jogjakarta", "johnny", "kolo", "kuta", "legian", "lenny", "lily", "malang", "malioboro",
+  "marinetti", "medan", "novotel", "nusa", "omar", "pak", "pakuwon", "prawirotaman", "ria", "rio", "rudy", "sari", "semarang", "seraph", "solo", "sudirman", "surabaya", "thamrin", "ubud", "yogi", "yogyakarta",
+  "agoda", "ibis", "ascott", "eva", "tunjungan", "seminyak", "indrayana", "antonius", "nyeman",
+  "great","surely", "stayed","everything","anything","else","really","one","since","always","kedawungville","asked","told","nothing","two","must","sew","tug","except","also","mia","ever","eth","nine","wow","cara","haha","hehe","lucas","sabrina","elm","monica","rialto","uluwatu","ancol","ciputra","yello","hyatt","want","although","whenever","gubeng","harris","indra", "belinda"
+) 
+corpus <- VCorpus(VectorSource(data_clean$processed_text_stm))
+corpus <- tm_map(corpus, removeWords, revisit_stopwords)
+
+# Convert the corpus back to a character vector to put in your data frame
+data_clean$processed_text_stm <- sapply(corpus, as.character)
+
+```
+
+```{r}
+processed <- textProcessor(
+  documents = data_clean$processed_text_stm,
+  metadata = data_clean[c("id","segment", "price", "predicted_class")],
+  # metadata = data_clean[c("segment", "type")],
+  lowercase = FALSE,  
+  removestopwords = TRUE,    
+  removenumbers = TRUE,
+  removepunctuation = FALSE,  
+  stem = TRUE,  
+  wordLengths = c(3, Inf),  # Keep words with 3+ characters
+  language = "en",
+)
+
+cat("\nText processing results:\n")
+cat("Documents retained:", length(processed$documents), "\n")
+cat("Vocabulary size:", length(processed$vocab), "\n")
+```
+
+```{r}
+# Prepare documents for STM
+out <- prepDocuments(
+  processed$documents, 
+  processed$vocab, 
+  processed$meta,
+  lower.thresh = 12,  # Remove words that appear in fewer than 5 documents
+  upper.thresh = (70000 * 0.95)
+  )
+
+cat("\nAfter prepDocuments:\n")
+cat("Documents retained:", length(out$documents), "\n")
+cat("Vocabulary size:", length(out$vocab), "\n")
+cat("Words removed due to frequency:", processed$words.removed, "\n")
+cat("Documents removed:", processed$docs.removed, "\n")
+```
+```{r}
+saveRDS(out, "../outputs/WIDPRCoutDocsWithStem.rds")
+```
+
+```{r}
+out <- readRDS("../outputs/WIDPRCoutDocsWithStem.rds")
+```
+
+```{r}
+meta <- out$meta
+documents <- out$documents
+vocab <- out$vocab
+meta$segment <- as.factor(meta$segment)
+meta$type <- as.factor(meta$type)
+meta$year <- as.numeric(as.character(meta$year))
+meta$predicted_class <- as.factor(meta$predicted_class) 
+head(meta)
+```
+```{r}
+meta <- out$meta
+documents <- out$documents
+vocab <- out$vocab
+meta$segment <- as.factor(meta$segment)
+meta$price <- as.numeric(meta$price)
+# meta$year <- as.numeric(as.character(meta$year))
+meta$predicted_class <- as.factor(meta$predicted_class) 
+head(meta)
+```
+
+
+```{r}
+library(future)
+library(furrr)
+library(tidyverse)
+
+num_cores <- availableCores() - 1
+plan(multisession, workers = num_cores)
+```
+
+```{r}
+searchK_parallel <- function(documents, vocab, K, prevalence, data,
+                             init.type = "Spectral", seed = 123,
+                             max.em.its = 75, verbose = FALSE,
+                             workers = availableCores() - 1,
+                             resume_file = NULL) {
+  
+  old_results <- NULL
+  if (!is.null(resume_file) && file.exists(resume_file)) {
+    message("Found existing results file. Loading progress...")
+    old_results <- readRDS(resume_file)
+    completed_k <- old_results$results_df$K
+  } else {
+    completed_k <- c()
+  }
+  
+  new_k_to_run <- setdiff(K, completed_k)
+  
+  if (length(new_k_to_run) > 0) {
+    message(paste("Computing for K =", paste(new_k_to_run, collapse = ", ")))
+    
+    # Make held-out data (same for all K)
+    heldout <- make.heldout(documents, vocab)
+    
+    plan(multisession, workers = workers)
+    
+    new_results_list <- future_map(new_k_to_run, function(k) {
+      model <- stm(
+        documents = heldout$documents,
+        vocab = vocab,
+        K = k,
+        prevalence = prevalence,
+        data = data,
+        init.type = init.type,
+        seed = seed,
+        max.em.its = max.em.its,
+        verbose = verbose
+      )
+      
+      heldout_val <- eval.heldout(model, heldout$missing)$expected.heldout
+      semcoh_val  <- mean(semanticCoherence(model, documents))
+      exclusivity_val <- mean(exclusivity(model))
+      
+      list(
+        model = model,
+        heldout = heldout_val,
+        semcoh = semcoh_val,
+        exclusivity = exclusivity_val
+      )
+    }, .options = furrr_options(seed = TRUE))
+    
+    new_results_df <- tibble(
+      K = new_k_to_run,
+      results = new_results_list,
+      heldout = map_dbl(new_results_list, "heldout"),
+      semcoh = map_dbl(new_results_list, "semcoh"),
+      exclusivity = map_dbl(new_results_list, "exclusivity")
+    )
+    
+    if (!is.null(old_results)) {
+      combined_df <- bind_rows(old_results$results_df, new_results_df) %>% arrange(K)
+      combined_list <- c(old_results$results, new_results_list)
+    } else {
+      combined_df <- new_results_df
+      combined_list <- new_results_list
+    }
+    
+  } else {
+    message("All K values in the specified range are already complete.")
+    combined_df <- old_results$results_df
+    combined_list <- old_results$results
+  }
+
+  out <- list(
+    results = combined_list,
+    results_df = combined_df,
+    K = combined_df$K
+  )
+  
+  if (!is.null(resume_file)) {
+    saveRDS(out, file = resume_file)
+    message(paste("Updated results saved to", resume_file))
+  }
+  
+  class(out) <- c("searchK_parallel", "list")
+  return(out)
+}
+
+
+# searchK plot
+plot.searchK_parallel <- function(x, ...) {
+  df <- x$results_df %>%
+    pivot_longer(cols = c(heldout, semcoh, exclusivity),
+                 names_to = "metric", values_to = "value")
+  
+  ggplot(df, aes(x = K, y = value, color = metric)) +
+    geom_line(size = 1.2) +
+    geom_point(size = 3) +
+    facet_wrap(~metric, scales = "free_y") +
+    labs(
+      title = "Parallel STM Model Diagnostics by K",
+      x = "Number of Topics (K)",
+      y = "Metric Value"
+    ) +
+    theme_minimal(base_size = 14)
+}
+```
+
+```{r}
+topic_range <- seq(14, 28, 2)
+
+search_results <- searchK_parallel(
+  documents = documents,
+  vocab = vocab,
+  K = topic_range,
+  prevalence = ~ segment + type + predicted_class,
+  data = meta,
+  seed = 123,
+  max.em.its = 65,
+  resume_file = "../outputs/NALL_stm_searchk_results.rds"
+)
+
+plot(search_results)
+```
+
+```{r}
+saveRDS(search_results, file = "../outputs/all_stm_searchk_results.rds")
+```
+
+```{r}
+search_results3 <- readRDS("../outputs/ONLYEN_stm_searchk_results.rds")
+```
+
+```{r}
+# if (!require(ggrepel)) install.packages("ggrepel")
+library(ggrepel)
+p <- search_results$results_df %>%
+  ggplot(aes(x = semcoh, y = exclusivity)) +
+  geom_point(shape = 18, size = 3, color = "darkblue") +
+  geom_text_repel(aes(label = K), size = 5, point.padding = 0.5) +
+  labs(
+    title = "Semantic Coherence vs. Exclusivity",
+    x = "Semantic Coherence",
+    y = "Exclusivity"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  coord_cartesian(xlim = c(-140, -20), ylim = c(9.5, 10))
+
+ggsave("../outputs/model_diagnostics.png", plot = p, width = 8, height = 6, dpi = 300)
+```
+
+```{r}
+fit_final_models_parallel <- function(K_values, output_dir, documents, vocab, prevalence, data, seed, max_its = 100, init_type = "Spectral", workers = availableCores() - 1) {
+  
+  dir.create(output_dir, showWarnings = FALSE, recursive = TRUE)
+  
+  plan(multisession, workers = workers)
+  
+  message(paste("Starting to fit final models for K =", paste(K_values, collapse = ", ")))
+  
+  saved_model_paths <- future_map_chr(K_values, function(k) {
+    
+    file_path <- file.path(output_dir, paste0("PWLALL2WS_stm_model_K", k, ".rds"))
+    
+    if (file.exists(file_path)) {
+      message(paste("Model for K =", k, "already exists. Skipping."))
+      return(file_path) # Return the existing path and move to the next K
+    }
+    
+    message(paste("Fitting model for K =", k, "..."))
+    
+    model <- stm(
+      documents = documents,
+      vocab = vocab,
+      K = k,
+      prevalence = prevalence, 
+      data = data,
+      seed = seed,
+      max.em.its = max_its, 
+      init.type = init_type,
+    )
+    
+    saveRDS(model, file = file_path)
+    
+    message(paste("Model for K =", k, "saved to:", file_path))
+    
+    return(file_path)
+    
+  }, .options = furrr_options(seed = TRUE))
+  
+  tibble(
+    K = K_values,
+    model_path = saved_model_paths
+  )
+}
+```
+
+```{r}
+final_k_values <- c(20)
+
+final_model_dir <- "../outputs/final_models/"
+
+saved_models_info <- fit_final_models_parallel(
+  K_values = final_k_values,
+  output_dir = final_model_dir,
+  documents = documents,
+  vocab = vocab,
+  prevalence = ~ segment + type, 
+  data = meta,
+  seed = 42,
+  max_its = 180, 
+  init_type = "Spectral" 
+)
+
+print(saved_models_info)
+```
+
+```{r}
+K_opt = 20
+stm_model <- readRDS(glue("../outputs/final_models/stm_model_K{K_opt}.rds"))
+
+topic_props <- colMeans(stm_model$theta)
+names(topic_props) <- paste("Topic", 1:K_opt)
+topic_props_df <- data.frame(
+  Topic = names(topic_props),
+  Proportion = topic_props
+) %>%
+  arrange(desc(Proportion))
+
+print("Topic Proportions (Overall):")
+print(topic_props_df)
+```
+
+```{r message=TRUE, warning=TRUE}
+library(openxlsx)
+
+final_k_values <- c(20)
+
+N_TOP_WORDS <- 30
+
+model_input_dir <- "../outputs/final_models/"
+base_output_dir <- "../outputs/stm_analysis"
+
+dir.create(base_output_dir, showWarnings = FALSE)
+
+for (K_opt in final_k_values) {
+  message(glue("\nProcessing model with K = {K_opt}..."))
+  
+  model_output_dir <- file.path(base_output_dir, glue("PWLALL2WS_K_{K_opt}"))
+  dir.create(model_output_dir, showWarnings = FALSE)
+  
+  model_path <- file.path(model_input_dir, glue("PWLALL2WS_stm_model_K{K_opt}.rds"))
+  
+  if (!file.exists(model_path)) {
+    warning(glue("Model file not found for K={K_opt} at path: {model_path}. Skipping."))
+    next 
+  }
+  
+  stm_model <- readRDS(model_path)
+  
+  message("  -> Analyzing overall topic proportions...")
+  
+  topic_props <- colMeans(stm_model$theta)
+  
+  topic_props_df <- tibble(
+    Topic = paste("Topic", 1:K_opt),
+    Proportion = topic_props
+  ) %>%
+    arrange(desc(Proportion))
+  
+  write.xlsx(topic_props_df, file = file.path(model_output_dir, "topic_proportions.xlsx"))
+  
+  proportions_plot <- ggplot(topic_props_df, aes(x = reorder(Topic, Proportion), y = Proportion)) +
+    geom_col(fill = "steelblue", alpha = 0.7) +
+    coord_flip() +
+    labs(
+      title = glue("Overall Topic Proportions (K={K_opt})"),
+      x = "Topic",
+      y = "Proportion"
+    ) +
+    theme_minimal()
+  
+  ggsave(
+    filename = file.path(model_output_dir, "topic_proportions_plot.png"),
+    plot = proportions_plot,
+    width = 8,
+    height = 10,
+    dpi = 300
+  )
+  
+  message("  -> Extracting and saving top words for each topic...")
+  
+  top_words <- labelTopics(stm_model, n = N_TOP_WORDS)
+  top_words_df <- map_df(1:K_opt, function(topic_num) {
+    
+    # Combine the words from all four metrics for the current topic
+    words_data <- rbind(
+      top_words$frex[topic_num, ],
+    #  top_words$prob[topic_num, ],
+    #  top_words$lift[topic_num, ],
+      top_words$score[topic_num, ]
+    )
+    
+    words_df <- as.data.frame(words_data)
+    colnames(words_df) <- paste0("Word_", 1:N_TOP_WORDS)
+    
+    bind_cols(
+      tibble(
+        Topic = topic_num,
+      #  Metric = c("FREX", "Probability", "Lift", "Score")
+        Metric = c("FREX", "Score")
+      ),
+      words_df
+    )
+  })
+  
+  write.xlsx(
+    top_words_df, 
+    file = file.path(model_output_dir, glue("{K_opt}_top_words_by_topic_single_sheet.xlsx"))
+  )
+  
+  message("  -> Saving model summary statistics...")
+  
+  summary_text <- c(
+    glue("STM Model Summary for K = {K_opt}"),
+    "---------------------------------",
+    glue("Number of topics: {K_opt}"),
+    glue("Number of documents: {stm_model$settings$dim$N}"),
+    glue("Vocabulary size: {stm_model$settings$dim$V}")
+  )
+  
+  writeLines(summary_text, con = file.path(model_output_dir, "model_summary.txt"))
+  
+  message(glue("Successfully saved all results for K = {K_opt} to '{model_output_dir}'"))
+}
+
+message("\nAll models have been processed successfully! ✅")
+
+```
+
+```{r}
+library(stm)
+library(dplyr)
+library(tibble)
+library(glue)
+
+out <- readRDS("../outputs/WIDoutDocsWithStem.rds")
+
+K_opt <- 20
+model_filename <- glue("../outputs/final_models/WLALL2WS_stm_model_K{K_opt}.rds")
+
+if (!file.exists(model_filename)) {
+  stop(glue("File model tidak ditemukan: {model_filename}. 
+            Periksa kembali nama file di folder '../outputs/final_models/'."))
+}
+
+stm_model <- readRDS(model_filename)
+
+cat(glue("Model K={K_opt} berhasil dimuat.\n"))
+
+# --- 4. Ekstrak matriks proporsi topik (theta) ---
+# 'stm_model$theta' adalah matriks di mana:
+# - Setiap baris adalah satu dokumen (ulasan).
+# - Setiap kolom adalah satu topik (K).
+# - Nilai di sel [i, j] adalah proporsi topik j pada dokumen i.
+topic_proportions_matrix <- stm_model$theta
+
+# --- 5. Ubah matriks menjadi dataframe yang lebih rapi ---
+# Kita beri nama kolom 'Topic1', 'Topic2', dst.
+topic_features_df <- as.data.frame(topic_proportions_matrix) %>%
+  setNames(paste0("Topic", 1:K_opt))
+
+training_data <- bind_cols(out$meta, topic_features_df)
+```
+
+```{r}
+library(readr)
+output_csv_path <- glue("../outputs/WIDWLALL2WS_GBT_td_K{K_opt}.csv")
+write_csv(training_data, output_csv_path)
+```
+
+

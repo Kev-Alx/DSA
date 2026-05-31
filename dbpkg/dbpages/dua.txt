@@ -1,0 +1,40 @@
+# Server Metrics Dashboard
+
+This is standard markdown text. It spans the full width of the container. 
+Below, we initialize a 2-column layout. Notice the blank lines between the HTML tags and the Markdown content!
+
+<grid-container cols="2">
+
+<grid-col>
+
+### Traffic Analysis
+Because we left blank lines above and below this text, the Markdown parser correctly identifies this as an `h3` and bolded **text**.
+
+* Handles bullet points perfectly.
+* Renders links like [Google](https://google.com).
+
+</grid-col>
+
+<grid-col>
+
+```chart
+  {
+    "tooltip": {},
+    "xAxis": {
+      "type": "category",
+      "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    },
+    "yAxis": {
+      "type": "value"
+    },
+    "series": [{
+      "data": [120, 200, 150, 80, 70, 110, 130],
+      "type": "bar",
+      "color": "#3b82f6",
+      "borderRadius": [4, 4, 0, 0]
+    }]
+  }
+```
+</grid-col>
+
+</grid-container>

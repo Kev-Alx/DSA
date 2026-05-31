@@ -1,0 +1,370 @@
+# Dashboard Component Showcase
+
+Welcome to the **full feature showcase** for `DashboardPage`. This document demonstrates every supported Markdown element and custom component. Use the sidebar to jump between sections.
+
+---
+
+## Typography
+
+Paragraphs render with comfortable `1.75` line-height and proper `1.25em` bottom margin, so long passages of text remain readable without feeling cramped.
+
+You can use **bold text** for emphasis, _italic_ for tone, and even **_bold italic_** when you really need to stress a point. Inline `code snippets` render with a subtle pill background that keeps them legible inline.
+
+Here is a [link to the Anthropic website](https://anthropic.com) demonstrating styled anchor rendering with a hover-opacity transition.
+
+> Blockquotes are rendered with a left-border accent and muted italic text — great for callouts, citations, or highlighted notes from documentation.
+
+---
+
+## Lists
+
+### Unordered
+
+- First item at the top level
+- Second item with **bold emphasis** inside
+- Third item with an [inline link](https://example.com)
+  - Nested item one
+  - Nested item two with `inline code`
+  - Deeply nested content works too
+
+### Ordered
+
+1. Clone the repository
+2. Install dependencies with `npm install`
+3. Run the development server
+4. Open `http://localhost:3000` in your browser
+
+---
+
+## Tables
+
+Tables are powered by `remark-gfm` and support left, centre, and right column alignment. Rows get a subtle hover highlight.
+
+### Basic Table
+
+| Component       | Type        | Default   | Description                               |
+|-----------------|-------------|-----------|-------------------------------------------|
+| `sidebar`       | `boolean`   | `true`    | Show the right-hand TOC sidebar           |
+| `figureBorders` | `boolean`   | `false`   | Draw borders around images and charts     |
+| `padding`       | `PaddingSize` | `"md"` | Controls outer content padding            |
+| `defaultChartStyle` | `object` | `—`    | ECharts base config merged into all charts |
+| `codeBlock`     | `object`    | `—`       | Code block theme and copy-button settings |
+
+### Alignment Demo
+
+| Left-aligned    | Centre-aligned  | Right-aligned |
+|:----------------|:---------------:|--------------:|
+| Alpha           | Bravo           |         1,024 |
+| Charlie         | Delta           |        98,304 |
+| Echo            | Foxtrot         |     1,048,576 |
+
+---
+
+## Code Blocks
+
+Code blocks use the theme from `settings.codeBlock.theme`. The header shows a language badge, macOS-style traffic-light dots, and an animated copy button (when `copyButton: true`).
+
+### JavaScript
+
+```javascript
+import { DashboardPage } from "./Dashboard";
+
+const content = `# Hello World`;
+
+export default function App() {
+  return (
+    <DashboardPage
+      md={content}
+      settings={{
+        codeBlock: { theme: "github-dark", copyButton: true },
+        padding: "lg",
+      }}
+    />
+  );
+}
+```
+
+### TypeScript
+
+```typescript
+interface DashboardPageSettings {
+  sidebar?: boolean;
+  figureBorders?: boolean;
+  padding?: "sm" | "md" | "lg" | "xl";
+  defaultChartStyle?: Record<string, any>;
+  codeBlock?: {
+    theme?: "github-light" | "github-dark" | "dracula" | "monokai" | "solarized-light";
+    copyButton?: boolean;
+  };
+}
+```
+
+### Shell
+
+```bash
+# Install required peer dependencies
+npm install react-markdown remark-gfm rehype-raw \
+            echarts echarts-for-react slugify unist-util-visit
+```
+
+### Python
+
+```python
+def deep_merge(target: dict, source: dict) -> dict:
+    """Recursively merge source into target; source wins on conflicts."""
+    out = {**target}
+    for key, sv in source.items():
+        tv = target.get(key)
+        if isinstance(sv, dict) and isinstance(tv, dict):
+            out[key] = deep_merge(tv, sv)
+        else:
+            out[key] = sv
+    return out
+```
+
+---
+
+## Charts
+
+Charts are rendered from ` ```chart ``` ` blocks containing ECharts JSON. All charts on this page inherit the `defaultChartStyle` from settings — here we've set a shared colour palette and font.
+
+### Bar Chart
+
+```chart
+{
+  "tooltip": { "trigger": "axis" },
+  "xAxis": { "type": "category", "data": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"] },
+  "yAxis": { "type": "value", "name": "Requests (k)" },
+  "series": [{
+    "name": "API Calls",
+    "data": [820, 932, 901, 1034, 1290, 1430],
+    "type": "bar",
+    "barMaxWidth": 48,
+    "itemStyle": { "borderRadius": [4, 4, 0, 0] }
+  }]
+}
+```
+
+### Line Chart with Area Fill
+
+```chart
+{
+  "tooltip": { "trigger": "axis" },
+  "legend": { "data": ["Revenue", "Costs"] },
+  "xAxis": { "type": "category", "data": ["Q1", "Q2", "Q3", "Q4"] },
+  "yAxis": { "type": "value", "name": "USD (k)" },
+  "series": [
+    {
+      "name": "Revenue",
+      "type": "line",
+      "smooth": true,
+      "areaStyle": { "opacity": 0.15 },
+      "data": [320, 480, 540, 710]
+    },
+    {
+      "name": "Costs",
+      "type": "line",
+      "smooth": true,
+      "areaStyle": { "opacity": 0.1 },
+      "data": [210, 270, 300, 390]
+    }
+  ]
+}
+```
+
+### Pie Chart
+
+```chart
+{
+  "tooltip": { "trigger": "item" },
+  "legend": { "orient": "vertical", "left": "left" },
+  "series": [{
+    "name": "Traffic Source",
+    "type": "pie",
+    "radius": ["40%", "70%"],
+    "data": [
+      { "value": 1048, "name": "Organic" },
+      { "value": 735,  "name": "Direct" },
+      { "value": 580,  "name": "Referral" },
+      { "value": 484,  "name": "Social" },
+      { "value": 300,  "name": "Email" }
+    ],
+    "emphasis": { "itemStyle": { "shadowBlur": 10, "shadowOffsetX": 0, "shadowColor": "rgba(0,0,0,0.5)" } }
+  }]
+}
+```
+
+---
+
+## Grid Layout
+
+Use `<grid-container cols="2">` or `cols="3"` to create responsive columns. Leave blank lines around Markdown inside columns so the parser treats it correctly.
+
+<grid-container cols="2">
+
+<grid-col>
+
+### Left Column
+
+This column contains standard Markdown — paragraphs, **bold**, _italic_, lists, and even inline `code` all render correctly inside grid columns.
+
+- Feature one
+- Feature two
+- Feature three
+
+</grid-col>
+
+<grid-col>
+
+```chart
+{
+  "tooltip": {},
+  "xAxis": { "type": "category", "data": ["Mon", "Tue", "Wed", "Thu", "Fri"] },
+  "yAxis": { "type": "value" },
+  "series": [{ "data": [120, 200, 150, 80, 170], "type": "bar", "itemStyle": { "borderRadius": [4, 4, 0, 0] } }]
+}
+```
+
+</grid-col>
+
+</grid-container>
+
+<grid-container cols="3">
+
+<grid-col>
+
+### Performance
+
+Sub-10ms average response time across all regions. **99.97%** uptime SLA.
+
+</grid-col>
+
+<grid-col>
+
+### Scalability
+
+Auto-scales from zero to **50k RPS** without configuration. Pay only for what you use.
+
+</grid-col>
+
+<grid-col>
+
+### Security
+
+SOC 2 Type II certified. End-to-end encryption. Role-based access control built in.
+
+</grid-col>
+
+</grid-container>
+
+---
+
+## Images
+
+Images get a `<figure>` wrapper with optional `title` captions. When `figureBorders: true`, a border and white background are applied to both images and charts.
+
+![A breathtaking mountain landscape at golden hour](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&auto=format&fit=crop "Sunrise over the Alps — Unsplash")
+
+![Abstract geometric pattern with blues and purples](https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=900&auto=format&fit=crop "Abstract composition — Unsplash")
+
+---
+
+## Collapsible Sections
+
+Use `<collapsible summary="...">` for expandable content. Add `defaultopen` to start it expanded.
+
+<collapsible summary="View full API reference">
+
+### `DashboardPage` Props
+
+| Prop       | Type                     | Description                      |
+|------------|--------------------------|----------------------------------|
+| `md`       | `string`                 | Markdown content to render       |
+| `title`    | `string?`                | Page title (used in nav tab)     |
+| `settings` | `DashboardPageSettings?` | Full settings object (see below) |
+
+### `DashboardPageSettings`
+
+```typescript
+{
+  sidebar?: boolean;          // default: true
+  figureBorders?: boolean;    // default: false
+  padding?: PaddingSize;      // "sm" | "md" | "lg" | "xl"  default: "md"
+  defaultChartStyle?: object; // ECharts base options
+  codeBlock?: {
+    theme?: CodeTheme;        // 5 themes available
+    copyButton?: boolean;     // default: true
+  };
+}
+```
+
+</collapsible>
+
+<collapsible summary="Changelog" defaultopen>
+
+### v3.0.0
+
+- ✅ Added `settings` prop with full type safety
+- ✅ Five code block colour themes
+- ✅ Copy-to-clipboard button with animated feedback
+- ✅ Table support via `remark-gfm`
+- ✅ `<collapsible>` custom component with height animation
+- ✅ Image rendering with `<figure>` / `<figcaption>`
+- ✅ `figureBorders` applies consistently to images and charts
+- ✅ Active TOC item tracked via `IntersectionObserver`
+
+### v2.0.0
+
+- Grid layout with `<grid-container>` and `<grid-col>`
+- ECharts integration with `defaultChartStyle` deep-merge
+- Smooth-scroll TOC with URL hash sync
+- Zero Tailwind `prose` dependency
+
+</collapsible>
+
+<collapsible summary="Environment setup guide">
+
+### Prerequisites
+
+Make sure you have **Node.js ≥ 18** installed. Then install the required packages:
+
+```bash
+npm install react-markdown remark-gfm rehype-raw \
+  echarts echarts-for-react slugify unist-util-visit
+```
+
+### Peer dependencies
+
+| Package              | Version  | Required for             |
+|----------------------|----------|--------------------------|
+| `react`              | ≥ 18     | Core                     |
+| `react-markdown`     | ≥ 9      | Markdown rendering       |
+| `remark-gfm`         | ≥ 4      | Tables, strikethrough    |
+| `echarts-for-react`  | ≥ 3      | Chart blocks             |
+| `rehype-raw`         | ≥ 7      | Custom HTML elements     |
+| `slugify`            | any      | TOC anchor generation    |
+
+</collapsible>
+
+---
+
+## Inline Formatting Reference
+
+| Element         | Markdown syntax              | Output                       |
+|-----------------|------------------------------|------------------------------|
+| Bold            | `**text**`                   | **text**                     |
+| Italic          | `_text_`                     | _text_                       |
+| Bold italic     | `**_text_**`                 | **_text_**                   |
+| Inline code     | `` `code` ``                 | `code`                       |
+| Link            | `[label](url)`               | [label](https://example.com) |
+| Strikethrough   | `~~text~~`                   | ~~text~~                     |
+
+---
+
+## Horizontal Rules
+
+Separate major content areas with a horizontal rule:
+
+---
+
+Content continues naturally below, with the rule providing a clean visual break.

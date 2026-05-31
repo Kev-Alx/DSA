@@ -1,0 +1,44 @@
+# Server Metrics Summary
+
+This dashboard provides an overview of our core infrastructure.
+
+## Traffic Overview
+
+<grid-container cols="2">
+  <grid-col>
+
+### Current Load
+
+The system is currently handling roughly **450 req/sec**. Below is the distribution of traffic over the last 24 hours.
+
+</grid-col>
+  <grid-col>
+
+```chart
+  {
+    "tooltip": {},
+    "xAxis": {
+      "type": "category",
+      "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    },
+    "yAxis": {
+      "type": "value"
+    },
+    "series": [{
+      "data": [120, 200, 150, 80, 70, 110, 130],
+      "type": "bar",
+      "color": "#3b82f6",
+      "borderRadius": [4, 4, 0, 0]
+    }]
+  }
+```
+
+</grid-col>
+
+</grid-container>
+
+<collapsible summary="Show details">
+
+Your **markdown** content here.
+
+</collapsible>

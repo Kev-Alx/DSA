@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
   },
   trailingSlash: true,
   basePath: process.env.NODE_ENV === "production" ? "/DSA" : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/DSA" : "",
 };
 
 export default nextConfig;

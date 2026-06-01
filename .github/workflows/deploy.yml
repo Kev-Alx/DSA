@@ -65,6 +65,9 @@ jobs:
       - name: Compile and Export Static HTML Production Site
         run: bun run build
 
+      - name: Disable Jekyll
+        run: touch out/.nojekyll
+
       - name: Deploy Compiled Files to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:

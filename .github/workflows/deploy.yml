@@ -38,16 +38,16 @@ jobs:
             return (
               <html>
                 <head>
-                  <meta httpEquiv="refresh" content="0; url=./en/" />
+                  <meta httpEquiv="refresh" content="0; url=/DSA/en/" /> // [!code highlight]
                   <script
                     dangerouslySetInnerHTML={{
                       __html: `
                         try {
                           var browserLang = navigator.language || 'en';
                           var targetLocale = browserLang.toLowerCase().startsWith('id') ? 'id' : 'en';
-                          window.location.replace('./' + targetLocale + '/');
+                          window.location.replace('/DSA/' + targetLocale + '/'); // [!code highlight]
                         } catch (e) {
-                          window.location.replace('./en/');
+                          window.location.replace('/DSA/en/'); // [!code highlight]
                         }
                       `,
                     }}

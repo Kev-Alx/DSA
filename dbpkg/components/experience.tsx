@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
-
 import { Badge } from "@/components/ui/badge";
+import { translations } from "@/constants/translations";
 
 export interface Release {
   version: string;
@@ -10,15 +10,21 @@ export interface Release {
 
 interface ChangelogContentProps {
   releases: Release[];
+  locale: "en" | "id";
 }
 
-const ChangelogContent = ({ releases }: ChangelogContentProps) => {
+const ChangelogContent = ({ releases, locale }: ChangelogContentProps) => {
+  const t = translations[locale].experience;
+
   return (
-    <div className="relative max-w-2xl mx-auto">
-      <div className="flex flex-col md:flex-row md:items-baseline md:justify-between border-b border-zinc-200 pb-6 mb-12">
+    <div className="relative max-w-2xl mx-auto py-24">
+      <div
+        id="experience"
+        className="flex flex-col md:flex-row md:items-baseline md:justify-between border-b border-zinc-200 dark:border-zinc-700 pb-6 mb-12"
+      >
         <div>
-          <h3 className="font-display font-medium text-3xl md:text-4xl text-zinc-900 tracking-tight mt-1">
-            Experiences
+          <h3 className="font-display font-medium text-3xl md:text-4xl tracking-tight mt-1">
+            {t.heading}
           </h3>
         </div>
       </div>

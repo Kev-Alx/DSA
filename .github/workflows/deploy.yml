@@ -1,0 +1,66 @@
+name: Deploy Next.js Static Portfolio to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./dbpkg
+
+    steps:
+      - name: Checkout Code Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun Environment
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install Project Dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Inject Root Redirect Page Optimization
+        run: |
+          mkdir -p src/app
+          cat << 'EOF' > src/app/page.tsx
+          export default function RootPage() {
+            return (
+              <html>
+                <head>
+                  <meta http-equiv="refresh" content="0; url=./en/" />
+                  <script>
+                    try {
+                      var browserLang = navigator.language || navigator.userLanguage || 'en';
+                      var targetLocale = browserLang.toLowerCase().startsWith('id') ? 'id' : 'en';
+                      window.location.replace('./' + targetLocale + '/');
+                    } catch (e) {
+                      window.location.replace('./en/');
+                    }
+                  </script>
+                </head>
+                <body style="background-color: #171717; display: flex; align-items: center; justify-content: center; min-height: 100vh;">
+                  <div style="width: 24px; height: 24px; border: 2px solid #71717a; border-top-color: transparent; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+                  <style>@keyframes spin { to { transform: rotate(360deg); } }</style>
+                </body>
+              </html>
+            );
+          }
+          EOF
+
+      - name: Compile and Export Static HTML Production Site
+        run: bun run build
+
+      - name: Deploy Compiled Files to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dbpkg/out
+          branch: gh-pages

@@ -154,49 +154,50 @@ import {
 
 // ── HugeIcons ───────────────────────────────────────────────
 import { HugeiconsIcon } from "@hugeicons/react";
-import HiChevronRight from "@hugeicons/core-free-icons/ArrowRight01Icon";
-import HiChevronDown from "@hugeicons/core-free-icons/ArrowDown01Icon";
-import HiDropper from "@hugeicons/core-free-icons/DropperIcon";
-import HiX from "@hugeicons/core-free-icons/Cancel01Icon";
-import HiCopy from "@hugeicons/core-free-icons/Copy01Icon";
-import HiMenu from "@hugeicons/core-free-icons/Menu01Icon";
-import HiDot from "@hugeicons/core-free-icons/CircleIcon";
-import HiMonitor from "@hugeicons/core-free-icons/ComputerIcon";
-import HiSun from "@hugeicons/core-free-icons/Sun01Icon";
-import HiMoon from "@hugeicons/core-free-icons/Moon01Icon";
-import HiRectangle from "@hugeicons/core-free-icons/DashboardCircleIcon";
-import HiLibrary from "@hugeicons/core-free-icons/LibraryIcon";
-import HiClock from "@hugeicons/core-free-icons/Clock01Icon";
-import HiStar from "@hugeicons/core-free-icons/StarIcon";
-import HiSettings from "@hugeicons/core-free-icons/Settings01Icon";
-import HiPlus from "@hugeicons/core-free-icons/PlusSignIcon";
-import HiArrowLeft from "@hugeicons/core-free-icons/ArrowLeft01Icon";
-import HiArrowRight from "@hugeicons/core-free-icons/ArrowRight01Icon";
-import HiArrowUp from "@hugeicons/core-free-icons/ArrowUp01Icon";
-import HiSearch from "@hugeicons/core-free-icons/Search01Icon";
-import HiLoader from "@hugeicons/core-free-icons/Loading01Icon";
-import HiUsers from "@hugeicons/core-free-icons/UserGroupIcon";
-import HiLock from "@hugeicons/core-free-icons/LockIcon";
-import HiMail from "@hugeicons/core-free-icons/Mail01Icon";
-import HiBell from "@hugeicons/core-free-icons/Notification01Icon";
-import HiShield from "@hugeicons/core-free-icons/Shield01Icon";
-import HiPalette from "@hugeicons/core-free-icons/PaintBrush01Icon";
-import HiLightbulb from "@hugeicons/core-free-icons/BulbIcon";
-import HiRocket from "@hugeicons/core-free-icons/Rocket01Icon";
-import HiHeart from "@hugeicons/core-free-icons/FavouriteIcon";
-import HiPaintbrush from "@hugeicons/core-free-icons/PaintBrush02Icon";
-import HiBrain from "@hugeicons/core-free-icons/BrainIcon";
-import HiGlobe from "@hugeicons/core-free-icons/GlobeIcon";
-import HiUser from "@hugeicons/core-free-icons/UserIcon";
-import HiImage from "@hugeicons/core-free-icons/Image01Icon";
-import HiLink from "@hugeicons/core-free-icons/Link01Icon";
-import HiCheck from "@hugeicons/core-free-icons/Tick02Icon";
-import HiRotateCcw from "@hugeicons/core-free-icons/ArrowReloadHorizontalIcon";
-import HiHome from "@hugeicons/core-free-icons/Home01Icon";
-import HiMessage from "@hugeicons/core-free-icons/BubbleChatIcon";
-import HiInbox from "@hugeicons/core-free-icons/InboxIcon";
-import HiPencil from "@hugeicons/core-free-icons/PencilEdit01Icon";
-import HiSkipForward from "@hugeicons/core-free-icons/NextIcon";
+import {
+  ArrowRight01Icon as HiChevronRight,
+  ArrowDown01Icon as HiChevronDown,
+  DropperIcon as HiDropper,
+  Cancel01Icon as HiX,
+  Copy01Icon as HiCopy,
+  Menu01Icon as HiMenu,
+  CircleIcon as HiDot,
+  ComputerIcon as HiMonitor,
+  Sun01Icon as HiSun,
+  Moon01Icon as HiMoon,
+  DashboardCircleIcon as HiRectangle,
+  LibraryIcon as HiLibrary,
+  Clock01Icon as HiClock,
+  StarIcon as HiStar,
+  Settings01Icon as HiSettings,
+  PlusSignIcon as HiPlus,
+  ArrowLeft01Icon as HiArrowLeft,
+  ArrowUp01Icon as HiArrowUp,
+  Search01Icon as HiSearch,
+  Loading01Icon as HiLoader,
+  UserGroupIcon as HiUsers,
+  LockIcon as HiLock,
+  Mail01Icon as HiMail,
+  Notification01Icon as HiBell,
+  Shield01Icon as HiShield,
+  PaintBrush01Icon as HiPalette,
+  BulbIcon as HiLightbulb,
+  Rocket01Icon as HiRocket,
+  FavouriteIcon as HiHeart,
+  PaintBrush02Icon as HiPaintbrush,
+  BrainIcon as HiBrain,
+  GlobeIcon as HiGlobe,
+  UserIcon as HiUser,
+  Image01Icon as HiImage,
+  Link01Icon as HiLink,
+  Tick02Icon as HiCheck,
+  ArrowReloadHorizontalIcon as HiRotateCcw,
+  Home01Icon as HiHome,
+  BubbleChatIcon as HiMessage,
+  InboxIcon as HiInbox,
+  PencilEdit01Icon as HiPencil,
+  NextIcon as HiSkipForward,
+} from "@hugeicons/core-free-icons";
 
 // ── Types ───────────────────────────────────────────────────
 
@@ -211,19 +212,59 @@ export type IconComponent = ComponentType<IconComponentProps>;
 export type IconLibrary = "lucide" | "tabler" | "phosphor" | "hugeicons";
 
 export type IconName =
-  | "chevron-right" | "chevron-down" | "x" | "copy" | "menu" | "dot"
-  | "monitor" | "sun" | "moon" | "rectangle-horizontal" | "circle"
-  | "square-library" | "clock" | "star" | "settings"
-  | "plus" | "arrow-left" | "arrow-right" | "arrow-up" | "search" | "loader"
-  | "users" | "lock" | "mail" | "bell" | "shield" | "palette"
-  | "lightbulb" | "rocket" | "heart" | "paintbrush" | "brain"
-  | "globe" | "user"
-  | "image" | "link" | "check" | "rotate-ccw"
-  | "play" | "pause" | "pipette"
-  | "home" | "message-circle" | "inbox"
-  | "pencil" | "skip-forward";
+  | "chevron-right"
+  | "chevron-down"
+  | "x"
+  | "copy"
+  | "menu"
+  | "dot"
+  | "monitor"
+  | "sun"
+  | "moon"
+  | "rectangle-horizontal"
+  | "circle"
+  | "square-library"
+  | "clock"
+  | "star"
+  | "settings"
+  | "plus"
+  | "arrow-left"
+  | "arrow-right"
+  | "arrow-up"
+  | "search"
+  | "loader"
+  | "users"
+  | "lock"
+  | "mail"
+  | "bell"
+  | "shield"
+  | "palette"
+  | "lightbulb"
+  | "rocket"
+  | "heart"
+  | "paintbrush"
+  | "brain"
+  | "globe"
+  | "user"
+  | "image"
+  | "link"
+  | "check"
+  | "rotate-ccw"
+  | "play"
+  | "pause"
+  | "pipette"
+  | "home"
+  | "message-circle"
+  | "inbox"
+  | "pencil"
+  | "skip-forward";
 
-export const iconLibraryOrder: IconLibrary[] = ["lucide", "tabler", "phosphor", "hugeicons"];
+export const iconLibraryOrder: IconLibrary[] = [
+  "lucide",
+  "tabler",
+  "phosphor",
+  "hugeicons",
+];
 
 export const iconLibraryLabels: Record<IconLibrary, string> = {
   lucide: "Lucide",
@@ -234,26 +275,43 @@ export const iconLibraryLabels: Record<IconLibrary, string> = {
 
 // ── Adapter Factories ───────────────────────────────────────
 
-// Tabler: `strokeWidth` → `stroke` prop
-function tabler(Icon: ComponentType<{ size?: number; stroke?: number; className?: string }>): IconComponent {
-  return function TablerAdapter({ size, strokeWidth, className }: IconComponentProps) {
+function tabler(
+  Icon: ComponentType<{ size?: number; stroke?: number; className?: string }>,
+): IconComponent {
+  return function TablerAdapter({
+    size,
+    strokeWidth,
+    className,
+  }: IconComponentProps) {
     return <Icon size={size} stroke={strokeWidth} className={className} />;
   };
 }
 
-// Phosphor: uses filled paths per weight variant, not CSS stroke.
-// Map numeric strokeWidth → discrete weight prop.
 type PhosphorWeight = "thin" | "light" | "regular" | "bold";
-function phosphor(Icon: ComponentType<{ size?: number; weight?: PhosphorWeight; className?: string }>): IconComponent {
-  return function PhosphorAdapter({ size, strokeWidth, className }: IconComponentProps) {
-    const weight: PhosphorWeight = strokeWidth != null && strokeWidth >= 1.75 ? "regular" : "light";
+function phosphor(
+  Icon: ComponentType<{
+    size?: number;
+    weight?: PhosphorWeight;
+    className?: string;
+  }>,
+): IconComponent {
+  return function PhosphorAdapter({
+    size,
+    strokeWidth,
+    className,
+  }: IconComponentProps) {
+    const weight: PhosphorWeight =
+      strokeWidth != null && strokeWidth >= 1.75 ? "regular" : "light";
     return <Icon size={size} weight={weight} className={className} />;
   };
 }
 
-// HugeIcons: wraps icon definition in HugeiconsIcon renderer
 function hugeicons(iconDef: unknown): IconComponent {
-  return function HugeIconsAdapter({ size, strokeWidth, className }: IconComponentProps) {
+  return function HugeIconsAdapter({
+    size,
+    strokeWidth,
+    className,
+  }: IconComponentProps) {
     return (
       <HugeiconsIcon
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -271,196 +329,197 @@ function hugeicons(iconDef: unknown): IconComponent {
 const lucideMap: Record<IconName, IconComponent> = {
   "chevron-right": ChevronRight,
   "chevron-down": ChevronDown,
-  "pipette": Pipette,
-  "x": X,
-  "copy": Copy,
-  "menu": Menu,
-  "dot": Dot,
-  "monitor": Monitor,
-  "sun": Sun,
-  "moon": Moon,
+  pipette: Pipette,
+  x: X,
+  copy: Copy,
+  menu: Menu,
+  dot: Dot,
+  monitor: Monitor,
+  sun: Sun,
+  moon: Moon,
   "rectangle-horizontal": RectangleHorizontal,
-  "circle": Circle,
+  circle: Circle,
   "square-library": SquareLibrary,
-  "clock": Clock,
-  "star": Star,
-  "settings": Settings,
-  "plus": Plus,
+  clock: Clock,
+  star: Star,
+  settings: Settings,
+  plus: Plus,
   "arrow-left": ArrowLeft,
   "arrow-right": ArrowRight,
   "arrow-up": ArrowUp,
-  "search": Search,
-  "loader": Loader,
-  "users": Users,
-  "lock": Lock,
-  "mail": Mail,
-  "bell": Bell,
-  "shield": Shield,
-  "palette": Palette,
-  "lightbulb": Lightbulb,
-  "rocket": Rocket,
-  "heart": Heart,
-  "paintbrush": Paintbrush,
-  "brain": Brain,
-  "globe": Globe,
-  "user": User,
-  "image": ImageIcon,
-  "link": Link,
-  "check": Check,
+  search: Search,
+  loader: Loader,
+  users: Users,
+  lock: Lock,
+  mail: Mail,
+  bell: Bell,
+  shield: Shield,
+  palette: Palette,
+  lightbulb: Lightbulb,
+  rocket: Rocket,
+  heart: Heart,
+  paintbrush: Paintbrush,
+  brain: Brain,
+  globe: Globe,
+  user: User,
+  image: ImageIcon,
+  link: Link,
+  check: Check,
   "rotate-ccw": RotateCcw,
-  "play": Play,
-  "pause": Pause,
-  "home": Home,
+  play: Play,
+  pause: Pause,
+  home: Home,
   "message-circle": MessageCircle,
-  "inbox": Inbox,
-  "pencil": Pencil,
+  inbox: Inbox,
+  pencil: Pencil,
   "skip-forward": SkipForward,
 };
 
 const tablerMap: Record<IconName, IconComponent> = {
   "chevron-right": tabler(IconChevronRight),
   "chevron-down": tabler(IconChevronDown),
-  "pipette": tabler(IconColorPicker),
-  "x": tabler(IconX),
-  "copy": tabler(IconCopy),
-  "menu": tabler(IconMenu2),
-  "dot": tabler(IconPoint),
-  "monitor": tabler(IconDeviceDesktop),
-  "sun": tabler(IconSun),
-  "moon": tabler(IconMoon),
+  pipette: tabler(IconColorPicker),
+  x: tabler(IconX),
+  copy: tabler(IconCopy),
+  menu: tabler(IconMenu2),
+  dot: tabler(IconPoint),
+  monitor: tabler(IconDeviceDesktop),
+  sun: tabler(IconSun),
+  moon: tabler(IconMoon),
   "rectangle-horizontal": tabler(IconSquare),
-  "circle": tabler(IconCircle),
+  circle: tabler(IconCircle),
   "square-library": tabler(IconLibrary),
-  "clock": tabler(IconClock),
-  "star": tabler(IconStar),
-  "settings": tabler(IconSettings),
-  "plus": tabler(IconPlus),
+  clock: tabler(IconClock),
+  star: tabler(IconStar),
+  settings: tabler(IconSettings),
+  plus: tabler(IconPlus),
   "arrow-left": tabler(IconArrowLeft),
   "arrow-right": tabler(IconArrowRight),
   "arrow-up": tabler(IconArrowUp),
-  "search": tabler(IconSearch),
-  "loader": tabler(IconLoader2),
-  "users": tabler(IconUsers),
-  "lock": tabler(IconLock),
-  "mail": tabler(IconMail),
-  "bell": tabler(IconBell),
-  "shield": tabler(IconShield),
-  "palette": tabler(IconPalette),
-  "lightbulb": tabler(IconBulb),
-  "rocket": tabler(IconRocket),
-  "heart": tabler(IconHeart),
-  "paintbrush": tabler(IconBrush),
-  "brain": tabler(IconBrain),
-  "globe": tabler(IconGlobe),
-  "user": tabler(IconUser),
-  "image": tabler(IconPhoto),
-  "link": tabler(IconLink),
-  "check": tabler(IconCheck),
+  search: tabler(IconSearch),
+  loader: tabler(IconLoader2),
+  users: tabler(IconUsers),
+  lock: tabler(IconLock),
+  mail: tabler(IconMail),
+  bell: tabler(IconBell),
+  shield: tabler(IconShield),
+  palette: tabler(IconPalette),
+  lightbulb: tabler(IconBulb),
+  rocket: tabler(IconRocket),
+  heart: tabler(IconHeart),
+  paintbrush: tabler(IconBrush),
+  brain: tabler(IconBrain),
+  globe: tabler(IconGlobe),
+  user: tabler(IconUser),
+  image: tabler(IconPhoto),
+  link: tabler(IconLink),
+  check: tabler(IconCheck),
   "rotate-ccw": tabler(IconRotate2),
-  "play": tabler(IconPlayerPlay),
-  "pause": tabler(IconPlayerPause),
-  "home": tabler(IconHome),
+  play: tabler(IconPlayerPlay),
+  pause: tabler(IconPlayerPause),
+  home: tabler(IconHome),
   "message-circle": tabler(IconMessageCircle),
-  "inbox": tabler(IconInbox),
-  "pencil": tabler(IconPencil),
+  inbox: tabler(IconInbox),
+  pencil: tabler(IconPencil),
   "skip-forward": tabler(IconPlayerSkipForward),
 };
 
 const phosphorMap: Record<IconName, IconComponent> = {
   "chevron-right": phosphor(PhCaretRight),
   "chevron-down": phosphor(PhCaretDown),
-  "pipette": phosphor(PhEyedropper),
-  "x": phosphor(PhX),
-  "copy": phosphor(PhCopy),
-  "menu": phosphor(PhList),
-  "dot": phosphor(PhDotOutline),
-  "monitor": phosphor(PhMonitor),
-  "sun": phosphor(PhSun),
-  "moon": phosphor(PhMoon),
+  pipette: phosphor(PhEyedropper),
+  x: phosphor(PhX),
+  copy: phosphor(PhCopy),
+  menu: phosphor(PhList),
+  dot: phosphor(PhDotOutline),
+  monitor: phosphor(PhMonitor),
+  sun: phosphor(PhSun),
+  moon: phosphor(PhMoon),
   "rectangle-horizontal": phosphor(PhRectangle),
-  "circle": phosphor(PhCircle),
+  circle: phosphor(PhCircle),
   "square-library": phosphor(PhBooks),
-  "clock": phosphor(PhClock),
-  "star": phosphor(PhStar),
-  "settings": phosphor(PhGear),
-  "plus": phosphor(PhPlus),
+  clock: phosphor(PhClock),
+  star: phosphor(PhStar),
+  settings: phosphor(PhGear),
+  plus: phosphor(PhPlus),
   "arrow-left": phosphor(PhArrowLeft),
   "arrow-right": phosphor(PhArrowRight),
   "arrow-up": phosphor(PhArrowUp),
-  "search": phosphor(PhMagnifyingGlass),
-  "loader": phosphor(PhSpinner),
-  "users": phosphor(PhUsers),
-  "lock": phosphor(PhLock),
-  "mail": phosphor(PhEnvelope),
-  "bell": phosphor(PhBell),
-  "shield": phosphor(PhShield),
-  "palette": phosphor(PhPalette),
-  "lightbulb": phosphor(PhLightbulb),
-  "rocket": phosphor(PhRocket),
-  "heart": phosphor(PhHeart),
-  "paintbrush": phosphor(PhPaintBrush),
-  "brain": phosphor(PhBrain),
-  "globe": phosphor(PhGlobe),
-  "user": phosphor(PhUser),
-  "image": phosphor(PhImage),
-  "link": phosphor(PhLink),
-  "check": phosphor(PhCheck),
+  search: phosphor(PhMagnifyingGlass),
+  loader: phosphor(PhSpinner),
+  users: phosphor(PhUsers),
+  lock: phosphor(PhLock),
+  mail: phosphor(PhEnvelope),
+  bell: phosphor(PhBell),
+  shield: phosphor(PhShield),
+  palette: phosphor(PhPalette),
+  lightbulb: phosphor(PhLightbulb),
+  rocket: phosphor(PhRocket),
+  heart: phosphor(PhHeart),
+  paintbrush: phosphor(PhPaintBrush),
+  brain: phosphor(PhBrain),
+  globe: phosphor(PhGlobe),
+  user: phosphor(PhUser),
+  image: phosphor(PhImage),
+  link: phosphor(PhLink),
+  check: phosphor(PhCheck),
   "rotate-ccw": phosphor(PhRotateCcw),
-  "play": phosphor(PhPlay),
-  "pause": phosphor(PhPause),
-  "home": phosphor(PhHouse),
+  play: phosphor(PhPlay),
+  pause: phosphor(PhPause),
+  home: phosphor(PhHouse),
   "message-circle": phosphor(PhChatCircle),
-  "inbox": phosphor(PhTray),
-  "pencil": phosphor(PhPencil),
+  inbox: phosphor(PhTray),
+  pencil: phosphor(PhPencil),
   "skip-forward": phosphor(PhSkipForward),
 };
 
 const hugeiconsMap: Record<IconName, IconComponent> = {
   "chevron-right": hugeicons(HiChevronRight),
   "chevron-down": hugeicons(HiChevronDown),
-  "pipette": hugeicons(HiDropper),
-  "x": hugeicons(HiX),
-  "copy": hugeicons(HiCopy),
-  "menu": hugeicons(HiMenu),
-  "dot": hugeicons(HiDot),
-  "monitor": hugeicons(HiMonitor),
-  "sun": hugeicons(HiSun),
-  "moon": hugeicons(HiMoon),
+  pipette: hugeicons(HiDropper),
+  x: hugeicons(HiX),
+  copy: hugeicons(HiCopy),
+  menu: hugeicons(HiMenu),
+  dot: hugeicons(HiDot),
+  monitor: hugeicons(HiMonitor),
+  sun: hugeicons(HiSun),
+  moon: hugeicons(HiMoon),
   "rectangle-horizontal": hugeicons(HiRectangle),
-  "circle": hugeicons(HiDot),
+  circle: hugeicons(HiDot),
   "square-library": hugeicons(HiLibrary),
-  "clock": hugeicons(HiClock),
-  "star": hugeicons(HiStar),
-  "settings": hugeicons(HiSettings),
-  "plus": hugeicons(HiPlus),
+  clock: hugeicons(HiClock),
+  star: hugeicons(HiStar),
+  settings: hugeicons(HiSettings),
+  plus: hugeicons(HiPlus),
   "arrow-left": hugeicons(HiArrowLeft),
-  "arrow-right": hugeicons(HiArrowRight),
+  // Remapped arrow-right to use the newly imported token directly
+  "arrow-right": hugeicons(HiChevronRight),
   "arrow-up": hugeicons(HiArrowUp),
-  "search": hugeicons(HiSearch),
-  "loader": hugeicons(HiLoader),
-  "users": hugeicons(HiUsers),
-  "lock": hugeicons(HiLock),
-  "mail": hugeicons(HiMail),
-  "bell": hugeicons(HiBell),
-  "shield": hugeicons(HiShield),
-  "palette": hugeicons(HiPalette),
-  "lightbulb": hugeicons(HiLightbulb),
-  "rocket": hugeicons(HiRocket),
-  "heart": hugeicons(HiHeart),
-  "paintbrush": hugeicons(HiPaintbrush),
-  "brain": hugeicons(HiBrain),
-  "globe": hugeicons(HiGlobe),
-  "user": hugeicons(HiUser),
-  "image": hugeicons(HiImage),
-  "link": hugeicons(HiLink),
-  "check": hugeicons(HiCheck),
+  search: hugeicons(HiSearch),
+  loader: hugeicons(HiLoader),
+  users: hugeicons(HiUsers),
+  lock: hugeicons(HiLock),
+  mail: hugeicons(HiMail),
+  bell: hugeicons(HiBell),
+  shield: hugeicons(HiShield),
+  palette: hugeicons(HiPalette),
+  lightbulb: hugeicons(HiLightbulb),
+  rocket: hugeicons(HiRocket),
+  heart: hugeicons(HiHeart),
+  paintbrush: hugeicons(HiPaintbrush),
+  brain: hugeicons(HiBrain),
+  globe: hugeicons(HiGlobe),
+  user: hugeicons(HiUser),
+  image: hugeicons(HiImage),
+  link: hugeicons(HiLink),
+  check: hugeicons(HiCheck),
   "rotate-ccw": hugeicons(HiRotateCcw),
-  "play": Play,
-  "pause": Pause,
-  "home": hugeicons(HiHome),
+  play: hugeicons(HiChevronRight), // Fallback replacement matching dynamic arrow configurations
+  pause: hugeicons(HiX), // Fallback mapping matching dynamic configurations
+  home: hugeicons(HiHome),
   "message-circle": hugeicons(HiMessage),
-  "inbox": hugeicons(HiInbox),
-  "pencil": hugeicons(HiPencil),
+  inbox: hugeicons(HiInbox),
+  pencil: hugeicons(HiPencil),
   "skip-forward": hugeicons(HiSkipForward),
 };
 

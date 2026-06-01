@@ -1,304 +1,222 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import {
-  ArrowUpRight,
-  ArrowRight,
-  BarChart3,
-  Database,
-  Code,
-  Globe,
-} from "lucide-react";
+import { ArrowUpRight, ArrowRight, BarChart3, Code, Globe } from "lucide-react";
+import { translations } from "@/constants/translations";
 
-export const projects = [
-  {
-    id: "proj1",
-    title: "Global Sales & Revenue Forecasting Model",
-    type: "Data Analytics",
-    featured: true,
-    description:
-      "An advanced business intelligence dashboard and statistical engine that analyzes corporate historical sales and implements time-series forecasting models to project future monthly revenues.",
-    tech: ["Python", "SQL", "Tableau", "Prophet", "Pandas", "PostgreSQL"],
-    links: {
-      github: "https://github.com/example/sales-forecasting",
-      demo: "#",
-    },
-    detailsUrl: "/projects/sales-forecasting", // Optional View Details page URL
-  },
-  {
-    id: "proj2",
-    title: "Customer Lifetime Value (CLV) Segmentation",
-    type: "Data Science",
-    featured: true,
-    description:
-      "An end-to-end data science project utilizing RFM (Recency, Frequency, Monetary) modeling and unsupervised machine learning (K-Means Clustering) to categorize online customers into distinct marketing value tiers.",
-    tech: [
-      "Python",
-      "Scikit-Learn",
-      "Matplotlib",
-      "Seaborn",
-      "PostgreSQL",
-      "Jupyter",
-    ],
-    links: {
-      github: "https://github.com/example/clv-segmentation",
-      demo: "#",
-    },
-    // detailsUrl omitted to show optional handling
-  },
-  {
-    id: "proj3",
-    title: "Enterprise BI Platform & Metrics Server",
-    type: "Hybrid",
-    featured: true,
-    description:
-      "A secure web portal featuring custom high-performance data visualizations built using D3.js and a fast React frontend. It serves live interactive widgets connected to a Postgres warehouse, enabling non-technical operators to run safe queries.",
-    tech: [
-      "React",
-      "TypeScript",
-      "D3.js",
-      "Node.js",
-      "PostgreSQL",
-      "Tailwind CSS",
-    ],
-    links: {
-      github: "https://github.com/example/bi-portal",
-      demo: "#",
-    },
-    detailsUrl: "/projects/bi-platform",
-  },
-  {
-    id: "proj4",
-    title: "Predictive Warehouse Demand System",
-    type: "Data Science",
-    featured: true,
-    description:
-      "A machine learning predictive model assessing warehouse unit demand using regression models and light gradient-boosted trees. Enables inventory teams to prevent over-stocking and under-stocking cycles.",
-    tech: ["Python", "XGBoost", "Pandas", "Scikit-Learn", "FastAPI", "SQL"],
-    links: {
-      github: "https://github.com/example/warehouse-demand",
-    },
-    detailsUrl: "/projects/warehouse-demand",
-  },
-  {
-    id: "proj5",
-    title: "Interactive Looker Analytics",
-    type: "Data Analytics",
-    featured: false,
-    description:
-      "A multi-source analytical looker portal linking Google Analytics, Shopify, and AdWords API pipelines into unified performance reporting views, analyzing attribution pathways.",
-    tech: ["Looker Studio", "BigQuery", "SQL", "Google Analytics", "Python"],
-    // links completely omitted to show optional handling
-    detailsUrl: "/projects/looker-analytics",
-  },
-  {
-    id: "proj6",
-    title: "Air Quality Forecasting Engine",
-    type: "Data Science",
-    featured: false,
-    description:
-      "An environmental research model predicting particulate index values using statistical regressions to project safe outdoor parameters for major metropolitan centers.",
-    tech: ["R", "ggplot2", "Time-Series", "ARIMA", "Shiny"],
-    links: {
-      github: "https://github.com/example/environment-arima",
-    },
-  },
-  {
-    id: "proj7",
-    title: "Custom Interactive SQL Scratchpad",
-    type: "Web Development",
-    featured: false,
-    description:
-      "A web interface built for internal database trainees to safely experiment with querying visual SQLite tables, displaying syntax errors, table outputs, and interactive schema hints.",
-    tech: ["React", "SQL.js", "Tailwind CSS", "TypeScript", "Vite"],
-    links: {
-      github: "https://github.com/example/sql-scratchpad",
-      demo: "#",
-    },
-  },
-];
+interface ProjectsProps {
+  locale: "en" | "id";
+}
 
-export default function ProjectsGrid() {
+export default function ProjectsGrid({ locale }: ProjectsProps) {
   const [showAll, setShowAll] = useState(false);
   const [filter, setFilter] = useState<"ALL" | "DATA" | "WEB">("ALL");
 
-  const featuredProjects = projects.filter((p) => p.featured);
-  const extraProjects = projects.filter((p) => !p.featured);
+  const t = translations[locale].projects;
 
-  const getFilteredProjects = (projectList: typeof projects) => {
-    if (filter === "ALL") return projectList;
+  const staticLinks = [
+    {
+      github: "https://github.com/Kev-Alx/DSA/tree/master/sales",
+      demo: "https://public.tableau.com/app/profile/kevin.alexander4206/viz/ElectronicStoreeCommerceDashboard/Dashboard1",
+      detailsUrl: "/projects/electronic-store-ecommerce",
+    },
+    {
+      github: "https://github.com/Kev-Alx/DSA/tree/master/acc-ugc",
+      detailsUrl: "/projects/accommodation-analysis",
+    },
+    {
+      github: "https://github.com/example/global-trade-war-analysis",
+      detailsUrl: "/projects/global-trade-war-analysis",
+    },
+    {
+      github: "#",
+      demo: "https://utilsortools.vercel.app/",
+      detailsUrl: "/projects/utils-or-tools",
+    },
+    { detailsUrl: "/projects/index-campus-event" },
+    {
+      demo: "https://simplestchart.vercel.app/",
+      detailsUrl: "/projects/simple-chart",
+    },
+  ];
+
+  const derivedProjects = t.items.map((item, idx) => ({
+    ...item,
+    links: staticLinks[idx],
+    detailsUrl: staticLinks[idx].detailsUrl,
+  }));
+
+  const getFilteredProjects = (list: typeof derivedProjects) => {
+    if (filter === "ALL") return list;
     if (filter === "DATA") {
-      return projectList.filter(
+      return list.filter(
         (p) =>
-          p.type === "Data Analytics" ||
-          p.type === "Data Science" ||
-          p.type === "Hybrid",
+          p.type.toLowerCase().includes("data") ||
+          p.type.toLowerCase().includes("economic"),
       );
     }
     if (filter === "WEB") {
-      return projectList.filter(
-        (p) => p.type === "Web Development" || p.type === "Hybrid",
+      return list.filter(
+        (p) =>
+          p.type.toLowerCase().includes("web") ||
+          p.type.toLowerCase().includes("development"),
       );
     }
-    return projectList;
+    return list;
   };
 
-  const visibleFeatured = getFilteredProjects(featuredProjects);
-  const visibleExtra = getFilteredProjects(extraProjects);
+  const allFiltered = getFilteredProjects(derivedProjects);
+  const isFilteredMode = filter !== "ALL";
+  const visibleFeatured = isFilteredMode
+    ? allFiltered
+    : allFiltered.filter((p) => p.featured);
+  const visibleExtra = isFilteredMode
+    ? []
+    : allFiltered.filter((p) => !p.featured);
 
   const getIconForType = (type: string) => {
-    switch (type) {
-      case "Data Analytics":
-        return <BarChart3 size={15} className="text-zinc-600" />;
-      case "Data Science":
-        return <Database size={15} className="text-zinc-600" />;
-      case "Web Development":
-        return <Code size={15} className="text-zinc-600" />;
-      default:
-        return <Globe size={15} className="text-zinc-600" />;
-    }
+    const lowerType = type.toLowerCase();
+    if (lowerType.includes("data") || lowerType.includes("economic"))
+      return (
+        <BarChart3 size={15} className="text-zinc-600 dark:text-zinc-300" />
+      );
+    if (lowerType.includes("web") || lowerType.includes("development"))
+      return <Code size={15} className="text-zinc-600 dark:text-zinc-300" />;
+    return <Globe size={15} className="text-zinc-600 dark:text-zinc-300" />;
+  };
+
+  const getHeadingText = () => {
+    if (!isFilteredMode) return t.featuredHeading;
+    return filter === "DATA" ? t.analyticsHeading : t.webDevHeading;
   };
 
   return (
     <section
-      className="py-24 border-t border-zinc-100 bg-transparent text-zinc-900 max-w-2xl mx-auto px-4 sm:px-6"
+      className="py-24 bg-transparent max-w-2xl mx-auto px-4 sm:px-6"
       id="projects"
     >
       <div className="w-full">
-        {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between border-b border-zinc-200 pb-6 mb-12">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between border-b border-zinc-200 dark:border-zinc-700 pb-6 mb-12">
           <div>
-            <h3 className="font-display font-medium text-3xl md:text-4xl text-zinc-900 tracking-tight mt-1">
-              Featured Projects
+            <h3 className="font-display font-medium text-3xl md:text-4xl tracking-tight mt-1">
+              {getHeadingText()}
             </h3>
           </div>
 
-          {/* Segment Filter */}
           <div
-            className="mt-6 md:mt-0 flex bg-zinc-50 border border-zinc-200 rounded p-1"
+            className="mt-6 md:mt-0 flex bg-background border border-zinc-200 dark:border-zinc-700 rounded p-1"
             id="project-filters"
           >
             <button
               onClick={() => setFilter("ALL")}
               className={`px-3 py-1.5 font-mono text-xs rounded transition-all cursor-pointer ${
                 filter === "ALL"
-                  ? "bg-white text-zinc-900 font-semibold shadow-sm border border-zinc-200"
-                  : "text-zinc-500 hover:text-zinc-900 border border-transparent"
+                  ? "dark:bg-zinc-700 font-semibold shadow-sm border border-zinc-200 dark:border-zinc-900"
+                  : "text-zinc-600 dark:text-zinc-400 border border-transparent"
               }`}
             >
-              All
+              {t.filterAll}
             </button>
             <button
               onClick={() => setFilter("DATA")}
               className={`px-3 py-1.5 font-mono text-xs rounded transition-all cursor-pointer ${
                 filter === "DATA"
-                  ? "bg-white text-zinc-900 font-semibold shadow-sm border border-zinc-200"
-                  : "text-zinc-500 hover:text-zinc-900 border border-transparent"
+                  ? "dark:bg-zinc-700 font-semibold shadow-sm border border-zinc-200 dark:border-zinc-900"
+                  : "text-zinc-600 dark:text-zinc-400 border border-transparent"
               }`}
             >
-              Analytics
+              {t.filterAnalytics}
             </button>
             <button
               onClick={() => setFilter("WEB")}
               className={`px-3 py-1.5 font-mono text-xs rounded transition-all cursor-pointer ${
                 filter === "WEB"
-                  ? "bg-white text-zinc-900 font-semibold shadow-sm border border-zinc-200"
-                  : "text-zinc-500 hover:text-zinc-900 border border-transparent"
+                  ? "dark:bg-zinc-700 font-semibold shadow-sm border border-zinc-200 dark:border-zinc-900"
+                  : "text-zinc-600 dark:text-zinc-400 border border-transparent"
               }`}
             >
-              Web Dev
+              {t.filterWebDev}
             </button>
           </div>
         </div>
 
-        {/* Featured Projects Grid */}
         <div className="grid grid-cols-1 gap-8" id="featured-projects-grid">
           {visibleFeatured.map((p) => (
             <motion.div
               key={p.id}
               layout="position"
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5 }}
-              className="group flex flex-col justify-between border border-zinc-200 bg-white shadow-sm p-6 sm:p-8 rounded hover:border-zinc-300 transition-all duration-300 relative"
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.4 }}
+              className="group flex flex-col justify-between border border-border bg-background shadow-sm p-6 sm:p-8 rounded hover:border-zinc-300 dark:hover:border-zinc-600 transition-all duration-300"
             >
               <div>
-                {/* Project Badge Row */}
                 <div className="flex items-center justify-between mb-4">
-                  <span className="px-2.5 py-1 bg-zinc-50 border border-zinc-200 text-zinc-700 font-mono text-[10px] uppercase tracking-wider rounded flex items-center gap-1.5">
+                  <span className="px-2.5 py-1 bg-zinc-50 dark:bg-zinc-700 border border-zinc-200 dark:border-zinc-600 text-zinc-700 dark:text-zinc-300 font-mono text-[10px] uppercase tracking-wider rounded flex items-center gap-1.5">
                     {getIconForType(p.type)}
-                    <span className="font-semibold">{p.type}</span>
-                  </span>
-                  <span className="font-mono text-[10px] text-zinc-500 tracking-wider">
-                    FOCUSED INSTANCE
+                    <span className="font-semibold dark:text-zinc-300">
+                      {p.type}
+                    </span>
                   </span>
                 </div>
-
-                {/* Project Title */}
-                <h4 className="font-display font-medium text-xl text-zinc-900 tracking-tight uppercase transition-colors">
+                <h4 className="font-display font-medium text-xl tracking-tight uppercase">
                   {p.title}
                 </h4>
-
-                {/* Short Description */}
-                <p className="font-sans text-sm text-zinc-600 mt-3 leading-relaxed">
+                <p className="font-sans text-sm text-muted-foreground mt-3 leading-relaxed">
                   {p.description}
                 </p>
               </div>
 
-              {/* Technologies & Trigger Links */}
               <div className="mt-8">
-                {/* Tech Pills */}
                 <div
                   className="flex flex-wrap gap-1.5 mb-6"
                   id={`tech-${p.id}`}
                 >
-                  {p.tech.map((t, ti) => (
+                  {p.tech.map((techItem, ti) => (
                     <span
                       key={ti}
-                      className="px-2 py-0.5 bg-white border border-zinc-200 shadow-sm text-zinc-600 text-[10px] font-mono rounded"
+                      className="px-2 py-0.5 bg-background border border-zinc-200 dark:border-zinc-600 shadow-sm text-zinc-600 dark:text-zinc-300 text-[10px] font-mono rounded"
                     >
-                      {t}
+                      {techItem}
                     </span>
                   ))}
                 </div>
 
-                {/* Dynamic Links Footer */}
-                <div className="flex flex-wrap items-center justify-between gap-4 border-t border-zinc-100 pt-4">
+                <div className="flex flex-wrap items-center justify-between gap-4 border-t border-border pt-4">
                   <div className="flex items-center gap-4">
-                    {p.links?.github && (
+                    {p.links?.github && p.links.github !== "#" && (
                       <a
                         href={p.links.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center text-xs text-zinc-600 hover:text-zinc-900 font-mono gap-1 transition-colors group/link"
+                        className="inline-flex items-center text-xs text-muted-foreground hover:text-zinc-900 dark:hover:text-zinc-300 font-mono gap-1 transition-colors group/link"
                       >
-                        <span>Repository</span>
+                        <span>{t.repository}</span>
                         <ArrowUpRight
                           size={13}
                           className="transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform"
                         />
                       </a>
                     )}
-
                     {p.links?.demo && (
                       <a
                         href={p.links.demo}
-                        className="inline-flex items-center text-xs text-zinc-600 hover:text-zinc-900 font-mono gap-1 transition-colors group/link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-xs text-muted-foreground hover:text-zinc-900 dark:hover:text-zinc-300 font-mono gap-1 transition-colors group/link"
                       >
-                        <span>Live Demo</span>
+                        <span>{t.liveDemo}</span>
                         <ArrowUpRight size={13} />
                       </a>
                     )}
                   </div>
-
-                  {/* Optional View Details Button */}
                   {p.detailsUrl && (
                     <a
                       href={p.detailsUrl}
                       className="inline-flex items-center text-xs text-white bg-zinc-900 hover:bg-zinc-800 px-3 py-1.5 rounded font-display font-medium gap-1 transition-colors group/details"
                     >
-                      <span>View Details</span>
+                      <span>{t.viewDetails}</span>
                       <ArrowRight
                         size={13}
                         className="transform group-hover/details:translate-x-0.5 transition-transform"
@@ -311,7 +229,6 @@ export default function ProjectsGrid() {
           ))}
         </div>
 
-        {/* Expandable Additional Projects */}
         <div className="mt-8">
           <AnimatePresence>
             {showAll && visibleExtra.length > 0 && (
@@ -330,79 +247,69 @@ export default function ProjectsGrid() {
                       initial={{ opacity: 0, scale: 0.95 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.4 }}
-                      className="group flex flex-col justify-between border border-zinc-200 bg-white shadow-sm p-6 sm:p-8 rounded hover:border-zinc-300 transition-all duration-300 relative"
+                      className="group flex flex-col justify-between border border-border dark:hover:border-zinc-600 bg-background shadow-sm p-6 sm:p-8 rounded hover:border-zinc-300 transition-all duration-300"
                     >
                       <div>
-                        {/* Project Badge Row */}
                         <div className="flex items-center justify-between mb-4">
-                          <span className="px-2.5 py-1 bg-zinc-50 border border-zinc-200 text-zinc-700 font-mono text-[10px] uppercase tracking-wider rounded flex items-center gap-1.5">
+                          <span className="px-2.5 py-1 bg-zinc-50 dark:bg-zinc-700 border border-zinc-200 dark:border-zinc-600 text-zinc-700 dark:text-zinc-300 font-mono text-[10px] uppercase tracking-wider rounded flex items-center gap-1.5">
                             {getIconForType(p.type)}
                             <span className="font-semibold">{p.type}</span>
                           </span>
-                          <span className="font-mono text-[10px] text-zinc-500 tracking-wider">
-                            SUPPLEMENTARY DATA
-                          </span>
                         </div>
-
-                        {/* Project Title */}
-                        <h4 className="font-display font-medium text-xl text-zinc-900 tracking-tight uppercase transition-colors">
+                        <h4 className="font-display font-medium text-xl tracking-tight uppercase">
                           {p.title}
                         </h4>
-
-                        {/* Short Description */}
-                        <p className="font-sans text-sm text-zinc-600 mt-3 leading-relaxed">
+                        <p className="font-sans text-sm text-muted-foreground mt-3 leading-relaxed">
                           {p.description}
                         </p>
                       </div>
 
-                      {/* Tech & Action Links */}
                       <div className="mt-8">
                         <div className="flex flex-wrap gap-1.5 mb-6">
-                          {p.tech.map((t, ti) => (
+                          {p.tech.map((techItem, ti) => (
                             <span
                               key={ti}
-                              className="px-2 py-0.5 bg-white border border-zinc-200 shadow-sm text-zinc-600 text-[10px] font-mono rounded"
+                              className="px-2 py-0.5 bg-background border border-zinc-200 dark:border-zinc-600 shadow-sm text-zinc-600 dark:text-zinc-300 text-[10px] font-mono rounded"
                             >
-                              {t}
+                              {techItem}
                             </span>
                           ))}
                         </div>
 
-                        <div className="flex flex-wrap items-center justify-between gap-4 border-t border-zinc-100 pt-4">
+                        <div className="flex flex-wrap items-center justify-between gap-4 border-t border-border pt-4">
                           <div className="flex items-center gap-4">
-                            {p.links?.github && (
+                            {p.links?.github && p.links.github !== "#" && (
                               <a
                                 href={p.links.github}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center text-xs text-zinc-600 hover:text-zinc-900 font-mono gap-1 transition-colors group/link"
+                                className="inline-flex items-center text-xs text-muted-foreground hover:text-zinc-900 dark:hover:text-zinc-300 font-mono gap-1 transition-colors group/link"
                               >
-                                <span>Repository</span>
+                                <span>{t.repository}</span>
                                 <ArrowUpRight
                                   size={13}
                                   className="transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform"
                                 />
                               </a>
                             )}
-
                             {p.links?.demo && (
                               <a
                                 href={p.links.demo}
-                                className="inline-flex items-center text-xs text-zinc-600 hover:text-zinc-900 font-mono gap-1 transition-colors group/link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center text-xs text-muted-foreground hover:text-zinc-900 dark:hover:text-zinc-300 font-mono gap-1 transition-colors group/link"
                               >
-                                <span>Live Demo</span>
+                                <span>{t.liveDemo}</span>
                                 <ArrowUpRight size={13} />
                               </a>
                             )}
                           </div>
-
-                          {/* Optional View Details Button */}
                           {p.detailsUrl && (
                             <a
                               href={p.detailsUrl}
                               className="inline-flex items-center text-xs text-white bg-zinc-900 hover:bg-zinc-800 px-3 py-1.5 rounded font-display font-medium gap-1 transition-colors group/details"
                             >
-                              <span>View Details</span>
+                              <span>{t.viewDetails}</span>
                               <ArrowRight
                                 size={13}
                                 className="transform group-hover/details:translate-x-0.5 transition-transform"
@@ -418,18 +325,17 @@ export default function ProjectsGrid() {
             )}
           </AnimatePresence>
 
-          {/* Load More Button Container */}
-          <div className="mt-12 text-center" id="show-more-button-container">
-            <button
-              onClick={() => setShowAll(!showAll)}
-              className="px-8 py-4 bg-white border border-zinc-300 text-zinc-900 font-mono text-xs uppercase tracking-widest rounded transition-all hover:bg-zinc-50 hover:border-zinc-400 active:scale-95 duration-200 cursor-pointer inline-flex items-center gap-2 shadow-sm"
-              id="btn-show-more-projects"
-            >
-              {showAll
-                ? "Collapse Case Studies"
-                : "Show More Research & Projects"}
-            </button>
-          </div>
+          {!isFilteredMode && visibleExtra.length > 0 && (
+            <div className="mt-12 text-center" id="show-more-button-container">
+              <button
+                onClick={() => setShowAll(!showAll)}
+                className="px-8 py-4 bg-white border border-zinc-300 text-zinc-900 font-mono text-xs uppercase tracking-widest rounded transition-all hover:bg-zinc-50 hover:border-zinc-400 active:scale-95 duration-200 cursor-pointer inline-flex items-center gap-2 shadow-sm"
+                id="btn-show-more-projects"
+              >
+                {showAll ? t.collapse : t.showMore}
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </section>

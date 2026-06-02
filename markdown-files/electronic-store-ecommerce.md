@@ -45,7 +45,7 @@ The analysis is built on a highly structured dataset containing 2,186,014 fully 
 
 #### Products and Categories
 
-![Category Revenue Visual](/sales/md-only-img/s1.png)
+![Category Revenue Visual](/sales/s1.png)
 
 ![Category Revenue Visual](/sales/image_013.png)
 

@@ -11,7 +11,7 @@ import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 // Import KaTeX styles for beautiful math symbols rendering
 import "katex/dist/katex.min.css";
-
+const BASE_PATH = process.env.NODE_ENV === "production" ? "/DSA" : "";
 interface DataProjectLayoutProps {
   markdownContent: string;
 }
@@ -50,9 +50,7 @@ export function DataProjectLayout({ markdownContent }: DataProjectLayoutProps) {
   >([]);
   const [activeId, setActiveId] = useState<string>("");
 
-  // Memoize preprocessed markdown to prevent recalculating on every render cycle
   const processedMarkdown = useMemo(() => {
-    // console.log(markdownContent);
     return preprocessMarkdown(markdownContent);
   }, [markdownContent]);
 
@@ -191,14 +189,22 @@ export function DataProjectLayout({ markdownContent }: DataProjectLayoutProps) {
                 </h4>
               );
             },
-            img: ({ src, alt }) => (
-              <img
-                src={src}
-                alt={alt || "Project Asset"}
-                className="w-full rounded border border-zinc-200 dark:border-zinc-800 my-6 bg-zinc-50 dark:bg-zinc-900 object-cover"
-                loading="lazy"
-              />
-            ),
+            img: ({ src, alt }) => {
+              const resolvedSrc =
+                // @ts-expect-error welelelel
+                src && src.startsWith("/") && !src.startsWith(BASE_PATH)
+                  ? `${BASE_PATH}${src}`
+                  : src;
+
+              return (
+                <img
+                  src={resolvedSrc}
+                  alt={alt || "Project Asset"}
+                  className="w-full rounded border border-zinc-200 dark:border-zinc-800 my-6 bg-zinc-50 dark:bg-zinc-900 object-cover"
+                  loading="lazy"
+                />
+              );
+            },
 
             // ── SYNTAX HIGHLIGHTING ENGINE CONFIGURATIONS ─────────────────
             pre: ({ children }) => (

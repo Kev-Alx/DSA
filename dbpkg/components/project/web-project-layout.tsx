@@ -3,6 +3,8 @@
 import { Globe, Code, Layers } from "lucide-react";
 import { staticLinks } from "@/constants/projects";
 
+const BASE_PATH = process.env.NODE_ENV === "production" ? "/DSA" : "";
+
 interface WebProjectLayoutProps {
   project: any;
   t: any;
@@ -17,11 +19,12 @@ export function WebProjectLayout({ project, t }: WebProjectLayoutProps) {
     );
   });
 
-  const images = matchedProject?.images || [];
+  const images = matchedProject?.images || project.images || [];
 
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-8">
       <div className="grid w-full grid-cols-1 md:grid-cols-12 gap-12 items-start">
+        {/* Left Column (Info) */}
         <div className="md:col-span-5 space-y-8 sticky top-24">
           <div>
             <div className="flex items-center gap-2 mb-3">
@@ -58,21 +61,30 @@ export function WebProjectLayout({ project, t }: WebProjectLayoutProps) {
           )}
         </div>
 
+        {/* Right Column (Images) */}
         <div className="md:col-span-7 space-y-6 w-full">
           {images.length > 0 ? (
-            images.map((src: string, idx: number) => (
-              <div
-                key={idx}
-                className="overflow-hidden rounded border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 shadow-sm"
-              >
-                <img
-                  src={src}
-                  alt={`${project.title} screenshot ${idx + 1}`}
-                  className="w-full h-auto object-cover transform-gpu will-change-transform"
-                  loading="lazy"
-                />
-              </div>
-            ))
+            images.map((src: string, idx: number) => {
+              // 2. Fix the path dynamically for GitHub Pages vs Localhost
+              const resolvedSrc =
+                src.startsWith("/") && !src.startsWith(BASE_PATH)
+                  ? `${BASE_PATH}${src}`
+                  : src;
+
+              return (
+                <div
+                  key={idx}
+                  className="overflow-hidden rounded border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 shadow-sm"
+                >
+                  <img
+                    src={resolvedSrc}
+                    alt={`${project.title} screenshot ${idx + 1}`}
+                    className="w-full h-auto object-cover transform-gpu will-change-transform"
+                    loading="lazy"
+                  />
+                </div>
+              );
+            })
           ) : (
             <div className="flex flex-col items-center justify-center p-12 border border-dashed border-border rounded text-center text-muted-foreground bg-zinc-50 dark:bg-zinc-900/50">
               <Globe size={24} className="mb-2 stroke-[1.5]" />

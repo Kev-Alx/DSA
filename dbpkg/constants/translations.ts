@@ -123,7 +123,9 @@ export const translations = {
       filterAnalytics: "Analytics",
       filterWebDev: "Web Dev",
       repository: "Repository",
+      closeProject: "Close Project",
       liveDemo: "Live Demo",
+      backToPortfolio: "Back to Portfolio",
       viewDetails: "View Details",
       collapse: "Collapse Projects",
       showMore: "Show More Projects",
@@ -177,16 +179,23 @@ export const translations = {
           featured: false,
           description:
             "A centralized, intuitive web application featuring a suite of essential utilities and daily productivity tools like PDF merger, image background remover, and more. Designed for maximum accessibility and speed directly from the browser.",
-          tech: ["React", "Next.js", "Tailwind CSS", "Vercel"],
+          tech: ["React", "Next.js", "Transformers.js"],
         },
         {
-          id: "index-campus-event",
-          title: "INDEX - Campus Event & Exhibition Platform",
+          id: "index-petra",
+          title: "INDEX Petra",
           type: "Frontend Web Development",
           featured: false,
           description:
             "A refined event management platform developed for Petra Christian University to manage, showcase, and schedule campus-wide exhibitions, competitions, seminars, and workshops. Features an elegant editorial UI with integrated timeline tracking and user registration flows.",
-          tech: ["Laravel", "Tailwind CSS", "MySQL", "cPanel"],
+          tech: [
+            "Laravel",
+            "React",
+            "Inertia",
+            "Tailwind CSS",
+            "MySQL",
+            "cPanel",
+          ],
         },
         {
           id: "cloud-chart-bi-tool",
@@ -195,7 +204,7 @@ export const translations = {
           featured: true,
           description:
             "A web-based, Tableau-like interactive data visualization and business intelligence tool. Enables users to upload datasets, dynamically drag and drop field variables into X/Y configurations, aggregate data granularly, and render highly customized interactive charts natively in the browser.",
-          tech: ["Next.js", "React", "Python", "AWS"],
+          tech: ["React", "Next.js", "Convex", "OAuth"],
         },
       ],
     },
@@ -308,6 +317,8 @@ export const translations = {
       filterAnalytics: "Analitik",
       filterWebDev: "Pengembangan Web",
       repository: "Repositori",
+      backToPortfolio: "Kembali ke Halaman Utama",
+      closeProject: "Tutup Proyek",
       liveDemo: "Live Demo",
       viewDetails: "Lihat Detail",
       collapse: "Sembunyikan Proyek",
@@ -362,16 +373,23 @@ export const translations = {
           featured: false,
           description:
             "Aplikasi web terpusat dan intuitif yang menyediakan serangkaian utilitas penting dan alat produktivitas harian seperti penggabung PDF, penghapus latar belakang gambar, dan banyak lagi. Dirancang untuk aksesibilitas maksimal dan kecepatan langsung dari peramban.",
-          tech: ["React", "Next.js", "Tailwind CSS", "Vercel"],
+          tech: ["React", "Next.js", "Transformers.js"],
         },
         {
-          id: "index-campus-event",
-          title: "INDEX - Platform Pameran & Acara Kampus",
+          id: "index-petra",
+          title: "INDEX Petra",
           type: "Frontend Web Development",
           featured: false,
           description:
             "Platform manajemen acara canggih yang dikembangkan untuk Universitas Kristen Petra untuk mengelola, menampilkan, dan menjadwalkan pameran, kompetisi, seminar, dan lokakarya di seluruh kampus. Menampilkan UI editorial yang elegan dengan pelacakan lini masa terintegrasi dan alur pendaftaran pengguna.",
-          tech: ["Laravel", "Tailwind CSS", "MySQL", "cPanel"],
+          tech: [
+            "Laravel",
+            "React",
+            "Inertia",
+            "Tailwind CSS",
+            "MySQL",
+            "cPanel",
+          ],
         },
         {
           id: "cloud-chart-bi-tool",
@@ -380,7 +398,7 @@ export const translations = {
           featured: true,
           description:
             "Alat visualisasi data interaktif dan intelijen bisnis berbasis web yang menyerupai Tableau. Memungkinkan pengguna mengunggah dataset, menyeret dan melepas variabel bidang ke dalam konfigurasi X/Y secara dinamis, mengagregasi data secara granular, serta merender grafik interaktif yang sangat disesuaikan secara asli di peramban.",
-          tech: ["Next.js", "React", "Python", "AWS"],
+          tech: ["Next.js", "Convex", "OAuth"],
         },
       ],
     },

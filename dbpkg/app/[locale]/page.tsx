@@ -6,6 +6,8 @@ import Education from "@/components/education";
 import ProjectsGrid from "@/components/projects";
 import HeroSection from "@/components/hero";
 import Contact from "@/components/contact";
+import path from "path";
+import fs from "fs";
 
 interface HomeProps {
   params: Promise<{ locale: "en" | "id" }>;
@@ -13,6 +15,25 @@ interface HomeProps {
 
 export default async function Home({ params }: HomeProps) {
   const { locale } = await params;
+  const dataSlugs = [
+    "electronic-store-ecommerce",
+    "accommodation-analysis",
+    "global-trade-war-analysis",
+  ];
+  const markdownMap: Record<string, string> = {};
+  dataSlugs.forEach((slug) => {
+    try {
+      const filePath = path.join(
+        process.cwd(),
+        "..",
+        "markdown-files",
+        `${slug}.md`,
+      );
+      markdownMap[slug] = fs.readFileSync(filePath, "utf8");
+    } catch (e) {
+      markdownMap[slug] = "";
+    }
+  });
   const releases = [
     {
       version: "Most Recent",
@@ -35,7 +56,7 @@ export default async function Home({ params }: HomeProps) {
           <HeroSection locale={locale} />
           <ChangelogContent releases={releases} locale={locale} />
           <Education locale={locale} />
-          <ProjectsGrid locale={locale} />
+          <ProjectsGrid locale={locale} markdownData={markdownMap} />
           <Contact locale={locale} />
         </section>
       </div>

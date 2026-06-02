@@ -10,7 +10,6 @@ import {
 import { X } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 
-// Context
 interface ExpandableScreenContextValue {
   isExpanded: boolean;
   expand: () => void;
@@ -34,9 +33,9 @@ function useExpandableScreen() {
   return context;
 }
 
-// Root Component
 interface ExpandableScreenProps {
   children: ReactNode;
+  expanded?: boolean;
   defaultExpanded?: boolean;
   onExpandChange?: (expanded: boolean) => void;
   layoutId?: string;
@@ -48,6 +47,7 @@ interface ExpandableScreenProps {
 
 export function ExpandableScreen({
   children,
+  expanded,
   defaultExpanded = false,
   onExpandChange,
   layoutId = "expandable-card",
@@ -56,15 +56,18 @@ export function ExpandableScreen({
   animationDuration = 0.3,
   lockScroll = true,
 }: ExpandableScreenProps) {
-  const [isExpanded, setIsExpanded] = useState(defaultExpanded);
+  const [isExpandedInternal, setIsExpandedInternal] = useState(defaultExpanded);
+
+  const isControlled = expanded !== undefined;
+  const isExpanded = isControlled ? expanded : isExpandedInternal;
 
   const expand = () => {
-    setIsExpanded(true);
+    if (!isControlled) setIsExpandedInternal(true);
     onExpandChange?.(true);
   };
 
   const collapse = () => {
-    setIsExpanded(false);
+    if (!isControlled) setIsExpandedInternal(false);
     onExpandChange?.(false);
   };
 
@@ -95,7 +98,6 @@ export function ExpandableScreen({
   );
 }
 
-// Trigger Component
 interface ExpandableScreenTriggerProps {
   children: ReactNode;
   className?: string;
@@ -111,7 +113,6 @@ export function ExpandableScreenTrigger({
     <AnimatePresence initial={false}>
       {!isExpanded && (
         <motion.div className={`inline-block relative ${className}`}>
-          {/* Background layer with shared layoutId for morphing */}
           <motion.div
             style={{
               borderRadius: triggerRadius,
@@ -120,7 +121,6 @@ export function ExpandableScreenTrigger({
             layoutId={layoutId}
             className="absolute inset-0 transform-gpu will-change-transform"
           />
-          {/* Content layer that fades out on expand */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -138,7 +138,6 @@ export function ExpandableScreenTrigger({
   );
 }
 
-// Content Component
 interface ExpandableScreenContentProps {
   children: ReactNode;
   className?: string;
@@ -159,7 +158,6 @@ export function ExpandableScreenContent({
     <AnimatePresence initial={false}>
       {isExpanded && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-2">
-          {/* Morphing background with shared layoutId */}
           <motion.div
             layoutId={layoutId}
             transition={{ duration: animationDuration }}
@@ -197,7 +195,6 @@ export function ExpandableScreenContent({
   );
 }
 
-// Background Component (optional)
 interface ExpandableScreenBackgroundProps {
   trigger?: ReactNode;
   content?: ReactNode;

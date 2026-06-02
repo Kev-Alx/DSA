@@ -5,9 +5,12 @@ nb_extract.py — Extract text and embed images into a single Jupyter notebook M
 Usage:
     python nb_extract.py notebook.ipynb
     python nb_extract.py notebook.ipynb --output my_folder
-    python nb_extract.py notebook.ipynb --separate-img
+    python nb_extract.py notebook.ipynb --separate-img --img-prefix xxx
+    python nb_extract.py notebook.ipynb --filename custom_name.md
     python nb_extract.py notebook.ipynb --exclude-code
     python nb_extract.py notebook.ipynb --exclude-img
+    python nb_extract.py notebook.ipynb --hide-code
+    python nb_extract.py notebook.ipynb --hide-code-only
 """
 
 import argparse
@@ -19,7 +22,7 @@ from pathlib import Path
 
 
 def cell_label(index: int, cell_type: str) -> str:
-    return f"<!-- Cell {index} [{cell_type}] -->"
+    return f""
 
 
 def extract_image_data(data: dict) -> tuple[str, str] | None:
@@ -54,8 +57,8 @@ def embed_image(mime: str, raw: str, counter: int) -> str:
     return f"![Embedded Image {counter}]({data_uri})"
 
 
-def save_image(mime: str, raw: str, counter: int, img_dir: Path) -> str:
-    """Save image to img_dir and return a relative Markdown image tag."""
+def save_image(mime: str, raw: str, counter: int, img_dir: Path, img_prefix: str) -> str:
+    """Save image to img_dir and return a relative Markdown image tag using img_prefix."""
     ext = mime.split("/")[-1].replace("svg+xml", "svg")
     img_filename = f"image_{counter:03d}.{ext}"
     img_path = img_dir / img_filename
@@ -69,7 +72,7 @@ def save_image(mime: str, raw: str, counter: int, img_dir: Path) -> str:
         img_path.write_bytes(base64.b64decode(b64))
 
     print(f"  Saved image {counter} → {img_path}")
-    return f"![Embedded Image {counter}](images/{img_filename})"
+    return f"![Embedded Image {counter}]({img_prefix}/{img_filename})"
 
 
 def extract_notebook(
@@ -79,6 +82,9 @@ def extract_notebook(
     exclude_code: bool = False,
     exclude_img: bool = False,
     filename: str = "content.md",
+    hide_code: bool = False,
+    hide_code_only: bool = False,
+    img_prefix: str = "images",
 ) -> None:
     with nb_path.open("r", encoding="utf-8") as f:
         nb = json.load(f)
@@ -88,8 +94,8 @@ def extract_notebook(
 
     img_dir: Path | None = None
     if separate_img and not exclude_img:
-        img_dir = out_dir / "images"
-        img_dir.mkdir(exist_ok=True)
+        img_dir = out_dir / img_prefix
+        img_dir.mkdir(parents=True, exist_ok=True)
 
     text_parts: list[str] = []
     image_counter = 0
@@ -109,7 +115,7 @@ def extract_notebook(
                     image_counter += 1
                     
                     if separate_img and img_dir:
-                        md_tag = save_image(mime, raw, image_counter, img_dir)
+                        md_tag = save_image(mime, raw, image_counter, img_dir, img_prefix)
                     else:
                         md_tag = embed_image(mime, raw, image_counter)
                     
@@ -124,12 +130,7 @@ def extract_notebook(
 
         # ── Code cells ────────────────────────────────────────────────────
         elif cell_type == "code":
-            # Append the actual code block (if not excluded)
-            if not exclude_code and source.strip():
-                text_parts.append(cell_label(cell_idx, "code"))
-                text_parts.append(f"```python\n{source.strip()}\n```")
-                text_parts.append("")
-
+            source_str = source.strip()
             outputs = cell.get("outputs", [])
             cell_text_chunks: list[str] = []
 
@@ -147,20 +148,21 @@ def extract_notebook(
                     # ── Image handling ────────────────────────────────────
                     image_info = extract_image_data(data)
                     if image_info:
-                        mime, raw = image_info
                         image_counter += 1
 
                         if exclude_img:
                             print(f"  Skipped image {image_counter} ({mime}) [--exclude-img]")
                         elif separate_img and img_dir:
-                            md_tag = save_image(mime, raw, image_counter, img_dir)
+                            mime, raw = image_info
+                            md_tag = save_image(mime, raw, image_counter, img_dir, img_prefix)
                             cell_text_chunks.append(md_tag)
                         else:
+                            mime, raw = image_info
                             md_tag = embed_image(mime, raw, image_counter)
                             cell_text_chunks.append(md_tag)
                             print(f"  Embedded image {image_counter} ({mime})")
 
-                    # ── Plain text (always include alongside or instead of image) ─
+                    # ── Plain text ──
                     if "text/plain" in data:
                         plain = "".join(data["text/plain"]).rstrip()
                         if plain and not plain.startswith("<"):
@@ -178,10 +180,49 @@ def extract_notebook(
                     evalue = output.get("evalue", "")
                     cell_text_chunks.append(f"**{ename}: {evalue}**")
 
-            if cell_text_chunks:
-                text_parts.append(cell_label(cell_idx, "code output"))
-                text_parts.extend(cell_text_chunks)
-                text_parts.append("")
+            # Render logic based on accordion flags
+            if hide_code:
+                cell_parts = []
+                if not exclude_code and source_str:
+                    cell_parts.append(f"```python\n{source_str}\n```")
+                    cell_parts.append("")
+                if cell_text_chunks:
+                    cell_parts.extend(cell_text_chunks)
+                    cell_parts.append("")
+                
+                if cell_parts:
+                    text_parts.append(cell_label(cell_idx, "code and output hidden"))
+                    text_parts.append("<details>")
+                    text_parts.append(f"<summary>Code &amp; Output for Cell {cell_idx}</summary>")
+                    text_parts.append("")  
+                    text_parts.extend(cell_parts)
+                    text_parts.append("</details>")
+                    text_parts.append("")
+
+            elif hide_code_only:
+                if not exclude_code and source_str:
+                    text_parts.append(cell_label(cell_idx, "code hidden"))
+                    text_parts.append("<details>")
+                    text_parts.append(f"<summary>Code for Cell {cell_idx}</summary>")
+                    text_parts.append("")  
+                    text_parts.append(f"```python\n{source_str}\n```")
+                    text_parts.append("</details>")
+                    text_parts.append("")
+                
+                if cell_text_chunks:
+                    text_parts.append(cell_label(cell_idx, "code output"))
+                    text_parts.extend(cell_text_chunks)
+                    text_parts.append("")
+
+            else:
+                if not exclude_code and source_str:
+                    text_parts.append(cell_label(cell_idx, "code"))
+                    text_parts.append(f"```python\n{source_str}\n```")
+                    text_parts.append("")
+                if cell_text_chunks:
+                    text_parts.append(cell_label(cell_idx, "code output"))
+                    text_parts.extend(cell_text_chunks)
+                    text_parts.append("")
 
         # ── Raw cells ──────────────────────────────────────────────────────
         elif cell_type == "raw":
@@ -211,20 +252,35 @@ def main() -> None:
     )
     parser.add_argument(
         "--separate-img", action="store_true",
-        help="Save images as separate files in an images/ subfolder instead of embedding as Data URIs"
+        help="Save images as separate files instead of embedding as Data URIs"
+    )
+    parser.add_argument(
+        "--img-prefix", type=str, default="images",
+        help="Directory name and Markdown path prefix for separate images (default: images)"
     )
     parser.add_argument(
         "--exclude-code", action="store_true",
-        help="Omit all code cell outputs from the Markdown"
+        help="Omit all code cell blocks from the Markdown"
     )
     parser.add_argument(
         "--exclude-img", action="store_true",
         help="Omit all images from the Markdown"
     )
+    parser.add_argument(
+        "--hide-code", action="store_true",
+        help="Wrap both code cells and their outputs in an HTML <details> accordion"
+    )
+    parser.add_argument(
+        "--hide-code-only", action="store_true",
+        help="Wrap ONLY the code cells in an HTML <details> accordion, leaving outputs visible"
+    )
     args = parser.parse_args()
 
     if args.separate_img and args.exclude_img:
         parser.error("--separate-img and --exclude-img are mutually exclusive")
+        
+    if args.hide_code and args.hide_code_only:
+        parser.error("--hide-code and --hide-code-only are mutually exclusive")
 
     nb_path: Path = args.notebook.resolve()
     if not nb_path.exists():
@@ -242,6 +298,9 @@ def main() -> None:
         exclude_code=args.exclude_code,
         exclude_img=args.exclude_img,
         filename=args.filename,
+        hide_code=args.hide_code,
+        hide_code_only=args.hide_code_only,
+        img_prefix=args.img_prefix,
     )
     print("Done.")
 

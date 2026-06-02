@@ -1,24 +1,2073 @@
 1:"$Sreact.fragment"
-2:I[31777,["/DSA/_next/static/chunks/10pzdqqp6gvky.js","/DSA/_next/static/chunks/16c6-w_zj6z3_.js"],"default"]
-3:I[13293,["/DSA/_next/static/chunks/10pzdqqp6gvky.js","/DSA/_next/static/chunks/16c6-w_zj6z3_.js"],"default"]
-4:I[85161,["/DSA/_next/static/chunks/10pzdqqp6gvky.js","/DSA/_next/static/chunks/16c6-w_zj6z3_.js"],"default"]
-d:I[90538,["/DSA/_next/static/chunks/10pzdqqp6gvky.js","/DSA/_next/static/chunks/16c6-w_zj6z3_.js"],"Accordion"]
-e:I[90538,["/DSA/_next/static/chunks/10pzdqqp6gvky.js","/DSA/_next/static/chunks/16c6-w_zj6z3_.js"],"AccordionItem"]
-f:I[90538,["/DSA/_next/static/chunks/10pzdqqp6gvky.js","/DSA/_next/static/chunks/16c6-w_zj6z3_.js"],"AccordionTrigger"]
-10:I[90538,["/DSA/_next/static/chunks/10pzdqqp6gvky.js","/DSA/_next/static/chunks/16c6-w_zj6z3_.js"],"AccordionContent"]
-12:I[71759,["/DSA/_next/static/chunks/10pzdqqp6gvky.js","/DSA/_next/static/chunks/16c6-w_zj6z3_.js"],"default"]
-13:I[80976,["/DSA/_next/static/chunks/10pzdqqp6gvky.js","/DSA/_next/static/chunks/16c6-w_zj6z3_.js"],"default"]
-14:I[15751,["/DSA/_next/static/chunks/10pzdqqp6gvky.js","/DSA/_next/static/chunks/16c6-w_zj6z3_.js"],"default"]
-15:I[97367,["/DSA/_next/static/chunks/0dbhjjzl8qfwv.js"],"OutletBoundary"]
-16:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"relative min-height-screen bg-white dark:bg-neutral-900 text-slate-900 dark:text-slate-300 ","children":[["$","$L2",null,{}],["$","div",null,{"className":"relative z-10","children":[["$","$L3",null,{"locale":"en"}],["$","section",null,{"className":"max-w-4xl mx-auto px-6 pt-24 flex flex-col gap-12","children":[["$","$L4",null,{"locale":"en"}],["$","div",null,{"className":"relative max-w-2xl mx-auto py-24","children":[["$","div",null,{"id":"experience","className":"flex flex-col md:flex-row md:items-baseline md:justify-between border-b border-zinc-200 dark:border-zinc-700 pb-6 mb-12","children":["$","div",null,{"children":["$","h3",null,{"className":"font-display font-medium text-3xl md:text-4xl tracking-tight mt-1","children":"Experience"}]}]}],[["$","div","Most Recent",{"id":"1","className":"relative flex scroll-mt-18 justify-end gap-2","children":[["$","div",null,{"className":"sticky top-19 flex w-36 flex-col items-end gap-2 self-start pb-4 max-md:hidden","children":[["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge shrink-0 items-center gap-1 overflow-hidden border border-transparent px-2 py-0.5 whitespace-nowrap transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 flex size-6 w-auto justify-end rounded-sm text-sm font-medium","children":"Most Recent"}],["$","div",null,{"className":"text-muted-foreground text-right text-sm font-medium","children":"Jan 2025 - Jul 2025"}]]}],["$","div",null,{"className":"flex flex-col items-center","children":[["$","div",null,{"className":"sticky top-19 flex size-6 items-center justify-center max-sm:top-5","children":["$","span",null,{"className":"bg-primary/20 flex size-4.5 shrink-0 items-center justify-center rounded-full","children":["$","span",null,{"className":"bg-primary size-3 rounded-full"}]}]}],["$","span",null,{"className":"-mt-2.5 w-px flex-1 border"}]]}],["$","div",null,{"className":"flex flex-1 flex-col gap-4 pb-11 pl-3 md:pl-6 lg:pl-9","children":[["$","div",null,{"className":"flex flex-col gap-2 md:hidden","children":[["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden border border-transparent px-2 py-0.5 text-xs whitespace-nowrap transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 flex rounded-sm font-medium","children":"Most Recent"}],["$","div",null,{"className":"font-medium","children":"Jan 2025 - Jul 2025"}]]}],["$","div",null,{"children":["$","div",null,{"className":"space-y-4","children":[["$","div",null,{"className":"space-y-3","children":[["$","h3",null,{"className":"text-xl font-semibold","children":"Data Engineer Intern"}],["$","p",null,{"className":"text-muted-foreground","children":"PT Bank Central Asia Tbk."}]]}],["$","p",null,{"className":"text-sm","children":"Built real-time data pipelines using Apache Kafka and Python to handle high-throughput data streams."}],["$","p",null,{"className":"text-sm","children":"Developed, Integrated, Tested and Deployed AI driven data processing pipeline service using FastAPI and Azure that converts unstructured data to structured data for legality requirements and better storage efficiency."}],"$L5"]}]}]]}]]}],"$L6"]]}],"$L7","$L8","$L9"]}]]}]]}],["$La","$Lb"],"$Lc"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"BmIohSNk0ZWxQTIsRszGf"}
-5:["$","$Ld",null,{"type":"multiple","className":"-mt-4 mb-0 w-full border-none","children":["$","$Le",null,{"value":"item-1","className":"bg-transparent","children":[["$","$Lf",null,{"className":"px-0 hover:no-underline [&>svg]:size-6!","children":["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge inline-flex w-fit shrink-0 items-center justify-center gap-1 overflow-hidden border border-transparent py-0.5 text-xs font-medium whitespace-nowrap transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! [a]:hover:bg-primary/80 h-6 rounded-sm border-none bg-green-600/10 px-2 text-green-600 dark:bg-green-400/10 dark:text-green-400","children":"Skills"}]}],["$","$L10",null,{"className":"text-muted-foreground","children":["$","ul",null,{"className":"text-muted-foreground list-inside list-disc space-y-3 text-sm","children":[["$","li",null,{"children":"Python"}],["$","li",null,{"children":"AI/ML"}],["$","li",null,{"children":"Apache Kafka"}],["$","li",null,{"children":"FastAPI"}],["$","li",null,{"children":"Microsoft Azure"}],["$","li",null,{"children":"REST API"}],["$","li",null,{"children":"JMeter"}],["$","li",null,{"children":"Docker"}]]}]}]]}]}]
-6:["$","div","1",{"id":"2","className":"relative flex scroll-mt-18 justify-end gap-2","children":[["$","div",null,{"className":"sticky top-19 flex w-36 flex-col items-end gap-2 self-start pb-4 max-md:hidden","children":[["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge shrink-0 items-center gap-1 overflow-hidden border border-transparent px-2 py-0.5 whitespace-nowrap transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 flex size-6 w-auto justify-end rounded-sm text-sm font-medium","children":"1"}],["$","div",null,{"className":"text-muted-foreground text-right text-sm font-medium","children":"Jul 2023 - Jun 2024"}]]}],["$","div",null,{"className":"flex flex-col items-center","children":[["$","div",null,{"className":"sticky top-19 flex size-6 items-center justify-center max-sm:top-5","children":["$","span",null,{"className":"bg-primary/20 flex size-4.5 shrink-0 items-center justify-center rounded-full","children":["$","span",null,{"className":"bg-primary size-3 rounded-full"}]}]}],["$","span",null,{"className":"-mt-2.5 w-px flex-1 border"}]]}],["$","div",null,{"className":"flex flex-1 flex-col gap-4 pb-11 pl-3 md:pl-6 lg:pl-9","children":[["$","div",null,{"className":"flex flex-col gap-2 md:hidden","children":[["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden border border-transparent px-2 py-0.5 text-xs whitespace-nowrap transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 flex rounded-sm font-medium","children":"1"}],["$","div",null,{"className":"font-medium","children":"Jul 2023 - Jun 2024"}]]}],["$","div",null,{"children":["$","div",null,{"className":"space-y-4","children":[["$","div",null,{"className":"space-y-3","children":[["$","h3",null,{"className":"text-xl font-semibold","children":"Data Team Member"}],["$","p",null,{"className":"text-muted-foreground","children":"Tim Petra Sinergi, Petra Christian University"}]]}],["$","p",null,{"className":"text-sm","children":"Designed and analyzed survey data for university events and programs, translating participant feedback into actionable insights to support evaluation and future planning."}],["$","p",null,{"className":"text-sm","children":"Managed and queried organizational data using Excel and SQL while contributing to the maintenance and development of new features for the Tim Petra Sinergi website."}],["$","$Ld",null,{"type":"multiple","className":"-mt-4 mb-0 w-full border-none","children":["$","$Le",null,{"value":"item-1","className":"bg-transparent","children":[["$","$Lf",null,{"className":"px-0 hover:no-underline [&>svg]:size-6!","children":["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge inline-flex w-fit shrink-0 items-center justify-center gap-1 overflow-hidden border border-transparent py-0.5 text-xs font-medium whitespace-nowrap transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! [a]:hover:bg-primary/80 h-6 rounded-sm border-none bg-green-600/10 px-2 text-green-600 dark:bg-green-400/10 dark:text-green-400","children":"Skills"}]}],"$L11"]}]}]]}]}]]}]]}]
-7:["$","$L12",null,{"locale":"en"}]
-8:["$","$L13",null,{"locale":"en"}]
-9:["$","$L14",null,{"locale":"en"}]
-a:["$","script","script-0",{"src":"/DSA/_next/static/chunks/10pzdqqp6gvky.js","async":true}]
-b:["$","script","script-1",{"src":"/DSA/_next/static/chunks/16c6-w_zj6z3_.js","async":true}]
-c:["$","$L15",null,{"children":["$","$16",null,{"name":"Next.MetadataOutlet","children":"$@17"}]}]
-11:["$","$L10",null,{"className":"text-muted-foreground","children":["$","ul",null,{"className":"text-muted-foreground list-inside list-disc space-y-3 text-sm","children":[["$","li",null,{"children":"Excel"}],["$","li",null,{"children":"SQL"}],["$","li",null,{"children":"Survey Design & Analysis"}],["$","li",null,{"children":"Data Visualization"}],["$","li",null,{"children":"Website Maintenance"}],["$","li",null,{"children":"Problem Solving"}]]}]}]
-17:null
+2:I[31777,["/DSA/_next/static/chunks/0aiax6w64a8h6.js","/DSA/_next/static/chunks/0ucsxjv54.n1o.js","/DSA/_next/static/chunks/0uwn_k-9.fenu.js"],"default"]
+3:I[13293,["/DSA/_next/static/chunks/0aiax6w64a8h6.js","/DSA/_next/static/chunks/0ucsxjv54.n1o.js","/DSA/_next/static/chunks/0uwn_k-9.fenu.js"],"default"]
+4:I[85161,["/DSA/_next/static/chunks/0aiax6w64a8h6.js","/DSA/_next/static/chunks/0ucsxjv54.n1o.js","/DSA/_next/static/chunks/0uwn_k-9.fenu.js"],"default"]
+f:I[90538,["/DSA/_next/static/chunks/0aiax6w64a8h6.js","/DSA/_next/static/chunks/0ucsxjv54.n1o.js","/DSA/_next/static/chunks/0uwn_k-9.fenu.js"],"Accordion"]
+10:I[90538,["/DSA/_next/static/chunks/0aiax6w64a8h6.js","/DSA/_next/static/chunks/0ucsxjv54.n1o.js","/DSA/_next/static/chunks/0uwn_k-9.fenu.js"],"AccordionItem"]
+11:I[90538,["/DSA/_next/static/chunks/0aiax6w64a8h6.js","/DSA/_next/static/chunks/0ucsxjv54.n1o.js","/DSA/_next/static/chunks/0uwn_k-9.fenu.js"],"AccordionTrigger"]
+12:I[90538,["/DSA/_next/static/chunks/0aiax6w64a8h6.js","/DSA/_next/static/chunks/0ucsxjv54.n1o.js","/DSA/_next/static/chunks/0uwn_k-9.fenu.js"],"AccordionContent"]
+14:I[71759,["/DSA/_next/static/chunks/0aiax6w64a8h6.js","/DSA/_next/static/chunks/0ucsxjv54.n1o.js","/DSA/_next/static/chunks/0uwn_k-9.fenu.js"],"default"]
+15:I[80976,["/DSA/_next/static/chunks/0aiax6w64a8h6.js","/DSA/_next/static/chunks/0ucsxjv54.n1o.js","/DSA/_next/static/chunks/0uwn_k-9.fenu.js"],"default"]
+19:I[15751,["/DSA/_next/static/chunks/0aiax6w64a8h6.js","/DSA/_next/static/chunks/0ucsxjv54.n1o.js","/DSA/_next/static/chunks/0uwn_k-9.fenu.js"],"default"]
+1a:I[97367,["/DSA/_next/static/chunks/01xlw8hd842-c.js","/DSA/_next/static/chunks/0t2xr05rlu96l.js"],"OutletBoundary"]
+1b:"$Sreact.suspense"
+:HL["/DSA/_next/static/chunks/0tmg9vcbw.fm2.css","style"]
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"relative min-height-screen bg-white dark:bg-neutral-900 text-slate-900 dark:text-slate-300 ","children":[["$","$L2",null,{}],["$","div",null,{"className":"relative z-10","children":[["$","$L3",null,{"locale":"en"}],["$","section",null,{"className":"max-w-4xl mx-auto px-6 pt-24 flex flex-col gap-12","children":[["$","$L4",null,{"locale":"en"}],["$","div",null,{"className":"relative max-w-2xl mx-auto py-24","children":[["$","div",null,{"id":"experience","className":"flex flex-col md:flex-row md:items-baseline md:justify-between border-b border-zinc-200 dark:border-zinc-700 pb-6 mb-12","children":["$","div",null,{"children":["$","h3",null,{"className":"font-display font-medium text-3xl md:text-4xl tracking-tight mt-1","children":"Experience"}]}]}],[["$","div","Most Recent",{"id":"1","className":"relative flex scroll-mt-18 justify-end gap-2","children":[["$","div",null,{"className":"sticky top-19 flex w-36 flex-col items-end gap-2 self-start pb-4 max-md:hidden","children":[["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge shrink-0 items-center gap-1 overflow-hidden border border-transparent px-2 py-0.5 whitespace-nowrap transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 flex size-6 w-auto justify-end rounded-sm text-sm font-medium","children":"Most Recent"}],["$","div",null,{"className":"text-muted-foreground text-right text-sm font-medium","children":"Jan 2025 - Jul 2025"}]]}],["$","div",null,{"className":"flex flex-col items-center","children":[["$","div",null,{"className":"sticky top-19 flex size-6 items-center justify-center max-sm:top-5","children":["$","span",null,{"className":"bg-primary/20 flex size-4.5 shrink-0 items-center justify-center rounded-full","children":["$","span",null,{"className":"bg-primary size-3 rounded-full"}]}]}],["$","span",null,{"className":"-mt-2.5 w-px flex-1 border"}]]}],["$","div",null,{"className":"flex flex-1 flex-col gap-4 pb-11 pl-3 md:pl-6 lg:pl-9","children":[["$","div",null,{"className":"flex flex-col gap-2 md:hidden","children":[["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden border border-transparent px-2 py-0.5 text-xs whitespace-nowrap transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 flex rounded-sm font-medium","children":"Most Recent"}],["$","div",null,{"className":"font-medium","children":"Jan 2025 - Jul 2025"}]]}],["$","div",null,{"children":["$","div",null,{"className":"space-y-4","children":[["$","div",null,{"className":"space-y-3","children":[["$","h3",null,{"className":"text-xl font-semibold","children":"Data Engineer Intern"}],["$","p",null,{"className":"text-muted-foreground","children":"PT Bank Central Asia Tbk."}]]}],["$","p",null,{"className":"text-sm","children":"Built real-time data pipelines using Apache Kafka and Python to handle high-throughput data streams."}],["$","p",null,{"className":"text-sm","children":"Developed, Integrated, Tested and Deployed AI driven data processing pipeline service using FastAPI and Azure that converts unstructured data to structured data for legality requirements and better storage efficiency."}],"$L5"]}]}]]}]]}],"$L6"]]}],"$L7","$L8","$L9"]}]]}]]}],["$La","$Lb","$Lc","$Ld"],"$Le"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"0VguxgXPzm95cWIo0im72"}
+5:["$","$Lf",null,{"type":"multiple","className":"-mt-4 mb-0 w-full border-none","children":["$","$L10",null,{"value":"item-1","className":"bg-transparent","children":[["$","$L11",null,{"className":"px-0 hover:no-underline [&>svg]:size-6!","children":["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge inline-flex w-fit shrink-0 items-center justify-center gap-1 overflow-hidden border border-transparent py-0.5 text-xs font-medium whitespace-nowrap transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! [a]:hover:bg-primary/80 h-6 rounded-sm border-none bg-green-600/10 px-2 text-green-600 dark:bg-green-400/10 dark:text-green-400","children":"Skills"}]}],["$","$L12",null,{"className":"text-muted-foreground","children":["$","ul",null,{"className":"text-muted-foreground list-inside list-disc space-y-3 text-sm","children":[["$","li",null,{"children":"Python"}],["$","li",null,{"children":"AI/ML"}],["$","li",null,{"children":"Apache Kafka"}],["$","li",null,{"children":"FastAPI"}],["$","li",null,{"children":"Microsoft Azure"}],["$","li",null,{"children":"REST API"}],["$","li",null,{"children":"JMeter"}],["$","li",null,{"children":"Docker"}]]}]}]]}]}]
+6:["$","div","1",{"id":"2","className":"relative flex scroll-mt-18 justify-end gap-2","children":[["$","div",null,{"className":"sticky top-19 flex w-36 flex-col items-end gap-2 self-start pb-4 max-md:hidden","children":[["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge shrink-0 items-center gap-1 overflow-hidden border border-transparent px-2 py-0.5 whitespace-nowrap transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 flex size-6 w-auto justify-end rounded-sm text-sm font-medium","children":"1"}],["$","div",null,{"className":"text-muted-foreground text-right text-sm font-medium","children":"Jul 2023 - Jun 2024"}]]}],["$","div",null,{"className":"flex flex-col items-center","children":[["$","div",null,{"className":"sticky top-19 flex size-6 items-center justify-center max-sm:top-5","children":["$","span",null,{"className":"bg-primary/20 flex size-4.5 shrink-0 items-center justify-center rounded-full","children":["$","span",null,{"className":"bg-primary size-3 rounded-full"}]}]}],["$","span",null,{"className":"-mt-2.5 w-px flex-1 border"}]]}],["$","div",null,{"className":"flex flex-1 flex-col gap-4 pb-11 pl-3 md:pl-6 lg:pl-9","children":[["$","div",null,{"className":"flex flex-col gap-2 md:hidden","children":[["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden border border-transparent px-2 py-0.5 text-xs whitespace-nowrap transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 flex rounded-sm font-medium","children":"1"}],["$","div",null,{"className":"font-medium","children":"Jul 2023 - Jun 2024"}]]}],["$","div",null,{"children":["$","div",null,{"className":"space-y-4","children":[["$","div",null,{"className":"space-y-3","children":[["$","h3",null,{"className":"text-xl font-semibold","children":"Data Team Member"}],["$","p",null,{"className":"text-muted-foreground","children":"Tim Petra Sinergi, Petra Christian University"}]]}],["$","p",null,{"className":"text-sm","children":"Designed and analyzed survey data for university events and programs, translating participant feedback into actionable insights to support evaluation and future planning."}],["$","p",null,{"className":"text-sm","children":"Managed and queried organizational data using Excel and SQL while contributing to the maintenance and development of new features for the Tim Petra Sinergi website."}],["$","$Lf",null,{"type":"multiple","className":"-mt-4 mb-0 w-full border-none","children":["$","$L10",null,{"value":"item-1","className":"bg-transparent","children":[["$","$L11",null,{"className":"px-0 hover:no-underline [&>svg]:size-6!","children":["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge inline-flex w-fit shrink-0 items-center justify-center gap-1 overflow-hidden border border-transparent py-0.5 text-xs font-medium whitespace-nowrap transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! [a]:hover:bg-primary/80 h-6 rounded-sm border-none bg-green-600/10 px-2 text-green-600 dark:bg-green-400/10 dark:text-green-400","children":"Skills"}]}],"$L13"]}]}]]}]}]]}]]}]
+7:["$","$L14",null,{"locale":"en"}]
+16:T2637,## Electronic Store eCommerce Purchase History Analysis
+
+This report analyzes data from an electronic store's eCommerce platform. The dataset is sourced from the Open Customer Data Platform (CDP) project and covers an eight-month operational window from April 2020 to November 2020.
+
+The initial dataset captured 2,633,521 total events representing many-to-many relations between products and users. After removing critical missing data, the final operational dataset comprises 2,186,014 complete transaction rows.
+
+**Purpose:**
+This report aims to analyze the eCommerce purchase history, category performance, and basket dynamics of the electronic store over an 8-month period (April – November 2020). To translate historical transaction behaviors into actionable eCommerce optimization strategies, enabling the executive team to make data-driven decisions on marketing spend and inventory depth.
+
+### Northstar Metrics:
+
+1. **Category Revenue Distribution** - Tracking the primary financial drivers across product lines.
+
+2. **Order Volume and Unit Velocity** - Evaluating the total number of orders placed against total physical units sold to measure transaction frequency versus physical product movement.
+
+3. **Basket Size Metrics** - Focusing on the average units per order metric to evaluate customer purchasing habits.
+
+### Executive Summary:
+
+Over the eight-month period from April to November 2020, the eCommerce platform demonstrated **highly concentrated sales** that are heavily reliant on two core product lines. **Electronics** dominated the revenue share at 43.7% (\$147.3M), followed by **Appliances** at 30.6% ($103.1M). Order volume and basket size metrics revealed a disconnect between revenue and transaction frequency: Appliances generated more total orders (~480k) and higher average units per order (1.26) compared to Electronics (~460k orders and 1.17 units per order). To optimize these dynamics, we must execute two primary actions: Maximize marketing spend and introduce aggressive checkout cross-selling in Electronics to improve its low 1.17 basket size, and implement bundled deals and premium product placements in Appliances to convert its high transaction frequency into stronger revenue yields.
+
+![Category Revenue Visual](/sales/image_003.png)
+
+**Key Takeaways:**
+
+**Extreme Revenue Concentration:** The business is fundamentally reliant on just two categories, with Electronics and Appliances combining to generate over 74% of total revenue.
+
+**Volume & Value Disconnect:** While Electronics is the undisputed revenue leader, Appliances actually drive a higher total order volume and larger average basket sizes.
+
+### Data
+
+The analysis is built on a highly structured dataset containing 2,186,014 fully complete rows out of the original 2.6M+ events.
+| Column Name | Type | Description |
+| ------------- | ---------- | ------------------------------------------------------- |
+| `event_time` | `datetime` | Timestamp of when the event occurred. |
+| `order_id` | `string` | Unique identifier for each order. |
+| `product_id` | `string` | Unique identifier for each product. |
+| `category_id` | `string` | Unique identifier for the product category. |
+| `category_code` | `string` | Readable category and sub-category name (if available). |
+| `brand` | `string` | Brand name (in lowercase, if available). |
+| `price` | `float` | Product price at purchase time. |
+| `user_id` | `string` | Unique identifier for the user. |
+
+### Insights Deep-Dive
+
+#### Products and Categories
+
+![Category Revenue Visual](/sales/md-only-img/s1.png)
+
+![Category Revenue Visual](/sales/image_013.png)
+
+**\*Electronics** is the clear revenue leader, generating $147.3M over the operational window. This single category is responsible for **43.7%** of the total eCommerce revenue.
+
+**Appliances** follow as the secondary pillar, contributing $103.1M, which represents **30.6%** of total revenue.
+
+Combined, these two categories account for a massive **74%** of the platform's total revenue, indicating heavy reliance on these specific product lines.
+
+Within the Electronics sector, major brands like **Samsung and Huawei** are prominent drivers, specifically moving volume in the tablet and audio/headphone sub-categories.
+
+#### Purchase Time Analysis
+
+|      Monthly Revenue & Order Volume      |       Orders Heatmap (Day × Hour)       |
+| :--------------------------------------: | :-------------------------------------: |
+| ![Monthly Revenue](/sales/image_007.png) | ![Orders Heatmap](/sales/image_008.png) |
+
+**Extreme Volatility:** The platform recovered from a severe April low (**\$8M revenue**) to hit peak transaction volume in June (**~210k orders**) and peak revenue in August (**$53M**).
+
+**Concerning Q4 Decline:** Sales consistently plummeted heading into the end of the year, dropping from $49M in September to just **\$12M in November**, requiring immediate investigation into funnel or inventory issues.
+
+**Morning Shopping Habit:** Purchase activity is heavily concentrated in the morning, surging between **06:00 and 12:00** daily, with an absolute peak converting hour at **10:00 AM**.
+
+**Evening Dormancy:** Order volumes drop off a cliff after **18:00** and remain effectively dormant overnight, proving this is a reliable daily morning behavior rather than an evening or weekend-driven activity.
+
+#### Purchase Frequency Analysis
+
+![Distribution of Purchase Frequency](/sales/image_011.png)
+
+![When Do Repeat Customers Return?](/sales/image_006.png)
+
+| Customer Category | Avg Days Between Orders | Median Days | Total Customers |
+| :---------------- | :---------------------: | :---------: | :-------------: |
+| **Recurrent**     |          39.2           |    21.0     |     38,796      |
+| **Loyal**         |           3.8           |     1.0     |    2,061,729    |
+
+A substantial portion of users still **drop off after their first purchase**, with **44.8%** one-time buyers. The transition from the first to the second order represents the sharpest decline in the customer lifecycle, with retention falling by more than half to around ~21%, making this the most critical window for onboarding and early retention interventions.
+
+A large share of the customer base demonstrates strong **retention**, with **55.2%** of users returning for repeat purchases instead of dropping off after a single transaction.
+
+Repeat purchasing behavior is highly compressed in time, as 74.8% of **repeat buyers make their second purchase within the same month** (median: 0 months). This pattern is reinforced by an extremely short purchase cycle among most users, with many transacting again within **~1 day**, while a smaller segment follows a longer cycle of around **~21 days**.
+
+#### Basket Analysis
+
+### Basket Analysis: Segments and Timing
+
+|    Basket Analysis - Segment Overview     |           Avg Basket Value Heatmap            |
+| :---------------------------------------: | :-------------------------------------------: |
+| ![Segment Overview](/sales/image_009.png) | ![Basket Value Heatmap](/sales/image_010.png) |
+
+**Key Basket Dynamics:**
+
+The platform’s financial stability is **largely driven by** the core **“average” basket segment**, which accounts for 91.2% of all orders and **83.6%** of total revenue, with a consistent AOV of around $220.
+
+A smaller segment of **large baskets** presents a disproportionate revenue opportunity, contributing **15.7% of total revenue** despite representing only **5.5% of orders**, supported by a significantly higher AOV of approximately $681.
+
+Basket value also varies systematically across time, revealing an **inverse relationship between transaction volume and cart size**. **High-traffic morning periods** (06:00–12:00) tend to generate **lower-value purchases**, often falling below \$200, while **lower-volume evening and late-night periods** (18:00–00:00) consistently attract **higher-spending** customers, with average basket values rising to $350–$400, particularly on Friday evenings and late Sunday nights.
+
+### Recommendations
+
+#### Products and Categories
+
+Electronics dominate revenue (**43.7%, $147.3M**), while Appliances lead in volume (~480k orders) but underperform in value.
+
+**Actions:**
+
+- Scale Electronics visibility for revenue stability
+- Increase Appliance AOV via bundling, pricing, and cross-selling
+- Expand into higher-AOV categories to reduce concentration risk
+
+#### Purchase Time
+
+Revenue drops sharply in Q4 (**\$49M → $12M**), while demand concentrates in mornings (peak ~10:00 AM) and higher-value purchases occur in evenings.
+
+**Actions:**
+
+- Strengthen Q4 inventory and campaign planning
+- Allocate marketing: mornings for volume, evenings for high-value conversion
+- Align staffing and operations with peak demand hours
+
+#### Purchase Frequency
+
+Fast repeat behavior (within **1–2 days**) contrasts with high one-time buyer share (**44.8%**), indicating a major drop-off after first purchase.
+
+**Actions:**
+
+- Trigger post-purchase campaigns within 24–48 hours
+- Introduce second-purchase incentives to reduce early churn
+- Develop loyalty or retention programs for repeat users
+
+#### Order Basket
+
+Large baskets drive disproportionate revenue (**15.7% from 5.5% of orders**), with higher spending concentrated in evening hours (**\$350–$400**).
+
+**Actions:**
+
+- Upsell to convert average baskets into larger transactions
+- Launch premium campaigns during evening high-value periods
+- Implement time-based promotions aligned with spending behavior
+
+### Dashboard
+
+![Dashboard Image](/sales/Dashboard-1.png)
+[Electronic Store eCommerce Tableu Public Dashboard Link](https://public.tableau.com/views/ElectronicStoreeCommerceDashboard/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+17:T27f0,## Accommodation Customer Preference & Revisit Intention Analysis
+
+This report analyzes user-generated content and transaction attributes from digital accommodation platforms (Agoda and Airbnb) across eight major Indonesian cities. The dataset spans an operational window from 2017 to 2025.
+
+Data gathered from respective platform APIs with over 200,000 unique customer reviews. Using a fine-tuned ModernBERT model for labeling and a Structural Topic Model (STM) paired with SHAP (Explainable AI), the unstructured text was transformed into an actionable, quantitative dataset.
+
+**Purpose:**
+This report aims to analyze customer preferences and predict revisit intention across different travel segments (Business vs. Leisure) and accommodation types (Hotel vs. Peer-to-Peer/Airbnb). By translating historical review data and topic modeling into actionable insights, the goal is to enable industry stakeholders to make data-driven decisions on service improvements, marketing strategies, and operational focus.
+
+### Northstar Metrics:
+
+1. **Factors Influencing Revisit Intention** – Analysis of the topics and service attributes associated with guests' likelihood of returning.
+
+2. **Traveler Segment Differences** – Comparison of review patterns and priorities between business and leisure travelers.
+
+3. **Accommodation Type Comparison** – Evaluation of how guest expectations and satisfaction drivers differ between hotels and peer-to-peer accommodations.
+
+### Executive Summary:
+
+Over the 2017–2025 period, the analysis revealed that accommodation success is heavily dictated by non-negotiable hygienic factors and highly segmented customer expectations. **Room Cleanliness & Odor** emerged as the absolute universal driver of negative revisit intention across all segments. Conversely, positive drivers are highly contextual: **Business travelers** prioritize operational efficiency: Strategic Location, Transit Proximity, Check-in Process, while **Leisure travelers** prioritize experiential value: Nature & Tranquil Environment, Recreational Facilities. Furthermore, the operational baseline differs drastically by accommodation type; Hotel loyalty is driven by **Staff Professionalism**, while P2P loyalty is disproportionately reliant on **Host Responsiveness** and the **Check-in/Reservation Process**.
+
+**Key Takeaways:**
+
+**Cleanliness remains the most critical factor influencing guest retention**. Reviews mentioning cleanliness issues or unpleasant odors show a strong association with lower revisit intention, suggesting that deficiencies in this area can outweigh strengths in location, pricing, or other service attributes.
+
+**Guest priorities differ substantially across traveler segments**. Business travelers place greater emphasis on convenience and operational efficiency, while leisure travelers are more influenced by the overall experience and atmosphere. These differences indicate that a single service strategy may not effectively address the needs of all customer groups.
+
+### Data
+
+The analysis is built on a highly structured dataset generated from over 200,000 English-language reviews, enriched with predictive labels and topic proportions.
+
+| Column Name      | Type       | Description                                                    |
+| ---------------- | ---------- | -------------------------------------------------------------- |
+| `id`             | `string`   | Unique identifier for each review.                             |
+| `date`           | `datetime` | Timestamp of the review publication.                           |
+| `comment`        | `string`   | The original unstructured text review from the customer.       |
+| `rating`         | `float`    | Customer's overall rating score for the property.              |
+| `location`       | `string`   | The city where the property is located.                        |
+| `travel_purpose` | `string`   | Purpose or travel (Leisure / Business)                         |
+| `price`          | `float`    | Price per night or per stay.                                   |
+| `roomType/Star`  | `string`   | Property classification (Hotel Stars or P2P Entire / Private). |
+| `revisit_label`  | `string`   | Revisit / Non-revisit label using ModernBERT.                  |
+
+---
+
+### Insights Deep-Dive
+
+#### Global Topic Prevelance and Importance
+
+| Global Topic Proportions                                | Global Topic Importance                                      |
+| ------------------------------------------------------- | ------------------------------------------------------------ |
+| ![Global Topic Proportions](/acc/global-topic-prop.png) | ![Global Topic Importance](/acc/global-topic-importance.png) |
+
+Room cleanliness and odor emerge as the most critical negative driver of revisit intention. Reviews with a high concentration of cleanliness-related complaints almost consistently indicate that guests are unlikely to return.
+
+Value for money, service quality, and access to nearby stores and walkable amenities appear less frequently in reviews, but when mentioned, they have a disproportionately strong positive effect on loyalty. These factors serve as key differentiators that transform satisfaction into repeat patronage.
+
+The contrast between prevalence and importance highlights an important insight: frequently discussed topics are not necessarily the most influential. Some operational basics must simply meet expectations, while select experience-enhancing factors drive long-term customer retention.
+
+#### Segment Analysis: Business vs. Leisure
+
+![Topic Importance Rank Business vs Leisure](/acc/rank-bvl.png)
+Topic Importance Rank Business vs Leisure
+
+Business travelers prioritize efficiency and convenience throughout their stay. Strategic location, airport and transit accessibility, and a seamless check-in process become significantly more influential for this segment.
+
+Leisure travelers place greater value on the overall experience rather than operational efficiency alone. Natural surroundings, a tranquil atmosphere, and recreational facilities show a marked increase in importance among guests traveling for leisure.
+
+These differences suggest that guest expectations vary considerably by travel purpose, requiring distinct service and marketing strategies for each segment.
+
+#### Accommodation Dynamics: Hotel vs. Peer-to-Peer (P2P)
+
+![Topic Importance Rank Accomodation Type](/acc/rank-acct.png)
+
+Traditional hotel guests place greater emphasis on hospitality, staff professionalism, and service quality. Human interaction remains a defining component of the hotel experience and a major contributor to guest loyalty.
+
+In peer-to-peer accommodations, host responsiveness and the effectiveness of the check-in process become substantially more important. Without a dedicated front desk, communication quality directly shapes the guest experience.
+
+P2P properties display greater variability in review outcomes, indicating higher operational risk but also greater potential rewards for hosts who consistently deliver exceptional service.
+
+#### Price Sensitivity and Temporal Trends
+
+| Global Topic Proportions                        | Global Topic Importance     |
+| ----------------------------------------------- | --------------------------- |
+| ![TPrice Sensivity Across](/acc/price=sens.png) | ![Alt](/acc/pricesens2.png) |
+
+As accommodation prices increase, complaints regarding broken amenities and accessibility issues become less common. Higher-priced properties generally perform better on these operational fundamentals.
+
+Noise and sound disturbances remain a persistent source of dissatisfaction across all price tiers. Unlike many service-related issues, noise appears to be a challenge that properties struggle to fully mitigate regardless of price positioning.
+
+![Topic Importance Rank Accomodation Type](/acc/time.png)
+
+During 2020–2021, the importance of check-in procedures and food & beverage services increased sharply as guests adapted to pandemic-related restrictions and contactless interactions.
+
+By 2025, most guest priorities had returned to pre-pandemic patterns. However, the importance of exceeding expectations has declined, suggesting that travelers now place greater value on reliable execution of core services than on unexpected extras.
+
+### Recommendations
+
+#### Quality Control & Core Operations
+
+"Room Cleanliness & Odor" is the primary destroyer of repeat revenue across all property types and prices.
+**Actions:**
+
+- Implement stricter housekeeping audits and quality assurance procedures to ensure consistent room standards before guest arrival.
+- Make sure to do odor-neutralization and humidity control, as musty smells are repeatedly cited as dealbreakers.
+- Address soundproofing or provide earplugs proactively, as noise complaints persist even in high-end accomodation type tiers.
+
+#### Segment-Specific Marketing & Service
+
+Business and Leisure travelers require completely different operational focuses to trigger repeat bookings.
+**Actions:**
+
+- **Business:** Streamline the check-in process (e.g., mobile check-in) and highlight transit/corporate hub proximity in marketing materials.
+- **Leisure:** Showcase aesthetic spaces, recreational add-ons, and local walkability. Bundle services that enhance the "tranquil" or "family" experience.
+
+#### Hotel vs. P2P Strategies
+
+The baseline expectations differ fundamentally between formal and informal accommodations.
+**Actions:**
+
+- **Hotel Management:** Invest heavily in staff training. The professionalism and courtesy of the front-line staff act as the primary differentiator for hotel loyalty.
+- **P2P Hosts:** Automate and clarify the check-in process with foolproof visual guides. Establish strict SLAs for messaging response times, as communication gaps are the biggest driver of P2P churn.
+
+#### Pricing and Value Perception
+
+Value for money remains a top positive driver, particularly for business segments constrained by corporate budgets.
+**Actions:**
+
+- Justify high price tiers not just with aesthetics, but with flawless functionality (zero broken amenities).
+- Revamp Food & Beverage offerings, as this topic has shown a structural increase in importance post-pandemic.
+18:T11b34,# Global Trade War: Multi-Asset Macroeconomic & Financial Impact Analysis (2018–2026)
+
+## 1. Table of Contents
+
+1. Table of Contents
+2. Environment Setup & Configuration
+3. Data Understanding, Loading & Sanity Checks
+4. EDA
+5. Equity Market Event Study (Tariff Shocks)
+6. Currency & FX Volatility Analysis
+7. Sector-Level Impact
+8. Trade Volume Dynamics
+9. Macroeconomic Response Modeling (Inflation & Unemployment)
+10. Feature Importance
+11. Anomaly Detection
+12. Tariff Cluster Analysis
+13. Key Findings
+14. Strategic Recommendations
+15. Risks and Limitations
+
+**Data Source**: Global Trade War 2018–Present Dataset (CC0 License)
+**Last Updated**: Daily tracking through April 2026
+
+![image.png](./trade-war/image.png)
+
+## 2. Environment Setup & Configuration
+
+<details>
+<summary>Code for Cell 3</summary>
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import warnings
+from datetime import datetime, timedelta
+
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
+from statsmodels.tsa.api import VAR
+from statsmodels.tsa.stattools import adfuller
+from scipy.stats import ttest_ind
+
+try:
+    from arch import arch_model
+except ImportError:
+    warnings.warn("The 'arch' library is not installed. GARCH modeling will require this package.")
+
+warnings.filterwarnings('ignore', category=FutureWarning)
+
+plt.style.use('fivethirtyeight')
+sns.set_context("paper", font_scale=1.2)
+CORP_PALETTE = ['#002E5D', '#A2142F', '#F3A536', '#007A78', '#6A737B']
+sns.set_palette(CORP_PALETTE)
+
+plt.rcParams.update({
+    'figure.figsize': (14, 7),
+    'figure.dpi': 300,
+    'axes.titleweight': 'bold',
+    'axes.titlesize': 16,
+    'axes.labelweight': 'bold',
+    'axes.labelsize': 12,
+    'grid.alpha': 0.6,
+    'axes.edgecolor': '#333333',
+    'axes.linewidth': 1.2
+})
+```
+
+</details>
+
+## 3. Data Understanding, Loading & Sanity Checks
+
+<details>
+<summary>Code for Cell 5</summary>
+
+```python
+class TradeWarDataLoader:
+    """
+    A robust, scalable data ingestion pipeline for macroeconomic and financial datasets.
+    Handles timezone normalization, missing value imputation, and memory optimization.
+    """
+    def __init__(self, data_dir='data/'):
+        self.data_dir = data_dir
+        self.data = {}
+
+        self.file_map = {
+            'tariff_timeline': 'tariff_timeline.csv',
+            'stock_market': 'stock_market_reaction.csv',
+            'currency': 'currency_impact.csv',
+            'sector': 'sector_impact.csv',
+            'inflation': 'inflation_response.csv',
+            'trade_volume': 'trade_volume_annual.csv'
+        }
+
+    def ingest_and_clean(self):
+        """Loads CSVs, parses dates, and enforces data types."""
+        print("🔄 Initiating Data Ingestion Pipeline...")
+
+        for name, filename in self.file_map.items():
+            try:
+                filepath = f"{self.data_dir}{filename}"
+                df = pd.read_csv(filepath)
+
+                if 'date' in df.columns:
+                    df['date'] = pd.to_datetime(df['date'], errors='coerce')
+                    df = df.sort_values('date').reset_index(drop=True)
+
+                self.data[name] = df
+
+            except FileNotFoundError:
+                print(f"⚠️ Warning: {filename} not found in {self.data_dir}.")
+            except Exception as e:
+                print(f"⚠️ Error loading {filename}: {str(e)}")
+
+        print("✅ Data Ingestion Complete.")
+
+    def get_portfolio_summary(self):
+        """Generates an executive summary of the loaded data architecture."""
+        print("📊 DATA ARCHITECTURE SUMMARY")
+        print("="*60)
+
+        summary_data = []
+        for name, df in self.data.items():
+            date_range = "N/A"
+            if 'date' in df.columns and not df['date'].empty:
+                start_dt = df['date'].min().strftime('%Y-%m-%d')
+                end_dt = df['date'].max().strftime('%Y-%m-%d')
+                date_range = f"{start_dt} to {end_dt}"
+
+            summary_data.append({
+                'Dataset': name.replace('_', ' ').title(),
+                'Records': f"{len(df):,}",
+                'Features': len(df.columns),
+                'Date Coverage': date_range
+            })
+
+        summary_df = pd.DataFrame(summary_data)
+        print(summary_df.to_string(index=False, justify='left'))
+
+    def get_dataset(self, name):
+        """Safe getter for datasets."""
+        return self.data.get(name, pd.DataFrame())
+```
+
+</details>
+
+<details>
+<summary>Code for Cell 6</summary>
+
+```python
+pipeline = TradeWarDataLoader(data_dir='data/')
+pipeline.ingest_and_clean()
+pipeline.get_portfolio_summary()
+df_tariffs = pipeline.get_dataset('tariff_timeline')
+df_stocks = pipeline.get_dataset('stock_market')
+df_fx = pipeline.get_dataset('currency')
+df_sectors = pipeline.get_dataset('sector')
+df_macro = pipeline.get_dataset('inflation')
+df_trade = pipeline.get_dataset('trade_volume')
+```
+
+</details>
+
+🔄 Initiating Data Ingestion Pipeline...
+✅ Data Ingestion Complete.
+📊 DATA ARCHITECTURE SUMMARY
+============================================================
+Dataset Records Features Date Coverage  
+Tariff Timeline 45 16 2018-03-08 to 2026-04-13
+Stock Market 34,475 16 2018-01-01 to 2026-04-28
+Currency 32,488 10 2018-01-01 to 2026-04-28
+Sector 33,456 15 2018-01-02 to 2026-04-28
+Inflation 1,882 11 2015-01-01 to 2026-03-01
+Trade Volume 1,465 9 N/A
+
+#### Data Integrity Audit & Trading Day Alignment
+
+1. **Missing Value Diagnostics:** Flags features exceeding a 5% missing threshold, signaling the need for statistically sound imputation.
+2. **Infinite Value Sanitization:** Identifies and neutralizes infinite values (`inf` or `-inf`) typically generated by division-by-zero errors.
+3. **Trading Day Synchronization:** Actively filters out weekend data leakage in the Equities and FX datasets to maintain a continuous, aligned trading calendar.
+4. **Isolating Major Tariff Shocks**—defined as a sudden tariff rate increase of 10% or greater. Isolating these exact timestamps is a prerequisite for establishing the T=0 benchmark required in the Cumulative Average Abnormal Return (CAAR) Event Studies.
+
+<details>
+<summary>Code for Cell 8</summary>
+
+```python
+def perform_audit(df_dict):
+    """
+    Audits financial datasets for missing trading days, NaN values,
+    and extreme outliers that could break GARCH/VAR models.
+    """
+    for name, df in df_dict.items():
+        if df.empty:
+            continue
+
+        missing_pct = df.isnull().mean().max() * 100
+        if missing_pct > 5:
+            print(f"  [!] {name}: High missing data detected (Max {missing_pct:.1f}% in a single column). Imputation required.")
+
+        num_cols = df.select_dtypes(include=[np.number]).columns
+        if np.isinf(df[num_cols]).values.any():
+            print(f"  [!] {name}: Infinite values detected. Models will crash. Fixing...")
+            df.replace([np.inf, -np.inf], np.nan, inplace=True)
+
+        if name in ['stock_market', 'currency'] and 'date' in df.columns:
+            initial_len = len(df)
+            df = df[df['date'].dt.dayofweek < 5]
+            dropped = initial_len - len(df)
+            if dropped > 0:
+                print(f"  [*] {name}: Removed {dropped} weekend observations to align trading days.")
+
+perform_audit({
+    'Equities': df_stocks,
+    'FX': df_fx,
+    'Macro': df_macro,
+    'Tariffs': df_tariffs
+})
+
+if not df_tariffs.empty:
+    major_shocks = df_tariffs[df_tariffs['tariff_rate_delta'] >= 10.0].copy()
+    event_dates = major_shocks['date'].sort_values().unique()
+    print(f"📌 Flagged {len(event_dates)} unique Major Tariff Shock dates for the Event Study.")
+```
+
+</details>
+
+[!] Macro: High missing data detected (Max 8.9% in a single column). Imputation required.
+[!] Tariffs: High missing data detected (Max 6.7% in a single column). Imputation required.
+📌 Flagged 31 unique Major Tariff Shock dates for the Event Study.
+
+## 4. EDA
+
+<details>
+<summary>Code for Cell 10</summary>
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import textwrap
+
+df_tariffs = pd.read_csv('data/tariff_timeline.csv')
+
+sns.set_theme(style="whitegrid", context="talk")
+
+fig, axes = plt.subplots(3, 2, figsize=(18, 22))
+fig.suptitle('Global Tariff Policy: Exploratory Data Analysis', fontsize=26, fontweight='bold', y=1.02)
+
+# Chart 1: Top Imposing Countries
+top_imposers = df_tariffs['imposing_country'].value_counts().head(10)
+sns.barplot(x=top_imposers.values, y=top_imposers.index, ax=axes[0, 0], palette="viridis")
+
+axes[0, 0].set_title('Top 10 Tariff-Imposing Countries', fontsize=18, fontweight='bold')
+axes[0, 0].set_xlabel('Number of Trade Actions')
+axes[0, 0].set_ylabel('')
+
+# Chart 2: Type of Trade Actions
+action_types = df_tariffs['type'].value_counts()
+colors = sns.color_palette("magma", len(action_types))
+
+axes[0, 1].pie(action_types.values, labels=action_types.index, autopct='%1.1f%%',
+               startangle=140, colors=colors, textprops={'fontsize': 12})
+axes[0, 1].set_title('Distribution of Trade Action Types', fontsize=18, fontweight='bold')
+
+# Chart 3: Tariff Rate Distribution
+sns.histplot(df_tariffs['tariff_rate_pct'].dropna(), bins=30, kde=True, ax=axes[1, 0], color='coral')
+
+axes[1, 0].set_title('Distribution of Tariff Rates (%)', fontsize=18, fontweight='bold')
+axes[1, 0].set_xlabel('Tariff Rate (%)')
+axes[1, 0].set_ylabel('Frequency')
+
+# Chart 4: Top 6 Targeted Sectors
+def wrap_labels(labels, width=30):
+    return [textwrap.fill(str(label), width=width) for label in labels]
+
+top_sectors = df_tariffs['sector'].value_counts().head(6)
+wrapped_labels_4 = wrap_labels(top_sectors.index)
+
+sns.barplot(x=top_sectors.values, y=wrapped_labels_4, ax=axes[1, 1], palette="crest")
+
+axes[1, 1].set_title('Top 6 Most Targeted Sectors', fontsize=18, fontweight='bold')
+axes[1, 1].set_xlabel('Number of Trade Actions')
+axes[1, 1].set_ylabel('')
+axes[1, 1].tick_params(axis='y', labelsize=11)
+
+# Chart 5: Retaliation vs Escalation by Country
+df_esc_ret = df_tariffs[df_tariffs['type'].isin(['New Tariff', 'Retaliation'])].copy()
+
+top_6_imposers = df_esc_ret['imposing_country'].value_counts().head(6).index
+df_top_imposers = df_esc_ret[df_esc_ret['imposing_country'].isin(top_6_imposers)]
+
+sns.countplot(data=df_top_imposers, x='type', hue='imposing_country', ax=axes[2, 0], palette='Set2')
+
+axes[2, 0].set_title('New Tariff vs. Escalation by Top Countries', fontsize=18, fontweight='bold')
+axes[2, 0].set_xlabel('')
+axes[2, 0].set_ylabel('Number of Actions')
+axes[2, 0].legend(title='Country', loc='upper right', fontsize=11, title_fontsize=12)
+
+# Chart 6: Tariff Rate by Sector (Boxplot)
+df_top_sectors = df_tariffs[df_tariffs['sector'].isin(top_sectors.index)].copy()
+
+df_top_sectors['sector_wrapped'] = df_top_sectors['sector'].apply(lambda x: textwrap.fill(str(x), width=30))
+
+sns.boxplot(data=df_top_sectors, x='tariff_rate_pct', y='sector_wrapped', ax=axes[2, 1], palette='pastel')
+
+axes[2, 1].set_title('Tariff Rate Distributions by Top Sectors', fontsize=18, fontweight='bold')
+axes[2, 1].set_xlabel('Tariff Rate (%)')
+axes[2, 1].set_ylabel('')
+axes[2, 1].tick_params(axis='y', labelsize=11)
+
+plt.tight_layout()
+plt.show()
+```
+
+</details>
+
+![Embedded Image 1](trade-war/image_001.png)
+
+1. The United States stands out as the dominant force driving global trade tensions, initiating more than twice the number of trade actions compared to its closest counterpart, China.
+2. Trade dynamics reveal a clear asymmetry in geopolitical behavior. The United States primarily introduces new tariffs, while major partners such as China and the European Union respond in a reactive, retaliatory manner rather than initiating actions independently.
+3. Global trade policy reflects a highly confrontational environment, with more than 86% of all recorded measures falling into hostile categories, including new tariffs, retaliatory actions, and escalations.
+4. Tariff severity follows a heavily right-skewed distribution, with a strong concentration around the 25% level. This rate effectively functions as a benchmark for trade conflict measures.
+5. Policymakers frequently rely on broad “All Goods” classifications, applying sweeping tariffs that create widespread disruption across supply chains rather than targeting narrowly defined industries.
+6. Despite the prevalence of broad-based tariffs, the most aggressive penalties are directed at strategic, high-growth sectors. Electric vehicles face the highest median tariff levels, approaching 70%, signaling a focused effort to protect critical technological industries.
+
+## 5. Equity Market Event Study
+
+<details>
+<summary>Code for Cell 13</summary>
+
+```python
+def calculate_caar(df_stocks, index_name, event_dates, est_window=90, evt_window=5):
+    """
+    Calculates Cumulative Average Abnormal Returns (CAAR) for a given index.
+    Uses a Mean-Adjusted Return model based on the estimation window.
+    """
+    df_idx = df_stocks[df_stocks['index_name'] == index_name].copy()
+    df_idx = df_idx.set_index('date').sort_index()
+    df_idx['daily_return_pct'] = df_idx['daily_return_pct'].fillna(0)
+
+    event_cars = []
+
+    for event_date in event_dates:
+        event_date = pd.to_datetime(event_date)
+
+        # Safely get integer locations for modern Pandas versions
+        try:
+            event_loc = df_idx.index.get_indexer([event_date], method='nearest')[0]
+            if event_loc == -1:
+                continue
+        except KeyError:
+            continue
+
+        est_start = max(0, event_loc - evt_window - est_window)
+        est_end = max(0, event_loc - evt_window)
+
+        evt_start = max(0, event_loc - evt_window)
+        evt_end = min(len(df_idx) - 1, event_loc + evt_window)
+
+        # Estimation window to calculate baseline expected return
+        estimation_data = df_idx.iloc[est_start:est_end]
+        if len(estimation_data) < (est_window // 2):
+            continue
+
+        expected_return = estimation_data['daily_return_pct'].mean()
+
+        # Event window calculations
+        event_data = df_idx.iloc[evt_start:evt_end + 1].copy()
+        if len(event_data) != (2 * evt_window + 1):
+            continue
+
+        event_data['abnormal_return'] = event_data['daily_return_pct'] - expected_return
+        event_data['CAR'] = event_data['abnormal_return'].cumsum()
+        event_data['event_day'] = range(-evt_window, evt_window + 1)
+
+        event_cars.append(event_data.set_index('event_day')['CAR'])
+
+    if not event_cars:
+        return None
+
+    # Aggregate to CAAR
+    car_df = pd.concat(event_cars, axis=1)
+    caar = pd.DataFrame({
+        'CAAR': car_df.mean(axis=1),
+        'STD': car_df.std(axis=1),
+        'N': car_df.count(axis=1)
+    })
+
+    # 95% Confidence Interval
+    t_crit = 1.96
+    caar['CI_upper'] = caar['CAAR'] + (t_crit * (caar['STD'] / np.sqrt(caar['N'])))
+    caar['CI_lower'] = caar['CAAR'] - (t_crit * (caar['STD'] / np.sqrt(caar['N'])))
+
+    return caar
+
+# Execute CAAR calculation for S&P 500
+caar_sp500 = calculate_caar(df_stocks, 'S&P 500 (USA)', event_dates, est_window=90, evt_window=5)
+
+# Plotting the Event Study
+if caar_sp500 is not None:
+    fig, ax = plt.subplots()
+    ax.plot(caar_sp500.index, caar_sp500['CAAR'], color='#002E5D', lw=2.5, label='CAAR')
+    ax.fill_between(caar_sp500.index, caar_sp500['CI_lower'], caar_sp500['CI_upper'],
+                    color='#6A737B', alpha=0.3, label='95% Confidence Interval')
+
+    ax.axvline(0, color='#A2142F', linestyle='--', lw=2, label='Tariff Announcement (t=0)')
+    ax.axhline(0, color='black', lw=1)
+
+    ax.set_title("S&P 500 Cumulative Average Abnormal Returns (CAAR)\nAround Major Tariff Announcements")
+    ax.set_xlabel("Trading Days Relative to Announcement")
+    ax.set_ylabel("Cumulative Abnormal Return (%)")
+    ax.legend(loc='upper left')
+    plt.tight_layout()
+    plt.show()
+```
+
+</details>
+
+![Embedded Image 2](trade-war/image_002.png)
+
+To evaluate the immediate equity market pricing of tariff implementations, a Cumulative Average Abnormal Return (CAAR) methodology is utilized. CAAR aggregates the daily impact of a specific event on asset prices by extracting expected benchmark returns, thereby isolating the abnormal pricing reaction directly attributable to the catalyst.
+
+The wide 95% confidence band completely encompassing the zero line throughout the entire event window from the chart indicates that major tariff announcements do not produce a statistically significant directional shock to the aggregate S&P 500.
+
+Key Findings:
+
+1. Markets don’t really react sharply to tariff announcements at the index level. Big indices like the S&P 500 tend to absorb or already price in the news, so you don’t see a clear jump or drop in the few days around the event.
+2. What does change is the level of uncertainty. After tariffs are announced, market movements become more spread out, suggesting increased volatility as money shifts between sectors that are hurt and those that benefit.
+
+## 6. FX Volatility Dynamics
+
+<details>
+<summary>Code for Cell 16</summary>
+
+```python
+df_cny = df_fx[df_fx['currency'] == 'CNY'].copy()
+df_cny['date'] = pd.to_datetime(df_cny['date'])
+df_cny = df_cny.set_index('date').sort_index()
+
+fig, ax = plt.subplots()
+ax.plot(df_cny.index, df_cny['rate_vs_usd'], color='#002E5D', lw=2, label='USD/CNY Exchange Rate')
+
+us_chn_events = df_tariffs[(df_tariffs['imposing_country'] == 'USA') &
+                           (df_tariffs['target_country'] == 'CHN')].copy()
+
+for _, row in us_chn_events.iterrows():
+    if row['date'] in df_cny.index:
+        ax.axvline(row['date'], color='#A2142F', alpha=0.5, linestyle='--', lw=1)
+
+ax.set_title("USD/CNY Exchange Rate vs. US Tariff Announcements\n(Upward Trend = CNY Depreciation)")
+ax.set_ylabel("USD / CNY Rate")
+ax.legend(loc='upper left')
+plt.tight_layout()
+plt.show()
+
+depreciation_results = []
+for _, row in us_chn_events.iterrows():
+    event_date = pd.to_datetime(row['date'])
+    try:
+        rate_t0 = df_cny.loc[df_cny.index.asof(event_date)]['rate_vs_usd']
+        rate_t30 = df_cny.loc[df_cny.index.asof(event_date + timedelta(days=30))]['rate_vs_usd']
+
+        depreciated = "Yes ✅" if rate_t30 > rate_t0 else "No ❌"
+        pct_change = ((rate_t30 - rate_t0) / rate_t0) * 100
+
+        depreciation_results.append({
+            'Tariff Date': event_date.strftime('%Y-%m-%d'),
+            'Tariff Rate (%)': row['tariff_rate_pct'],
+            'Sector Target': row['sector'],
+            'CNY Depreciated (30d)?': depreciated,
+            '30d FX Change (%)': f"{pct_change:.2f}%"
+        })
+    except:
+        continue
+
+df_depreciation = pd.DataFrame(depreciation_results)
+print("\n" + "="*70)
+print("CNY DEPRECIATION MATRIX (30-Days Post US Tariff)")
+print("="*70)
+print(df_depreciation.to_string(index=False))
+print("="*70 + "\n")
+```
+
+</details>
+
+![Embedded Image 3](trade-war/image_003.png)
+
+======================================================================
+CNY DEPRECIATION MATRIX (30-Days Post US Tariff)
+======================================================================
+Tariff Date Tariff Rate (%) Sector Target CNY Depreciated (30d)? 30d FX Change (%)
+2018-07-06 25.0 Tech, Industrial, Aerospace Yes ✅ 2.95%
+2018-08-23 25.0 Semiconductors, Chemicals, Rail Yes ✅ 0.04%
+2018-09-24 10.0 Consumer Goods, Furniture, Electronics Yes ✅ 1.18%
+2019-05-10 25.0 Consumer Goods, Furniture, Electronics Yes ✅ 1.21%
+2019-09-01 15.0 Consumer Electronics, Apparel, Footwear Yes ✅ 0.05%
+2020-01-15 7.5 Consumer Goods, Phase 1 Rollback Yes ✅ 1.10%
+2022-10-07 25.0 Semiconductors, AI Chips Yes ✅ 2.61%
+2024-05-14 100.0 EVs Yes ✅ 0.08%
+2024-05-14 25.0 Steel, Aluminum Yes ✅ 0.08%
+2024-05-14 50.0 Semiconductors Yes ✅ 0.08%
+2025-01-20 10.0 All Goods No ❌ -0.62%
+2025-03-04 20.0 All Goods No ❌ -0.23%
+2025-04-09 145.0 All Goods No ❌ -1.55%
+======================================================================
+
+<details>
+<summary>Code for Cell 17</summary>
+
+```python
+# Isolate CNY Currency Data
+df_cny = df_fx[df_fx['currency'] == 'CNY'].copy()
+df_cny = df_cny.set_index('date').sort_index()
+
+# Calculate log returns for GARCH stability
+df_cny['log_return'] = np.log(df_cny['rate_vs_usd'] / df_cny['rate_vs_usd'].shift(1)) * 100
+df_cny = df_cny.dropna(subset=['log_return'])
+
+# Fit GARCH(1,1) Model
+try:
+    # Scale returns by 10 (common practice for optimizer convergence in ARCH models)
+    cny_returns = df_cny['log_return'] * 10
+
+    garch = arch_model(cny_returns, vol='Garch', p=1, q=1, mean='Zero')
+    garch_fitted = garch.fit(disp='off')
+
+    # Extract annualized conditional volatility
+    # Unscale by dividing by 10, then annualize (sqrt of 252 trading days)
+    df_cny['cond_vol_annualized'] = (garch_fitted.conditional_volatility / 10) * np.sqrt(252)
+
+    print(garch_fitted.summary())
+
+    # Plotting Conditional Volatility
+    fig, ax = plt.subplots()
+    ax.plot(df_cny.index, df_cny['cond_vol_annualized'], color='#F3A536', lw=1.5, label='GARCH(1,1) Conditional Volatility')
+
+    # Overlay Tariff Shock Events
+    added_label = False
+    for event_date in event_dates:
+        if event_date in df_cny.index or pd.to_datetime(event_date) > df_cny.index.min():
+            label = 'Major Tariff Shock' if not added_label else ""
+            ax.axvline(pd.to_datetime(event_date), color='#A2142F', alpha=0.4, linestyle='--', lw=1.5, label=label)
+            added_label = True
+
+    ax.set_title("USD/CNY Exchange Rate Volatility Dynamics\nVariance Clustering Around Trade War Escalations")
+    ax.set_ylabel("Annualized Conditional Volatility")
+    ax.legend(loc='upper left')
+    plt.tight_layout()
+    plt.show()
+
+except NameError:
+    print("Skipping GARCH estimation: 'arch' library not imported.")
+except Exception as e:
+    print(f"GARCH Model fitting failed: {str(e)}")
+```
+
+</details>
+
+Zero Mean - GARCH Model Results
+
+==============================================================================
+Dep. Variable: log_return R-squared: 0.000
+Mean Model: Zero Mean Adj. R-squared: 0.000
+Vol Model: GARCH Log-Likelihood: -5234.97
+Distribution: Normal AIC: 10475.9
+Method: Maximum Likelihood BIC: 10493.0
+No. Observations: 2164
+Date: Sat, May 02 2026 Df Residuals: 2164
+Time: 20:43:44 Df Model: 0
+Volatility Model  
+==========================================================================
+coef std err t P>|t| 95.0% Conf. Int.
+
+---
+
+omega 0.1781 7.543e-02 2.361 1.824e-02 [3.022e-02, 0.326]
+alpha[1] 0.0927 2.429e-02 3.816 1.358e-04 [4.508e-02, 0.140]
+beta[1] 0.8929 2.637e-02 33.867 2.067e-251 [ 0.841, 0.945]
+==========================================================================
+
+Covariance estimator: robust
+![Embedded Image 4](trade-war/image_004.png)
+
+##### **What is GARCH?**
+
+To quantify the transmission of trade policy uncertainty into foreign exchange markets, a Generalized Autoregressive Conditional Heteroskedasticity (GARCH) model is applied to the USD/CNY exchange rate returns. GARCH models time-varying volatility, specifically capturing the phenomenon of "variance clustering"—where large price fluctuations are followed by large fluctuations, and small by small. By estimating conditional variance, this methodology identifies how long a shock to the currency market persists before reverting to the mean.
+
+##### **Analysis**
+
+The model yields a highly significant $\beta$ coefficient of 0.8929 and an $\alpha$ coefficient of 0.0927. The sum of these parameters ($\alpha + \beta \approx 0.985$) approaches unity, indicating extreme volatility persistence. A tariff-induced shock to the USD/CNY exchange rate does not dissipate quickly; rather, it fundamentally alters the risk regime for an extended duration. This is visually confirmed by the sustained volatility clusters aligning directly with major tariff announcements across the historical timeline.
+
+Furthermore, the post-tariff depreciation matrix and the primary exchange rate trajectory reveal a distinct structural break in currency market behavior. During the initial phases of the trade war (2018–2024), targeted tariffs consistently triggered CNY depreciation (ranging from 0.04% to 2.95% over 30 days), acting as a natural pricing shock absorber for exporters. However, the implementation of broad "All Goods" tariffs beginning in early 2025 marks a definitive regime shift, paradoxically resulting in immediate CNY appreciation (-0.23% to -1.55%) following the announcements.
+
+#### **Section Summary**
+
+1.  **High Volatility Persistence:** GARCH(1,1) estimations confirm that trade-induced FX volatility is highly persistent. Sudden geopolitical escalations create prolonged periods of currency instability rather than transient, quickly resolved pricing anomalies.
+2.  **Currency as an Absorption Mechanism:** Early, targeted tariffs (2018–2024) systematically precipitated predictable CNY depreciation, effectively neutralizing a portion of the nominal tariff impact and shifting the cost burden dynamically.
+3.  **Structural Regime Shift:** The transition to sweeping "All Goods" tariffs in 2025 triggered a definitive break in foreign exchange mechanics. The resulting contrarian CNY appreciation signals a fundamental exhaustion of the currency's capacity to unilaterally absorb broad-based macroeconomic trade barriers.
+
+## 7. Sector Level Impact
+
+<details>
+<summary>Code for Cell 20</summary>
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+
+sector_era_analysis = df_sectors.copy()
+sector_era_analysis['year_quarter'] = sector_era_analysis['date'].dt.to_period('Q').astype(str)
+
+def classify_era(date):
+    if date < pd.Timestamp('2018-03-01'):
+        return 'Pre-Trade War'
+    elif date < pd.Timestamp('2020-01-01'):
+        return 'Trade War 1.0'
+    elif date < pd.Timestamp('2024-01-01'):
+        return 'Pandemic Recovery'
+    else:
+        return 'Trade War 2.0'
+
+sector_era_analysis['era'] = sector_era_analysis['date'].apply(classify_era)
+
+sector_perf_q = sector_era_analysis.groupby(['sector', 'era', 'year_quarter']).agg({
+    'daily_return_pct': 'mean',
+    'volatility_10d': 'mean'
+}).reset_index()
+
+era_order = ['Pre-Trade War', 'Trade War 1.0', 'Pandemic Recovery', 'Trade War 2.0']
+sector_perf_q['era_order'] = sector_perf_q['era'].map({e: i for i, e in enumerate(era_order)})
+sector_perf_q = sector_perf_q.sort_values(['era_order', 'year_quarter'])
+sector_perf_q['pivot_col'] = sector_perf_q['era'] + "|" + sector_perf_q['year_quarter']
+
+era_avg = sector_era_analysis.groupby(['sector', 'era']).agg({
+    'daily_return_pct': 'mean',
+    'volatility_10d': 'mean'
+}).reset_index()
+
+ordered_cols = sector_perf_q['pivot_col'].drop_duplicates().tolist()
+final_cols = ['GAP_start']
+current_era = ordered_cols[0].split('|')[0]
+gap_idx = 0
+
+for col in ordered_cols:
+    era = col.split('|')[0]
+    if era != current_era:
+        final_cols.append(f'GAP_{gap_idx}')
+        current_era = era
+        gap_idx += 1
+    final_cols.append(col)
+
+sector_return_pivot = sector_perf_q.pivot(index='sector', columns='pivot_col', values='daily_return_pct').sort_index()
+sector_volatility_pivot = sector_perf_q.pivot(index='sector', columns='pivot_col', values='volatility_10d').sort_index()
+
+for col in final_cols:
+    if col.startswith('GAP'):
+        sector_return_pivot[col] = np.nan
+        sector_volatility_pivot[col] = np.nan
+
+sector_return_pivot = sector_return_pivot[final_cols]
+sector_volatility_pivot = sector_volatility_pivot[final_cols]
+sectors_sorted = sector_return_pivot.index.tolist()
+
+era_blocks = {}
+current_era = None
+start_idx = None
+
+for i, col in enumerate(final_cols):
+    if col.startswith('GAP'):
+        if current_era is not None:
+            era_blocks[current_era] = (start_idx, i - 1)
+        current_era = None
+    else:
+        era = col.split('|')[0]
+        if current_era is None:
+            current_era = era
+            start_idx = i
+if current_era is not None:
+    era_blocks[current_era] = (start_idx, len(final_cols) - 1)
+
+gap_to_era = {}
+for i, col in enumerate(final_cols):
+    if col.startswith('GAP'):
+        for j in range(i + 1, len(final_cols)):
+            if not final_cols[j].startswith('GAP'):
+                gap_to_era[i] = final_cols[j].split('|')[0]
+                break
+
+quarter_ticks = []
+quarter_labels = []
+for i, col in enumerate(final_cols):
+    if not col.startswith('GAP'):
+        quarter_ticks.append(i + 0.5)
+        quarter_labels.append(col.split('|')[1])
+
+def add_era_annotations_to_gaps(ax, era_avg_df, metric_col, fmt_func):
+    for gap_idx, era in gap_to_era.items():
+        avg_data = era_avg_df[era_avg_df['era'] == era].set_index('sector')[metric_col]
+        for row_idx, sector in enumerate(sectors_sorted):
+            val = avg_data.get(sector, np.nan)
+            if pd.notna(val):
+                ax.text(gap_idx + 0.5, row_idx + 0.5, fmt_func(val),
+                        ha='center', va='center', fontsize=8, fontweight='bold',
+                        color='black', zorder=5)
+
+fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(22, 16))
+fig.patch.set_facecolor('white')
+
+# Shared plotting logic
+for ax, pivot_df, title, cbar_label, cmap, metric, fmt_f in [
+    (ax1, sector_return_pivot, 'Sector Performance (Returns): Winners & Losers Across Macro Cycles', 'Avg Quarterly Return (%)', 'YlGnBu', 'daily_return_pct', lambda v: f"+{v:.1f}%" if v >= 0 else f"{v:.1f}%"),
+    (ax2, sector_volatility_pivot, 'Sector Risk (Volatility): Uncertainty Clustering Across Macro Cycles', 'Annualized Volatility (%)', 'YlOrRd', 'volatility_10d', lambda v: f"{v:.1f}%")
+]:
+    sns.heatmap(pivot_df, annot=False, fmt='', cmap=cmap,
+                ax=ax, cbar_kws={'label': cbar_label, 'shrink': 0.8},
+                linewidths=0.3, linecolor='#cccccc',
+                xticklabels=False, yticklabels=True,
+                mask=pivot_df.isnull())
+
+    ax.set_title(title, fontweight='bold', fontsize=14, pad=15)
+    ax.set_xlabel('')
+    ax.set_ylabel('Market Sector', fontweight='bold', fontsize=11)
+
+    add_era_annotations_to_gaps(ax, era_avg, metric, fmt_f)
+
+    ax.set_xticks(quarter_ticks)
+    ax.set_xticklabels(quarter_labels, rotation=90, fontsize=7, ha='center')
+
+    ylim = ax.get_ylim()
+    for era_name, (start, end) in era_blocks.items():
+        mid_point = (start + end + 1) / 2
+        ax.text(mid_point, ylim[0] + 1.5, era_name,
+                ha='center', va='top', fontsize=10, fontweight='bold', color='black',
+                clip_on=False, transform=ax.transData)
+
+plt.tight_layout(pad=3.0)
+plt.subplots_adjust(bottom=0.12)
+plt.show()
+
+print("\n🏭 Sector Performance in Trade War 2.0 (2024-Present)")
+print("="*60)
+
+tw20_performance = era_avg[era_avg['era'] == 'Trade War 2.0'].sort_values('daily_return_pct', ascending=False)
+
+print("\n📈 Top 5 Performing Sectors:")
+for idx, row in tw20_performance.head().iterrows():
+    print(f"   {row['sector']}: {row['daily_return_pct']:.3f}% daily return (Vol: {row['volatility_10d']:.2f}%)")
+
+print("\n📉 Bottom 5 Performing Sectors:")
+for idx, row in tw20_performance.tail().iterrows():
+    print(f"   {row['sector']}: {row['daily_return_pct']:.3f}% daily return (Vol: {row['volatility_10d']:.2f}%)")
+
+sensitivity_groups = df_sectors.groupby('tariff_sensitivity').agg({
+    'daily_return_pct': 'mean',
+    'volatility_10d': 'mean'
+}).round(3)
+
+print("\n🎯 Performance by Tariff Sensitivity Level:")
+display(sensitivity_groups)
+```
+
+</details>
+
+![Embedded Image 5](trade-war/image_005.png)
+
+### 🏭 Sector Performance in Trade War 2.0 (2024-Present)
+
+📈 Top 5 Performing Sectors:  
+Semiconductors: 0.172% daily return (Vol: 2.14%)  
+Automobiles: 0.115% daily return (Vol: 1.57%)  
+Emerging Markets: 0.092% daily return (Vol: 1.03%)  
+Technology: 0.092% daily return (Vol: 1.72%)  
+Mining & Materials: 0.083% daily return (Vol: 1.47%)
+
+📉 Bottom 5 Performing Sectors:  
+Consumer Discretionary: 0.059% daily return (Vol: 1.23%)  
+Materials: 0.045% daily return (Vol: 0.99%)  
+Retail: 0.041% daily return (Vol: 1.34%)  
+Agriculture: 0.027% daily return (Vol: 0.89%)  
+Healthcare: 0.020% daily return (Vol: 0.84%)
+
+🎯 Performance by Tariff Sensitivity Level:
+daily_return_pct volatility_10d
+tariff_sensitivity
+High 0.064 1.591
+Low 0.051 1.412
+Medium 0.040 1.346
+
+#### Sector Performance and Volatility Dynamics
+
+The short-term impact of individual tariffs may not look dramatic, but ongoing trade tensions are clearly reshaping how different sectors perform over time. Data from the “Trade War 2.0” period (2024–present) shows an interesting pattern: the industries most heavily targeted by tariffs are actually driving market returns, but they come with much higher volatility.
+
+**Leading sectors** like semiconductors and automobiles are posting the strongest daily returns, around 0.17% and 0.12%. However, these gains don’t come easy—they also experience much bigger price swings, making them riskier to hold.
+
+**Lagging sectors** tend to be more stable and less exposed to global trade. Areas like healthcare, agriculture, and retail are seeing much lower returns, but their performance is also more consistent and less volatile.
+
+**The bigger picture** suggests a clear trade-off. Sectors that are more exposed to tariffs tend to deliver higher returns overall, but only because investors are taking on more risk. In other words, if you’re investing in industries directly affected by trade conflicts, the market is rewarding you—but you have to be willing to deal with the ups and downs that come with it.
+
+<details>
+<summary>Code for Cell 22</summary>
+
+```python
+def run_did_analysis(df_sectors, treatment_sectors, control_sectors, event_date, target_metric='daily_return_pct'):
+    """
+    Performs a Difference-in-Differences (DiD) regression to isolate the causal impact
+    of a tariff shock on specific sectors, controlling for baseline market trends.
+    """
+    print(f"📊 Running DiD Analysis for Event Date: {event_date}")
+
+    # Filter for relevant sectors and drop missing targets
+    df_did = df_sectors[df_sectors['sector'].isin(treatment_sectors + control_sectors)].copy()
+    df_did = df_did.dropna(subset=[target_metric, 'date'])
+    df_did['date'] = pd.to_datetime(df_did['date'])
+
+    # Define DiD Dummy Variables
+    event_dt = pd.to_datetime(event_date)
+    df_did['Post'] = (df_did['date'] >= event_dt).astype(int)
+    df_did['Treatment'] = df_did['sector'].apply(lambda x: 1 if x in treatment_sectors else 0)
+    df_did['Post_x_Treatment'] = df_did['Post'] * df_did['Treatment']
+
+    # Aggregate to weekly/monthly to reduce daily noise for the regression
+    df_did.set_index('date', inplace=True)
+    df_agg = df_did.groupby(['Treatment', 'Post', 'Post_x_Treatment', pd.Grouper(freq='W')])[target_metric].mean().reset_index()
+
+    # OLS Regression
+    formula = f"{target_metric} ~ Treatment + Post + Post_x_Treatment"
+    model = smf.ols(formula, data=df_agg).fit(cov_type='HC1') # Robust Standard Errors
+
+    print("\n" + "="*60)
+    print("DIFFERENCE-IN-DIFFERENCES OLS ESTIMATION")
+    print("="*60)
+    print(model.summary().tables[1])
+    print("="*60 + "\n")
+
+    return df_agg, model
+
+# Execute DiD Analysis
+# Assuming '2018-07-06' (Section 301 China Tariffs) as the primary shock
+treatment_group = ['Steel', 'Agriculture', 'Semiconductors', 'Autos']
+control_group = ['Healthcare', 'Utilities', 'Real Estate']
+
+# Note: Adjust 'daily_return_pct' to 'index_level' or 'volume' depending on your column metadata
+df_did_agg, did_model = run_did_analysis(
+    df_sectors,
+    treatment_group,
+    control_group,
+    event_date='2018-07-06',
+    target_metric='daily_return_pct'
+)
+
+# Plotting Parallel Trends & DiD
+if not df_did_agg.empty:
+    fig, ax = plt.subplots()
+
+    # Plot Control Group
+    control_data = df_did_agg[df_did_agg['Treatment'] == 0]
+    ax.plot(control_data['date'], control_data['daily_return_pct'].rolling(4).mean(),
+            label='Control Sectors (Domestic/Insulated)', color='#6A737B', lw=2.5)
+
+    # Plot Treatment Group
+    treatment_data = df_did_agg[df_did_agg['Treatment'] == 1]
+    ax.plot(treatment_data['date'], treatment_data['daily_return_pct'].rolling(4).mean(),
+            label='Treatment Sectors (Tariff Exposed)', color='#A2142F', lw=2.5)
+
+    # Event Line
+    ax.axvline(pd.to_datetime('2018-07-06'), color='black', linestyle='--', lw=2, label='Tariff Implementation (Treatment)')
+
+    ax.set_title("Causal Impact of Tariffs on Equities (Difference-in-Differences)\n4-Week Rolling Average Returns")
+    ax.set_ylabel("Average Sector Return (%)")
+    ax.legend(loc='upper left')
+    plt.tight_layout()
+    plt.show()
+```
+
+</details>
+
+📊 Running DiD Analysis for Event Date: 2018-07-06
+
+============================================================
+DIFFERENCE-IN-DIFFERENCES OLS ESTIMATION
+============================================================
+====================================================================================
+coef std err z P>|z| [0.025 0.975]
+
+---
+
+Intercept 0.0471 0.109 0.430 0.667 -0.167 0.262
+Treatment 0.0034 0.154 0.022 0.983 -0.298 0.305
+Post -0.0035 0.112 -0.031 0.975 -0.224 0.217
+Post_x_Treatment 0.0341 0.159 0.214 0.831 -0.278 0.346
+====================================================================================
+============================================================
+![Embedded Image 6](trade-war/image_006.png)
+
+#### Causal Impact Evaluation using Difference-in-Differences (DiD) Modeling
+
+Difference-in-Differences (DiD) is a methodology utilized to isolate and estimate the causal effect of a specific intervention. In this context, the implementation of a tariff. The model compares the post-event trajectory of a "treatment" group (sectors highly exposed to tariffs) against a "control" group (domestically insulated sectors). By evaluating the differential in performance before and after the event, the DiD estimator strips out broader market movements that affect all sectors simultaneously, revealing the isolated impact of the policy.
+
+The Ordinary Least Squares (OLS) estimation yields an interaction coefficient—the core DiD estimator—of 0.0341. However, with a p-value of 0.831, this result is highly statistically insignificant. This indicates that the initial tariff implementation did not exert a definitive, causal drag on the returns of targeted sectors relative to insulated sectors in the immediate aftermath.
+
+---
+
+#### Section Summary
+
+1. When a new tariff is introduced, the immediate impact on the targeted sector is not as severe as many would expect. There is no clear evidence of a sharp, direct drop in performance compared with sectors that are less exposed.
+
+2. Over longer periods of trade tension, the picture changes. Sectors that are most exposed to tariffs—such as semiconductors and automobiles—have actually delivered stronger returns than more insulated industries. Investors seem willing to accept the extra uncertainty because those sectors offer greater upside.
+
+3. The bigger effect of trade conflict shows up in volatility rather than broad market weakness. Trade friction tends to create larger swings in supply-chain-heavy industries, while capital often shifts toward higher-risk, higher-growth sectors instead of more defensive domestic names.
+
+## 8. Trade Volume Dynamics
+
+<details>
+<summary>Code for Cell 25</summary>
+
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
+import numpy as np
+
+trade_volume = pipeline.get_dataset('trade_volume')
+# Prepare trade data for analysis
+exports_data = trade_volume[trade_volume['indicator'] == 'NE.EXP.GNFS.CD'].copy()
+imports_data = trade_volume[trade_volume['indicator'] == 'NE.IMP.GNFS.CD'].copy()
+
+exports_data = exports_data.rename(columns={'value': 'exports_usd'})
+imports_data = imports_data.rename(columns={'value': 'imports_usd'})
+
+# Define era boundaries for overlays
+max_year = exports_data['year'].max() if not exports_data.empty else 2026
+eras = [
+    {'start': 2015, 'end': 2017.5, 'color': 'green', 'label': 'Pre-Trade War', 'alpha': 0.1},
+    {'start': 2017.5, 'end': 2019.5, 'color': 'orange', 'label': 'Trade War 1.0', 'alpha': 0.2},
+    {'start': 2019.5, 'end': 2023.5, 'color': 'blue', 'label': 'Recovery', 'alpha': 0.1},
+    {'start': 2023.5, 'end': max_year, 'color': 'red', 'label': 'Trade War 2.0', 'alpha': 0.2}
+]
+
+major_economies = ['United States', 'China', 'Germany', 'Japan', 'Vietnam', 'Mexico']
+
+# %%
+# 1. Global Trade Dynamics (Exports & Imports Only) with Era Overlays
+fig, axes = plt.subplots(1, 2, figsize=(16, 6))
+
+export_trends = exports_data[exports_data['country'].isin(major_economies)]
+import_trends = imports_data[imports_data['country'].isin(major_economies)]
+
+# Plot 1: Exports
+for country in major_economies:
+    country_data = export_trends[export_trends['country'] == country].sort_values('year')
+    axes[0].plot(country_data['year'], country_data['exports_usd'] / 1e12,
+                 marker='o', linewidth=2, markersize=5, label=country)
+
+axes[0].set_title('Export Trends of Major Economies', fontweight='bold', fontsize=12)
+axes[0].set_xlabel('Year')
+axes[0].set_ylabel('Exports (USD Trillions)')
+axes[0].legend(loc='upper left', fontsize=9)
+axes[0].grid(True, alpha=0.3)
+for era in eras:
+    axes[0].axvspan(era['start'], era['end'], alpha=era['alpha'], color=era['color'], label=era['label'])
+
+# Plot 2: Imports
+for country in major_economies:
+    country_data = import_trends[import_trends['country'] == country].sort_values('year')
+    axes[1].plot(country_data['year'], country_data['imports_usd'] / 1e12,
+                 marker='s', linewidth=2, markersize=5, label=country)
+
+axes[1].set_title('Import Trends of Major Economies', fontweight='bold', fontsize=12)
+axes[1].set_xlabel('Year')
+axes[1].set_ylabel('Imports (USD Trillions)')
+axes[1].legend(loc='upper left', fontsize=9)
+axes[1].grid(True, alpha=0.3)
+for era in eras:
+    axes[1].axvspan(era['start'], era['end'], alpha=era['alpha'], color=era['color'])
+
+plt.suptitle('Global Trade Dynamics Across Trade War Eras', fontsize=14, fontweight='bold', y=1.05)
+plt.tight_layout()
+plt.show()
+
+beneficiary_countries = ['Vietnam', 'Mexico', 'India', 'Thailand', 'Malaysia', 'China']
+growth_records = []
+
+for country in beneficiary_countries:
+    country_exports = exports_data[exports_data['country'] == country].sort_values('year')
+
+    if len(country_exports) > 0:
+        baseline = country_exports[country_exports['year'] <= 2017]['exports_usd'].mean()
+        tw1_exports = country_exports[(country_exports['year'] >= 2018) & (country_exports['year'] <= 2019)]['exports_usd'].mean()
+        tw2_exports = country_exports[country_exports['year'] >= 2024]['exports_usd'].mean()
+
+        if baseline > 0:
+            tw1_growth = ((tw1_exports - baseline) / baseline) * 100
+            tw2_growth = ((tw2_exports - baseline) / baseline) * 100
+
+            growth_records.append({
+                'Country': country,
+                'Trade War 1.0 Growth (%)': tw1_growth,
+                'Trade War 2.0 Growth (%)': tw2_growth
+            })
+
+df_growth = pd.DataFrame(growth_records).set_index('Country')
+
+plt.figure(figsize=(10, 6))
+sns.heatmap(df_growth, annot=True, cmap='RdYlGn', center=0, fmt='.1f', linewidths=.5, cbar_kws={'label': 'Growth vs Pre-War Baseline (%)'})
+plt.title('Trade Diversion: Export Growth vs Pre-War Baseline', fontweight='bold', fontsize=14, pad=15)
+plt.ylabel('')
+plt.tight_layout()
+plt.show()
+
+# %%
+# 3. Year-over-Year Growth Rates (Moved after Trade Diversion)
+plt.figure(figsize=(14, 6))
+
+for country in major_economies:
+    country_data = export_trends[export_trends['country'] == country].sort_values('year')
+    if 'yoy_change_pct' in country_data.columns:
+        plt.plot(country_data['year'], country_data['yoy_change_pct'],
+                 marker='^', linewidth=2, markersize=5, label=country)
+
+plt.axhline(y=0, color='black', linestyle='-', linewidth=1)
+plt.title('Export Growth Rates (YoY %)', fontweight='bold', fontsize=14)
+plt.xlabel('Year')
+plt.ylabel('Year-over-Year Growth (%)')
+plt.legend(loc='best', fontsize=10)
+plt.grid(True, alpha=0.3)
+
+for era in eras:
+    plt.axvspan(era['start'], era['end'], alpha=era['alpha'], color=era['color'])
+
+plt.tight_layout()
+plt.show()
+```
+
+</details>
+
+![Embedded Image 7](trade-war/image_007.png)
+![Embedded Image 8](trade-war/image_008.png)
+![Embedded Image 9](trade-war/image_009.png)
+
+1. **Global trade stayed resilient overall**, but tariffs triggered sharp, synchronized short-term drops in export growth.
+
+2. **Supply chains shifted**, with Vietnam, Mexico, and India gaining the most as companies rerouted production away from tariff-heavy routes (Germany, Japan).
+
+3. **Trade wasn’t reduced but just redirected**, the war shifts the focus of export momentum away from traditional hubs and directly toward strategically neutral emerging markets..
+
+## 9. Macroeconomic Response Modeling (Inflation & Trade Volume)
+
+<details>
+<summary>Code for Cell 28</summary>
+
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from statsmodels.tsa.stattools import adfuller
+from statsmodels.tsa.vector_ar.var_model import VAR
+
+def check_stationarity(series, signif=0.05):
+    """
+    Returns True if the series is stationary at the given significance level.
+    Uses the Augmented Dickey-Fuller test with automatic lag selection (AIC).
+    """
+    result = adfuller(series.dropna(), autolag='AIC')
+    return result[1] <= signif
+
+
+def find_date_col(df):
+    """
+    Returns the name of a parseable date column, or None if the index is
+    already a DatetimeIndex. Uses a strict allowlist to avoid accidentally
+    matching categorical columns like 'period' or 'era'.
+    """
+    if isinstance(df.index, pd.DatetimeIndex):
+        return None
+    for col in df.columns:
+        if col.lower() in ('date', 'time', 'datetime', 'timestamp'):
+            return col
+    return None
+
+
+
+def prepare_macro_data(df_macro, df_tariffs, df_trade):
+    """
+    Merges three disparate macroeconomic datasets into a unified monthly
+    time-series suitable for Vector Autoregression (VAR) modelling.
+
+    Handles:
+      - df_macro  : long-format CPI/PPI panel with a 'date' column
+      - df_tariffs: event-level tariff log with a 'date' column
+      - df_trade  : annual trade data keyed by integer 'year' (no date column)
+    """
+    print("🔄 Standardizing Macro Time-Series for VAR...")
+
+    df_t = df_tariffs.copy()
+    df_t['date'] = pd.to_datetime(df_t['date'])
+    df_t = df_t.set_index('date')
+
+    monthly_tariffs = (
+        df_t.resample('ME')['tariff_rate_pct']
+        .mean()
+        .fillna(0)
+        .cumsum()
+    )
+    monthly_tariffs.name = 'Cumulative_Tariff_Rate'
+
+    df_m = df_macro.copy()
+    df_m['date'] = pd.to_datetime(df_m['date'])
+    df_m = df_m.set_index('date')
+
+    if 'metric' in df_m.columns:
+        df_cpi = df_m[df_m['metric'].str.upper() == 'CPI'].copy()
+        if df_cpi.empty:
+            first_metric = df_m['metric'].iloc[0]
+            print(f"  ⚠️  'CPI' not found in metric column — using '{first_metric}' instead.")
+            df_cpi = df_m[df_m['metric'] == first_metric].copy()
+    else:
+        df_cpi = df_m.copy()
+
+    monthly_cpi = (
+        df_cpi.resample('ME')['value']
+        .mean()
+        .ffill()
+    )
+    monthly_cpi.name = 'CPI_Inflation'
+
+    df_tr = df_trade.copy()
+    df_tr['date'] = pd.to_datetime(df_tr['year'].astype(str) + '-01-01')
+    df_tr = df_tr.set_index('date')
+
+    monthly_trade = (
+        df_tr.resample('ME')['value']
+        .mean()
+        .interpolate(method='linear')
+    )
+    monthly_trade.name = 'Global_Trade_Volume'
+
+    df_var = pd.concat([monthly_tariffs, monthly_cpi, monthly_trade], axis=1).dropna()
+
+    if df_var.empty:
+        print("  ⚠️  No overlapping date range across the three datasets.")
+    else:
+        print(f"  ✅ VAR dataset ready | Shape: {df_var.shape} | "
+              f"Range: {df_var.index.min().date()} → {df_var.index.max().date()}")
+
+    return df_var
+
+
+
+def _get_irf_bands(irf_obj, impulse_idx, response_idx, orth=True, signif=0.05):
+    """
+    Extracts point estimates and confidence bands for one impulse→response pair.
+    Uses asymptotic (analytical) bands — fast and version-stable.
+    Falls back to MC simulation if asymptotic bands are unavailable.
+    """
+    irfs = irf_obj.orth_irfs if orth else irf_obj.irfs
+    point = irfs[:, response_idx, impulse_idx]
+
+    try:
+        stderr = irf_obj.stderr(orth=orth)
+        z = abs(np.percentile(np.random.standard_normal(100_000), (signif / 2) * 100))
+        se = stderr[:, response_idx, impulse_idx]
+        lower, upper = point - z * se, point + z * se
+    except Exception:
+        # Fallback: Monte Carlo bootstrap (slower but robust)
+        bands = irf_obj.err_band_mc(orth=orth, repl=500, seed=42)
+        lower = bands.lower[:, response_idx, impulse_idx]
+        upper = bands.upper[:, response_idx, impulse_idx]
+
+    return point, lower, upper
+
+
+
+df_var = prepare_macro_data(df_macro, df_tariffs, df_trade)
+
+if not df_var.empty:
+    df_var_diff = df_var.copy()
+    for col in df_var.columns:
+        is_stationary = check_stationarity(df_var[col])
+        status = "stationary ✅" if is_stationary else "non-stationary → differencing 🔁"
+        print(f"  {col}: {status}")
+        if not is_stationary:
+            df_var_diff[col] = df_var[col].diff()
+
+    df_var_diff = df_var_diff.dropna()
+    print(f"\n  Post-differencing shape: {df_var_diff.shape}")
+
+
+    model = VAR(df_var_diff)
+
+    k = df_var_diff.shape[1]
+    max_safe_lags = max(1, (len(df_var_diff) // (k * k)) - 1)
+    maxlags = min(12, max_safe_lags)
+
+    lag_selection = model.select_order(maxlags=maxlags)
+    optimal_lag = max(1, lag_selection.aic)   # floor at 1 — lag=0 is degenerate
+    print(f"  ✅ Optimal lag via AIC: {optimal_lag} month(s)  (searched up to {maxlags})")
+
+    var_fitted = model.fit(optimal_lag)
+
+    print("\n" + "=" * 60)
+    print("  VAR RESIDUAL CORRELATION MATRIX")
+    print("=" * 60)
+    print(var_fitted.resid_corr.round(4))
+    print("=" * 60)
+
+    irf = var_fitted.irf(12)
+    cols = df_var_diff.columns.tolist()
+    impulse_idx = cols.index('Cumulative_Tariff_Rate')
+
+    response_vars   = ['CPI_Inflation', 'Global_Trade_Volume']
+    response_labels = ['CPI Inflation', 'Global Trade Volume']
+    response_colors = ['steelblue', 'darkorange']
+
+    fig, axes = plt.subplots(1, 2, figsize=(14, 5))
+
+    for ax, var, label, color in zip(axes, response_vars, response_labels, response_colors):
+        response_idx = cols.index(var)
+        point, lower, upper = _get_irf_bands(irf, impulse_idx, response_idx)
+        periods = range(len(point))
+
+        ax.plot(periods, point, color=color, linewidth=2.2, label='IRF')
+        ax.fill_between(periods, lower, upper, alpha=0.20, color=color, label='95% CI')
+        ax.axhline(0, color='black', linewidth=0.9, linestyle='--')
+        ax.set_title(f'Tariff Shock → {label}', fontweight='bold', fontsize=12)
+        ax.set_xlabel('Months After Shock')
+        ax.set_ylabel('Response (first-differenced units)')
+        ax.legend(fontsize=9)
+        ax.grid(True, alpha=0.3)
+        ax.set_xticks(list(periods))
+
+    fig.suptitle(
+        "Macroeconomic Impulse Response to a Tariff Shock (12-Month Horizon)",
+        fontweight='bold', fontsize=14, y=1.02
+    )
+    plt.tight_layout()
+    plt.show()
+
+    print("\n📊 Forecast Error Variance Decomposition (FEVD) @ 12 months:")
+    fevd = var_fitted.fevd(12)
+    fevd_df = pd.DataFrame(
+        {col: fevd.decomp[i][-1] for i, col in enumerate(cols)},
+        index=cols
+    ).T
+    fevd_df.columns = [f'Explained by: {c}' for c in cols]
+    print(fevd_df.round(4))
+
+    # Optional: FEVD bar chart
+    fig2, ax2 = plt.subplots(figsize=(10, 4))
+    fevd_df.plot(kind='bar', ax=ax2, colormap='tab10', edgecolor='white')
+    ax2.set_title('Forecast Error Variance Decomposition @ 12 Months', fontweight='bold')
+    ax2.set_xlabel('Variable')
+    ax2.set_ylabel('Proportion of Forecast Variance')
+    ax2.set_xticklabels(cols, rotation=15, ha='right')
+    ax2.legend(loc='upper right', fontsize=8)
+    ax2.grid(axis='y', alpha=0.3)
+    plt.tight_layout()
+    plt.show()
+
+else:
+    print("\n⚠️  Insufficient overlapping data to execute VAR modelling.")
+    print("    Check that df_macro, df_tariffs, and df_trade share a common date range.")
+```
+
+</details>
+
+🔄 Standardizing Macro Time-Series for VAR...
+✅ VAR dataset ready | Shape: (83, 3) | Range: 2018-03-31 → 2025-01-31
+
+🔎 Testing for Stationarity (ADF Test)...
+Cumulative_Tariff_Rate: non-stationary → differencing 🔁
+CPI_Inflation: non-stationary → differencing 🔁
+Global_Trade_Volume: non-stationary → differencing 🔁
+
+Post-differencing shape: (82, 3)
+
+⚙️ Fitting Vector Autoregression (VAR) Model...
+✅ Optimal lag via AIC: 7 month(s) (searched up to 8)
+
+============================================================
+VAR RESIDUAL CORRELATION MATRIX
+============================================================
+[[1.     -0.09    0.0491]
+ [-0.09    1.     -0.1637]
+ [ 0.0491 -0.1637  1.]]
+============================================================
+
+📈 Computing Impulse Response Functions (IRF)...
+![Embedded Image 10](trade-war/image_010.png)
+
+📊 Forecast Error Variance Decomposition (FEVD) @ 12 months:  
+Explained by: Cumulative_Tariff_Rate
+Cumulative_Tariff_Rate 0.9597
+CPI_Inflation 0.0941
+Global_Trade_Volume 0.5951
+
+Explained by: CPI_Inflation
+Cumulative_Tariff_Rate 0.0316
+CPI_Inflation 0.8714
+Global_Trade_Volume 0.0919
+
+Explained by: Global_Trade_Volume
+Cumulative_Tariff_Rate 0.0087
+CPI_Inflation 0.0344
+Global_Trade_Volume 0.3129
+![Embedded Image 11](trade-war/image_011.png)
+
+#### VAR
+
+All variables were non-stationary and were differenced, which ensures the relationships are stable and not driven by trends.
+
+The optimal lag length is 7 months based on AIC. This suggests that shocks in tariffs, inflation, and trade take several months to fully propagate through the system rather than occurring instantly.
+
+Residual correlations are low, with absolute values below 0.2. Values close to zero indicate that most of the relationships between variables have been captured by the model.
+
+**Takeaway:**  
+The VAR is dynamically rich enough to capture delayed effects, uses a sufficient sample size for credibility, and shows no major signs of misspecification.
+
+---
+
+#### IRF (Impulse Response Functions)
+
+For **CPI inflation**, the response is small, slightly negative at first, and returns toward zero within 6 to 8 months. The confidence intervals are wide and frequently include zero, which means the effect is not statistically strong. This implies that any inflationary impact from tariffs is weak, short-lived, and uncertain.
+
+For **global trade volume**, the response is immediately negative and becomes substantially more negative over time, reaching its largest decline around month 7. The effect remains negative throughout the horizon, even as it partially recovers. This indicates a persistent and economically meaningful contraction in trade following a tariff shock.
+
+**Takeaway:**  
+The timing of responses matters. Trade reacts quickly and strongly, while inflation shows little consistent reaction and high uncertainty.
+
+---
+
+#### FEVD (12-Month Horizon)
+
+Forecast error variance decomposition shows how much of each variable’s fluctuations are explained by shocks to itself versus other variables over a 12-month horizon. Higher values indicate stronger explanatory influence.
+
+For the **cumulative tariff rate**, about 0.96 of its variation is explained by its own shocks. This means tariff changes are largely independent within the system and can be treated as an external policy driver.
+
+For **CPI inflation**, about 0.87 of its variation is explained by its own shocks, while tariffs account for 0.09. This shows that inflation is mostly driven by its own internal dynamics, with tariffs playing a secondary role.
+
+For **global trade volume**, about 0.59 of its variation is explained by tariff shocks, compared to 0.31 explained by its own shocks. This indicates that tariffs are the dominant driver of trade fluctuations over this horizon.
+
+**Takeaway:**  
+Tariffs act as an external force, strongly influencing trade but only modestly affecting inflation, while inflation remains largely self-driven.
+
+## 10. Feature Importance
+
+<details>
+<summary>Code for Cell 31</summary>
+
+```python
+from sklearn.ensemble import RandomForestRegressor
+
+df_ml = df_stocks[df_stocks['index_name'] == 'S&P 500 (USA)'].copy()
+df_ml['date'] = pd.to_datetime(df_ml['date'])
+df_ml = df_ml.set_index('date').sort_index()
+
+df_ml['return_lag_1'] = df_ml['daily_return_pct'].shift(1)
+df_ml['volume_lag_1'] = df_ml['volume'].shift(1)
+df_ml['ma_spread'] = (df_ml['ma_20d'] - df_ml['ma_50d']) / df_ml['ma_50d']
+df_ml['tariff_event_nearby'] = df_ml['tariff_event_nearby'].astype(int)
+
+df_ml['target_abs_return'] = df_ml['daily_return_pct'].abs()
+
+features = ['return_lag_1', 'volume_lag_1', 'ma_spread', 'volatility_20d', 'tariff_event_nearby']
+df_ml_clean = df_ml.dropna(subset=features + ['target_abs_return'])
+
+X = df_ml_clean[features]
+y = df_ml_clean['target_abs_return']
+
+rf_model = RandomForestRegressor(n_estimators=500, max_depth=5, random_state=42, n_jobs=-1)
+rf_model.fit(X, y)
+
+importances = rf_model.feature_importances_
+feature_names = ['Prev. Day Return', 'Prev. Day Volume', 'Moving Avg Spread (20d-50d)',
+                 'Rolling Volatility (20d)', 'Tariff Event Proximity']
+
+df_importance = pd.DataFrame({
+    'Feature': feature_names,
+    'Importance': importances * 100
+}).sort_values(by='Importance', ascending=True)
+
+fig, ax = plt.subplots(figsize=(12, 6))
+bars = ax.barh(df_importance['Feature'], df_importance['Importance'], color='#007A78')
+
+for i, feature in enumerate(df_importance['Feature']):
+    if feature == 'Tariff Event Proximity':
+        bars[i].set_color('#A2142F')
+
+ax.set_title("Machine Learning Feature Importance\n(What drives the magnitude of daily S&P 500 movements?)", pad=15)
+ax.set_xlabel("Relative Importance (%)")
+ax.set_ylabel("Predictive Feature")
+
+for bar in bars:
+    width = bar.get_width()
+    ax.text(width + 0.5, bar.get_y() + bar.get_height()/2, f'{width:.1f}%',
+            va='center', fontweight='bold')
+
+plt.tight_layout()
+plt.show()
+```
+
+</details>
+
+![Embedded Image 12](trade-war/image_012.png)
+
+Rolling volatility dominates with about 58.8 percent importance, indicating that market dynamics are driven almost entirely by internal market conditions rather than tariff-related events.
+
+## 11. Anomaly Detection
+
+<details>
+<summary>Code for Cell 34</summary>
+
+```python
+from sklearn.ensemble import IsolationForest
+
+print("🚨 Deploying Isolation Forest for Unsupervised Anomaly Detection...")
+
+anomaly_features = ['daily_return_pct', 'volatility_20d', 'volume', 'tariff_event_nearby']
+df_ano = df_ml.dropna(subset=anomaly_features).copy()
+X_ano = df_ano[['daily_return_pct', 'volatility_20d', 'volume']]
+
+iso_forest = IsolationForest(n_estimators=300, contamination=0.02, random_state=42)
+df_ano['Anomaly_Flag'] = iso_forest.fit_predict(X_ano)
+
+anomalies = df_ano[df_ano['Anomaly_Flag'] == -1]
+normal_days = df_ano[df_ano['Anomaly_Flag'] == 1]
+
+print(f"✅ Isolation Forest flagged {len(anomalies)} trading days as severe mathematical anomalies.")
+
+fig, ax = plt.subplots(figsize=(16, 7))
+
+ax.plot(df_ano.index, df_ano['indexed_to_100'], color='#6A737B', lw=2, label='S&P 500 (Indexed)', zorder=1)
+
+ax.scatter(anomalies.index, anomalies['indexed_to_100'], color='#A2142F', s=100,
+           edgecolor='black', lw=1.5, zorder=2, label='Algorithmic Anomaly Detected')
+
+added_label = False
+for event_date in event_dates:
+    event_dt = pd.to_datetime(event_date)
+    if event_dt in df_ano.index or event_dt > df_ano.index.min():
+        label = 'Major Tariff Implementation' if not added_label else ""
+        ax.axvline(event_dt, color='#002E5D', alpha=0.3, linestyle='--', lw=1.5, zorder=0, label=label)
+        added_label = True
+
+ax.set_title("Unsupervised Anomaly Detection (Isolation Forest)\nFlagging Severe Market Dislocations During the Trade War", pad=15)
+ax.set_ylabel("S&P 500 (Indexed to 100)")
+ax.set_xlabel("")
+ax.legend(loc='upper left')
+
+plt.tight_layout()
+plt.show()
+
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
+
+# Subplot 1: Volatility vs Return (Why did the AI flag these days?)
+ax1.scatter(normal_days['volatility_20d'], normal_days['daily_return_pct'],
+            color='#6A737B', alpha=0.4, label='Normal Trading Day')
+ax1.scatter(anomalies['volatility_20d'], anomalies['daily_return_pct'],
+            color='#A2142F', s=80, edgecolor='black', label='Flagged Anomaly')
+
+ax1.set_title("Anomaly Feature Space\n(Identifying the Fringes of Market Mechanics)", fontweight='bold')
+ax1.set_xlabel("Rolling 20-Day Volatility")
+ax1.set_ylabel("Daily Return (%)")
+ax1.legend()
+
+df_ano['Tariff_Context'] = df_ano['tariff_event_nearby'].map({0: 'No Event', 1: 'Tariff Event Nearby'})
+
+sns.countplot(data=df_ano, x='Tariff_Context', hue='Anomaly_Flag',
+              palette={1: '#6A737B', -1: '#A2142F'}, ax=ax2)
+
+ax2.set_title("Anomaly Distribution\n(Frequency of Outliers vs. Geopolitical Proximity)", fontweight='bold')
+ax2.set_xlabel("")
+ax2.set_ylabel("Number of Trading Days")
+
+handles, _ = ax2.get_legend_handles_labels()
+ax2.legend(handles, ['Normal Day', 'Flagged Anomaly'], loc='upper right')
+
+plt.tight_layout()
+plt.show()
+```
+
+</details>
+
+🚨 Deploying Isolation Forest for Unsupervised Anomaly Detection...
+✅ Isolation Forest flagged 42 trading days as severe mathematical anomalies.
+![Embedded Image 13](trade-war/image_013.png)
+![Embedded Image 14](trade-war/image_014.png)
+
+The anomaly detection model is designed to identify trading days that exhibit behavior fundamentally disconnected from normal market mechanics. Rather than looking for simple price drops, it flags structural dislocations—periods where the combination of daily price swings and underlying volatility becomes so extreme and unusual that the data point is completely isolated from standard historical trading patterns.
+
+#### Key Inferences
+
+1. Market anomalies are driven by extreme conditions, not normal fluctuations. They tend to appear when large price swings happen alongside unusually high volatility, signaling real stress in the system.
+
+2. These anomalies cluster around major disruption periods (like the 2020 crash), rather than lining up consistently with tariff announcements. This shows that broader macro shocks play a much bigger role than trade policy events.
+
+3. While anomalies do increase slightly near tariff activity, most of them occur outside those windows. This suggests that trade wars create ongoing background pressure, but they are not the main trigger of sharp market dislocations.
+
+## 12. Tariff Cluster Analysis
+
+<details>
+<summary>Code for Cell 37</summary>
+
+```python
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+
+clustering_cols = ['tariff_rate_pct', 'tariff_rate_delta', 'estimated_trade_value_usd_bn']
+df_cluster = df_tariffs.dropna(subset=clustering_cols).copy()
+
+X = df_cluster[clustering_cols]
+
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+wcss = []
+k_range = range(1, 11)
+
+for k in k_range:
+    kmeans = KMeans(n_clusters=k, init='k-means++', random_state=42, n_init=10)
+    kmeans.fit(X_scaled)
+    wcss.append(kmeans.inertia_)
+
+plt.figure(figsize=(6, 3), dpi=300)
+plt.plot(k_range, wcss, marker='o', linestyle='-', color='#002E5D', linewidth=2, markersize=7)
+
+plt.title('Elbow Method: Optimizing Cluster Count (k) for Tariff Archetypes', weight='bold', size=10)
+plt.xlabel('Number of Clusters (k)', weight='bold', size=10)
+plt.ylabel('Within-Cluster Sum of Squares (WCSS)', weight='bold', size=7)
+plt.xticks(k_range, fontsize=7)
+plt.yticks(fontsize=7)
+plt.grid(True, alpha=0.6, linestyle='--')
+
+plt.axvspan(3, 5, color='#F3A536', alpha=0.1, label='Typical Elbow Zone')
+plt.legend()
+
+plt.show()
+```
+
+</details>
+
+![Embedded Image 15](trade-war/image_015.png)
+
+<details>
+<summary>Code for Cell 38</summary>
+
+```python
+optimal_k = 3
+kmeans_final = KMeans(n_clusters=optimal_k, init='k-means++', random_state=42, n_init=10)
+df_cluster['Cluster_Label'] = kmeans_final.fit_predict(X_scaled)
+
+df_tariffs = df_tariffs.merge(df_cluster[['Cluster_Label']], left_index=True, right_index=True, how='left')
+
+cluster_summary_num = df_tariffs.groupby('Cluster_Label')[clustering_cols].mean().round(2)
+print("NUMERICAL INDICATORS BY CLUSTER TYPE")
+print(cluster_summary_num)
+print("\n")
+
+print("CATEGORICAL DOMINANCE BY CLUSTER TYPE")
+for cluster in range(optimal_k):
+    sub_df = df_tariffs[df_tariffs['Cluster_Label'] == cluster]
+    print(f"CLUSTER {cluster} | N = {len(sub_df)}")
+    print(f"  Top Imposer      : {sub_df['imposing_country'].mode().iloc[0]}")
+    print(f"  Primary Target   : {sub_df['target_country'].mode().iloc[0]}")
+    print(f"  Dominant Sector  : {sub_df['sector'].mode().iloc[0]}")
+    print(f"  Action Type      : {sub_df['type'].mode().iloc[0]}")
+    print("-" * 60)
+```
+
+</details>
+
+NUMERICAL INDICATORS BY CLUSTER TYPE
+tariff_rate_pct tariff_rate_delta
+Cluster_Label
+0.0 22.43 17.62
+1.0 107.71 73.86
+2.0 10.00 10.00
+
+estimated_trade_value_usd_bn
+
+Cluster_Label
+0.0 111.49
+1.0 128.50
+2.0 3300.00
+
+CATEGORICAL DOMINANCE BY CLUSTER TYPE
+CLUSTER 0 | N = 34
+Top Imposer : USA
+Primary Target : CHN
+Dominant Sector : All Goods
+Action Type : Retaliation
+
+---
+
+CLUSTER 1 | N = 7
+Top Imposer : CHN
+Primary Target : USA
+Dominant Sector : All Goods
+Action Type : Retaliation
+
+---
+
+CLUSTER 2 | N = 1
+Top Imposer : USA
+Primary Target : ALL
+Dominant Sector : All Goods
+Action Type : Universal Baseline
+
+---
+
+<details>
+<summary>Code for Cell 39</summary>
+
+```python
+df_benchmark = df_stocks[df_stocks['ticker'] == '^GSPC'].copy()
+df_benchmark = df_benchmark.sort_values('date').set_index('date')
+
+event_metrics = []
+
+for idx, row in df_tariffs.iterrows():
+    event_date = row['date']
+    cluster = row['Cluster_Label']
+
+    if pd.isna(cluster):
+        continue
+
+    valid_dates = df_benchmark[df_benchmark.index >= event_date]
+    if valid_dates.empty:
+        continue
+
+    loc = df_benchmark.index.get_loc(valid_dates.index[0])
+
+    if loc + 20 < len(df_benchmark):
+        price_t0 = df_benchmark.iloc[loc]['close']
+        price_t5 = df_benchmark.iloc[loc + 5]['close']
+        price_t20 = df_benchmark.iloc[loc + 20]['close']
+
+        event_metrics.append({
+            'Cluster_Label': cluster,
+            '5D_Forward_Return_Pct': ((price_t5 - price_t0) / price_t0) * 100,
+            '20D_Forward_Return_Pct': ((price_t20 - price_t0) / price_t0) * 100,
+            'Post_Event_Volatility': df_benchmark.iloc[loc + 20]['volatility_20d']
+        })
+
+df_event_metrics = pd.DataFrame(event_metrics)
+
+cluster_impact = df_event_metrics.groupby('Cluster_Label').mean().round(2)
+
+fig, ax = plt.subplots(1, 2, figsize=(16, 6), dpi=300)
+
+cluster_impact[['5D_Forward_Return_Pct', '20D_Forward_Return_Pct']].plot(
+    kind='bar', ax=ax[0], color=['#A2142F', '#002E5D'], alpha=0.85
+)
+ax[0].set_title('Average Forward Equity Returns by Tariff Archetype', weight='bold')
+ax[0].set_ylabel('Cumulative Return (%)', weight='bold')
+ax[0].set_xlabel('Tariff Cluster', weight='bold')
+ax[0].axhline(0, color='black', linewidth=1)
+ax[0].grid(axis='y', alpha=0.3)
+ax[0].set_xticklabels(['0 (Macro)', '1 (Retaliatory)', '2 (Surgical)'], rotation=0)
+
+cluster_impact['Post_Event_Volatility'].plot(
+    kind='bar', ax=ax[1], color='#F3A536', alpha=0.85
+)
+ax[1].set_title('Average 20-Day Post-Event Volatility', weight='bold')
+ax[1].set_ylabel('Volatility (20d)', weight='bold')
+ax[1].set_xlabel('Tariff Cluster', weight='bold')
+ax[1].grid(axis='y', alpha=0.3)
+ax[1].set_xticklabels(['0 (Macro)', '1 (Retaliatory)', '2 (Surgical)'], rotation=0)
+
+plt.tight_layout()
+plt.show()
+```
+
+</details>
+
+![Embedded Image 16](trade-war/image_016.png)
+
+Retaliatory clusters (Cluster 1) feature significantly higher tariff rates and changes, but relatively small trade value exposure.
+
+Smaller, high-intensity retaliatory tariffs show mixed or even positive forward returns, whereas broad, system-wide tariffs trigger negative returns and elevated volatility, reinforcing that market impact is driven by coverage and systemic reach rather than tariff magnitude alone.
+
+## 13. Key Findings
+
+1. **Trade wars caused significant but temporary market dislocations.**
+
+- Event studies show no statistically significant directional shocks in the immediate trading window.
+- Major tariff announcements also do not produce statistically significant shocks in broad equity indices (e.g., S&P 500). Markets largely pre-price or absorb these events.
+- Extreme market stress is not caused by trade wars. Major anomalies align with systemic crises (e.g., 2020 pandemic), not tariff announcements.
+
+2. **Volatility—not returns—is the primary transmission channel**
+
+- Across equities and FX, the dominant impact is persistent volatility rather than directional price movement. Trade shocks reshape risk regimes instead of market levels.
+
+- Markets are primarily internally driven. ~59% of market dynamics are explained by volatility, indicating endogenous factors dominate over tariff events.
+
+3. **FX acts as a dynamic shock absorber—until it doesn’t**
+
+- 2018–2024 (Trade War 1.0 & Recovery): Tariffs → CNY depreciation (offsetting tariff costs)
+
+- 2025 onward (Trade War 2.0): Structural break → CNY appreciation
+
+- This indicates limits to currency adjustment mechanisms under prolonged trade pressure.
+
+4. **Sectoral divergence is the real impact**
+   Trade-exposed sectors (e.g., semiconductors, autos) show higher returns and higher volatility, while domestic sectors remain more stable but with lower returns.
+
+5. **No strong short-term causal damage to targeted sectors**
+   DiD results show no statistically significant immediate impact, suggesting rapid market adjustment.
+
+6. **Trade wars rewire—not reduce—global trade**
+   Short-term decline in trade volume is followed by recovery via rerouting, with countries like Vietnam, Mexico, and India benefiting.
+
+7. **Macroeconomic impact is asymmetric**
+   Trade volume is persistently negatively affected, while inflation effects are weak and inconsistent. Trade wars act more as growth shocks than inflation drivers.
+
+8. **Tariffs behave as exogenous policy shocks**
+   VAR and FEVD results show tariffs strongly influence trade flows but are not driven by macroeconomic variables.
+
+9. **Market impact is driven by tariff scope rather than intensity**
+   High-intensity retaliatory tariffs show limited or mixed market effects, while broad, system-wide tariffs (large trade coverage) generate the most negative returns and highest volatility, indicating that scale and systemic reach matter more than tariff magnitude alone.
+
+## 14. Strategic Reccomendations
+
+#### For Policymakers
+
+1. **Anticipate trade diversion**
+   Protectionist policies reallocate trade rather than reduce it. Plan for third-country spillovers and supply chain shifts.
+
+2. **Strengthen supply chain resilience**
+   Invest in domestic capacity and strategic partnerships (friend-shoring) to mitigate persistent trade volume shocks.
+
+3. **Monitor financial stability through volatility**
+   Track FX volatility and sector-level dispersion as primary indicators of trade shock impact.
+
+#### For Traders
+
+1. **Trade volatility, not direction**
+   Tariff events are better suited for options strategies and volatility-based approaches rather than directional bets.
+
+2. **Rotate selectively into trade-exposed sectors**
+   These sectors offer higher returns but with higher risk, requiring active management and hedging.
+
+3. **Avoid overreacting to tariff headlines**
+   Aggregate market responses are muted, so avoid panic-driven decisions.
+
+## 15. Risks and Limitations
+
+1. Data limitations
+   Tariff data may not fully capture non-tariff barriers, and financial variables act as indirect proxies of economic impact.
+
+2. Model assumptions
+   GARCH may miss nonlinear regime shifts, while VAR differencing may remove long-term relationships.
+
+3. Statistical insignificance in causal models
+   DiD results may reflect either market efficiency or limited model sensitivity.
+
+4. Concurrent COVID-19 and monetary policy effects may confound results
+   Overlapping shocks during the sample period may blur the isolated impact of trade war policies.
+
+5. Bilateral trade data needed for precise trade diversion measurement
+   Aggregate trade data limits the ability to accurately capture rerouting effects across specific country pairs.
+8:["$","$L15",null,{"locale":"en","markdownData":{"electronic-store-ecommerce":"$16","accommodation-analysis":"$17","global-trade-war-analysis":"$18"}}]
+9:["$","$L19",null,{"locale":"en"}]
+a:["$","link","0",{"rel":"stylesheet","href":"/DSA/_next/static/chunks/0tmg9vcbw.fm2.css","precedence":"next"}]
+b:["$","script","script-0",{"src":"/DSA/_next/static/chunks/0aiax6w64a8h6.js","async":true}]
+c:["$","script","script-1",{"src":"/DSA/_next/static/chunks/0ucsxjv54.n1o.js","async":true}]
+d:["$","script","script-2",{"src":"/DSA/_next/static/chunks/0uwn_k-9.fenu.js","async":true}]
+e:["$","$L1a",null,{"children":["$","$1b",null,{"name":"Next.MetadataOutlet","children":"$@1c"}]}]
+13:["$","$L12",null,{"className":"text-muted-foreground","children":["$","ul",null,{"className":"text-muted-foreground list-inside list-disc space-y-3 text-sm","children":[["$","li",null,{"children":"Excel"}],["$","li",null,{"children":"SQL"}],["$","li",null,{"children":"Survey Design & Analysis"}],["$","li",null,{"children":"Data Visualization"}],["$","li",null,{"children":"Website Maintenance"}],["$","li",null,{"children":"Problem Solving"}]]}]}]
+1c:null

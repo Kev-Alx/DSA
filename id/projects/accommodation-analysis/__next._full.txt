@@ -1,0 +1,154 @@
+1:"$Sreact.fragment"
+2:I[39756,["/DSA/_next/static/chunks/01xlw8hd842-c.js","/DSA/_next/static/chunks/0t2xr05rlu96l.js"],"default"]
+3:I[37457,["/DSA/_next/static/chunks/01xlw8hd842-c.js","/DSA/_next/static/chunks/0t2xr05rlu96l.js"],"default"]
+6:I[97367,["/DSA/_next/static/chunks/01xlw8hd842-c.js","/DSA/_next/static/chunks/0t2xr05rlu96l.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+a:I[97367,["/DSA/_next/static/chunks/01xlw8hd842-c.js","/DSA/_next/static/chunks/0t2xr05rlu96l.js"],"ViewportBoundary"]
+c:I[97367,["/DSA/_next/static/chunks/01xlw8hd842-c.js","/DSA/_next/static/chunks/0t2xr05rlu96l.js"],"MetadataBoundary"]
+e:I[68027,[],"default",1]
+:HL["/DSA/_next/static/chunks/03_or2c1ty46f.css","style"]
+:HL["/DSA/_next/static/media/797e433ab948586e-s.p.09zddjkbdep5a.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/DSA/_next/static/media/caa3a2e1cccd8315-s.p.09~u27dqhyhd6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/DSA/_next/static/chunks/0tmg9vcbw.fm2.css","style"]
+0:{"P":null,"c":["","id","projects","accommodation-analysis",""],"q":"","i":false,"f":[[["",{"children":[["locale","id","d",null],{"children":["projects",{"children":[["slug","accommodation-analysis","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16]}],[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/DSA/_next/static/chunks/03_or2c1ty46f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],"$L4"]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L5",[["$","link","0",{"rel":"stylesheet","href":"/DSA/_next/static/chunks/0tmg9vcbw.fm2.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/DSA/_next/static/chunks/0x.~j7vy9ohz0.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/DSA/_next/static/chunks/0ckyaw75zpiga.js","async":true,"nonce":"$undefined"}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],{},null,false,null]},null,false,"$@9"]},null,false,"$@9"]},null,false,null]},null,false,"$@9"],["$","$1","h",{"children":[null,["$","$La",null,{"children":"$Lb"}],["$","div",null,{"hidden":true,"children":["$","$Lc",null,{"children":["$","$7",null,{"name":"Next.Metadata","children":"$Ld"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$e",[]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"0VguxgXPzm95cWIo0im72"}
+f:[]
+9:"$Wf"
+10:I[22016,["/DSA/_next/static/chunks/0x.~j7vy9ohz0.js","/DSA/_next/static/chunks/0ckyaw75zpiga.js"],""]
+11:I[5014,["/DSA/_next/static/chunks/0x.~j7vy9ohz0.js","/DSA/_next/static/chunks/0ckyaw75zpiga.js"],"default"]
+12:I[12893,["/DSA/_next/static/chunks/0x.~j7vy9ohz0.js","/DSA/_next/static/chunks/0ckyaw75zpiga.js"],"DataProjectLayout"]
+4:["$","html",null,{"lang":"id","className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable h-full antialiased","children":["$","body",null,{"className":"min-h-full flex flex-col selection:bg-foreground selection:text-background","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]}]
+13:T27f0,## Accommodation Customer Preference & Revisit Intention Analysis
+
+This report analyzes user-generated content and transaction attributes from digital accommodation platforms (Agoda and Airbnb) across eight major Indonesian cities. The dataset spans an operational window from 2017 to 2025.
+
+Data gathered from respective platform APIs with over 200,000 unique customer reviews. Using a fine-tuned ModernBERT model for labeling and a Structural Topic Model (STM) paired with SHAP (Explainable AI), the unstructured text was transformed into an actionable, quantitative dataset.
+
+**Purpose:**
+This report aims to analyze customer preferences and predict revisit intention across different travel segments (Business vs. Leisure) and accommodation types (Hotel vs. Peer-to-Peer/Airbnb). By translating historical review data and topic modeling into actionable insights, the goal is to enable industry stakeholders to make data-driven decisions on service improvements, marketing strategies, and operational focus.
+
+### Northstar Metrics:
+
+1. **Factors Influencing Revisit Intention** – Analysis of the topics and service attributes associated with guests' likelihood of returning.
+
+2. **Traveler Segment Differences** – Comparison of review patterns and priorities between business and leisure travelers.
+
+3. **Accommodation Type Comparison** – Evaluation of how guest expectations and satisfaction drivers differ between hotels and peer-to-peer accommodations.
+
+### Executive Summary:
+
+Over the 2017–2025 period, the analysis revealed that accommodation success is heavily dictated by non-negotiable hygienic factors and highly segmented customer expectations. **Room Cleanliness & Odor** emerged as the absolute universal driver of negative revisit intention across all segments. Conversely, positive drivers are highly contextual: **Business travelers** prioritize operational efficiency: Strategic Location, Transit Proximity, Check-in Process, while **Leisure travelers** prioritize experiential value: Nature & Tranquil Environment, Recreational Facilities. Furthermore, the operational baseline differs drastically by accommodation type; Hotel loyalty is driven by **Staff Professionalism**, while P2P loyalty is disproportionately reliant on **Host Responsiveness** and the **Check-in/Reservation Process**.
+
+**Key Takeaways:**
+
+**Cleanliness remains the most critical factor influencing guest retention**. Reviews mentioning cleanliness issues or unpleasant odors show a strong association with lower revisit intention, suggesting that deficiencies in this area can outweigh strengths in location, pricing, or other service attributes.
+
+**Guest priorities differ substantially across traveler segments**. Business travelers place greater emphasis on convenience and operational efficiency, while leisure travelers are more influenced by the overall experience and atmosphere. These differences indicate that a single service strategy may not effectively address the needs of all customer groups.
+
+### Data
+
+The analysis is built on a highly structured dataset generated from over 200,000 English-language reviews, enriched with predictive labels and topic proportions.
+
+| Column Name      | Type       | Description                                                    |
+| ---------------- | ---------- | -------------------------------------------------------------- |
+| `id`             | `string`   | Unique identifier for each review.                             |
+| `date`           | `datetime` | Timestamp of the review publication.                           |
+| `comment`        | `string`   | The original unstructured text review from the customer.       |
+| `rating`         | `float`    | Customer's overall rating score for the property.              |
+| `location`       | `string`   | The city where the property is located.                        |
+| `travel_purpose` | `string`   | Purpose or travel (Leisure / Business)                         |
+| `price`          | `float`    | Price per night or per stay.                                   |
+| `roomType/Star`  | `string`   | Property classification (Hotel Stars or P2P Entire / Private). |
+| `revisit_label`  | `string`   | Revisit / Non-revisit label using ModernBERT.                  |
+
+---
+
+### Insights Deep-Dive
+
+#### Global Topic Prevelance and Importance
+
+| Global Topic Proportions                                | Global Topic Importance                                      |
+| ------------------------------------------------------- | ------------------------------------------------------------ |
+| ![Global Topic Proportions](/acc/global-topic-prop.png) | ![Global Topic Importance](/acc/global-topic-importance.png) |
+
+Room cleanliness and odor emerge as the most critical negative driver of revisit intention. Reviews with a high concentration of cleanliness-related complaints almost consistently indicate that guests are unlikely to return.
+
+Value for money, service quality, and access to nearby stores and walkable amenities appear less frequently in reviews, but when mentioned, they have a disproportionately strong positive effect on loyalty. These factors serve as key differentiators that transform satisfaction into repeat patronage.
+
+The contrast between prevalence and importance highlights an important insight: frequently discussed topics are not necessarily the most influential. Some operational basics must simply meet expectations, while select experience-enhancing factors drive long-term customer retention.
+
+#### Segment Analysis: Business vs. Leisure
+
+![Topic Importance Rank Business vs Leisure](/acc/rank-bvl.png)
+Topic Importance Rank Business vs Leisure
+
+Business travelers prioritize efficiency and convenience throughout their stay. Strategic location, airport and transit accessibility, and a seamless check-in process become significantly more influential for this segment.
+
+Leisure travelers place greater value on the overall experience rather than operational efficiency alone. Natural surroundings, a tranquil atmosphere, and recreational facilities show a marked increase in importance among guests traveling for leisure.
+
+These differences suggest that guest expectations vary considerably by travel purpose, requiring distinct service and marketing strategies for each segment.
+
+#### Accommodation Dynamics: Hotel vs. Peer-to-Peer (P2P)
+
+![Topic Importance Rank Accomodation Type](/acc/rank-acct.png)
+
+Traditional hotel guests place greater emphasis on hospitality, staff professionalism, and service quality. Human interaction remains a defining component of the hotel experience and a major contributor to guest loyalty.
+
+In peer-to-peer accommodations, host responsiveness and the effectiveness of the check-in process become substantially more important. Without a dedicated front desk, communication quality directly shapes the guest experience.
+
+P2P properties display greater variability in review outcomes, indicating higher operational risk but also greater potential rewards for hosts who consistently deliver exceptional service.
+
+#### Price Sensitivity and Temporal Trends
+
+| Global Topic Proportions                        | Global Topic Importance     |
+| ----------------------------------------------- | --------------------------- |
+| ![TPrice Sensivity Across](/acc/price=sens.png) | ![Alt](/acc/pricesens2.png) |
+
+As accommodation prices increase, complaints regarding broken amenities and accessibility issues become less common. Higher-priced properties generally perform better on these operational fundamentals.
+
+Noise and sound disturbances remain a persistent source of dissatisfaction across all price tiers. Unlike many service-related issues, noise appears to be a challenge that properties struggle to fully mitigate regardless of price positioning.
+
+![Topic Importance Rank Accomodation Type](/acc/time.png)
+
+During 2020–2021, the importance of check-in procedures and food & beverage services increased sharply as guests adapted to pandemic-related restrictions and contactless interactions.
+
+By 2025, most guest priorities had returned to pre-pandemic patterns. However, the importance of exceeding expectations has declined, suggesting that travelers now place greater value on reliable execution of core services than on unexpected extras.
+
+### Recommendations
+
+#### Quality Control & Core Operations
+
+"Room Cleanliness & Odor" is the primary destroyer of repeat revenue across all property types and prices.
+**Actions:**
+
+- Implement stricter housekeeping audits and quality assurance procedures to ensure consistent room standards before guest arrival.
+- Make sure to do odor-neutralization and humidity control, as musty smells are repeatedly cited as dealbreakers.
+- Address soundproofing or provide earplugs proactively, as noise complaints persist even in high-end accomodation type tiers.
+
+#### Segment-Specific Marketing & Service
+
+Business and Leisure travelers require completely different operational focuses to trigger repeat bookings.
+**Actions:**
+
+- **Business:** Streamline the check-in process (e.g., mobile check-in) and highlight transit/corporate hub proximity in marketing materials.
+- **Leisure:** Showcase aesthetic spaces, recreational add-ons, and local walkability. Bundle services that enhance the "tranquil" or "family" experience.
+
+#### Hotel vs. P2P Strategies
+
+The baseline expectations differ fundamentally between formal and informal accommodations.
+**Actions:**
+
+- **Hotel Management:** Invest heavily in staff training. The professionalism and courtesy of the front-line staff act as the primary differentiator for hotel loyalty.
+- **P2P Hosts:** Automate and clarify the check-in process with foolproof visual guides. Establish strict SLAs for messaging response times, as communication gaps are the biggest driver of P2P churn.
+
+#### Pricing and Value Perception
+
+Value for money remains a top positive driver, particularly for business segments constrained by corporate budgets.
+**Actions:**
+
+- Justify high price tiers not just with aesthetics, but with flawless functionality (zero broken amenities).
+- Revamp Food & Beverage offerings, as this topic has shown a structural increase in importance post-pandemic.
+5:["$","main",null,{"className":"min-h-screen py-8 bg-background","children":["$","div",null,{"className":"w-full h-full relative text-foreground","children":["$","div",null,{"className":"w-full","children":[["$","div",null,{"className":"sticky top-0 z-40 bg-background flex justify-between items-center py-4 max-w-6xl mx-auto px-4 mb-6","children":[["$","$L10",null,{"href":"/id","className":"inline-flex items-center gap-1.5 text-xs font-mono text-muted-foreground hover:text-foreground transition-colors","children":[["$","$L11",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left","size":14}]," ","Kembali ke Halaman Utama"]}],["$","div",null,{"className":"flex gap-2 items-center","children":[["$","a",null,{"href":"https://github.com/Kev-Alx/DSA/tree/master/acc-ugc","target":"_blank","rel":"noopener noreferrer","className":"inline-flex items-center text-xs text-muted-foreground hover:text-zinc-900 dark:hover:text-zinc-300 font-mono gap-1 transition-colors group/link","children":[["$","span",null,{"children":"Repositori"}],["$","$L11",null,{"ref":"$undefined","iconNode":[["path",{"d":"M7 7h10v10","key":"1tivn9"}],["path",{"d":"M7 17 17 7","key":"1vkiza"}]],"className":"lucide-arrow-up-right transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform","size":13}]]}],"$undefined"]}]]}],["$","$L12",null,{"markdownContent":"$13"}]]}]}]}]
+b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+14:I[27201,["/DSA/_next/static/chunks/01xlw8hd842-c.js","/DSA/_next/static/chunks/0t2xr05rlu96l.js"],"IconMark"]
+8:null
+d:[["$","title","0",{"children":"Kev-Alx"}],["$","meta","1",{"name":"description","content":"Personal portfolio of Kevin Alexander."}],["$","link","2",{"rel":"icon","href":"/DSA/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L14","3",{}]]
